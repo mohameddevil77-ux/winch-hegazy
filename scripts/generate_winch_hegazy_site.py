@@ -388,7 +388,43 @@ html_index = f"""{get_head(
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         
-        <!-- Photo 1: Red Hegazy Truck Brand -->
+                <!-- Photo 1: Lamborghini Supercar Night -->
+        <div class="glass rounded-3xl overflow-hidden border border-amber-500/40 hover:border-amber-400 transition-all group flex flex-col justify-between shadow-xl">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-950 relative">
+            <img src="assets/images/hegazy_lamborghini_night.jpg" alt="نقل سيارات السوبر كار لامبورجيني ليلاً ونش حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-rescue-600/90 text-white text-[10px] font-black tracking-wider uppercase">سوبر كار VIP</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-white font-extrabold text-sm mb-1">نقل سيارات السوبر كار (لامبورجيني هوراكان)</h4>
+            <p class="text-slate-400 text-xs">سحب وتثبيت السيارات الفارهة والخارقة ليلاً بأربطة عجلات مطاطية وإضاءات تأمين كاملة.</p>
+          </div>
+        </div>
+
+        <!-- Photo 2: Caterpillar Heavy Loader -->
+        <div class="glass rounded-3xl overflow-hidden border border-amber-500/40 hover:border-amber-400 transition-all group flex flex-col justify-between shadow-xl">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-950 relative">
+            <img src="assets/images/hegazy_caterpillar_loader.jpg" alt="نقل لودر كاتربيلر CAT 930 ونش حجازي للمعدات الثقيلة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-amber-500/90 text-slate-950 text-[10px] font-black tracking-wider">معدات ثقيلة</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-white font-extrabold text-sm mb-1">نقل اللوادر والمعدات (كاتربيلر CAT 930)</h4>
+            <p class="text-slate-400 text-xs">قدرات شاقة لنقل لوادر ومعدات الإنشاءات والحفر لمواقع المشروعات والعاصمة الإدارية.</p>
+          </div>
+        </div>
+
+        <!-- Photo 3: Construction Loader Desert Project -->
+        <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-950 relative">
+            <img src="assets/images/hegazy_heavy_equipment_loader.jpg" alt="نقل معدات الحفر والصحراء لودر WA100 ونش حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-slate-800 text-amber-300 text-[10px] font-black">مواقع ومحاجر</span>
+          </div>
+          <div class="p-4">
+            <h4 class="text-white font-extrabold text-sm mb-1">خدمة مواقع العمل الصحراوية والمحاجر</h4>
+            <p class="text-slate-400 text-xs">نقل معدات البناء والصوامع (لودر WA100) بين المشروعات في بدر والعبور والإسماعيلية.</p>
+          </div>
+        </div>
+
+        <!-- Photo 4: Red Hegazy Truck Brand -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
             <img src="assets/images/hegazy_red_truck_branding.jpg" alt="ونش حجازي المعتمد HEGAZY وأرقام الطوارئ الميدانية الرسمية" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -399,7 +435,7 @@ html_index = f"""{get_head(
           </div>
         </div>
 
-        <!-- Photo 2: Porsche Highway Flatbed -->
+        <!-- Photo 5: Porsche Highway Flatbed -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
             <img src="assets/images/hegazy_orange_truck_porsche.jpg" alt="إنقاذ سيارات الدفع الرباعي بورش على الطرق السريعة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -410,7 +446,7 @@ html_index = f"""{get_head(
           </div>
         </div>
 
-        <!-- Photo 3: Luxury Cupra Crossover -->
+        <!-- Photo 6: Luxury Cupra Crossover -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
             <img src="assets/images/hegazy_luxury_car_flatbed.jpg" alt="سحب وتثبيت السيارات الفاخرة والرياضية بأربطة الإطارات بدون خدوش" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
@@ -421,62 +457,61 @@ html_index = f"""{get_head(
           </div>
         </div>
 
-        <!-- Photo 4: Tractor Head Heavy Recovery -->
+        <!-- Photo 7: Tractor Head Heavy Recovery -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
             <img src="assets/images/hegazy_semi_truck_head.jpg" alt="سحب وإنقاذ رؤوس التريلات والشاحنات الضخمة Actros على ونش حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-4">
             <h4 class="text-white font-extrabold text-sm mb-1">سحب رؤوس التريلات والشاحنات</h4>
-            <p class="text-slate-400 text-xs">قدرات سحب جبارة لنقل رؤوس الشاحنات والتريلات المعطلة بسلامة كاملة.</p>
+            <p class="text-slate-400 text-xs">إنقاذ ميكانيكي للشاحنات التريلا المعطلة وتوصيلها لورش ومراكز الصيانة المعتمدة.</p>
           </div>
         </div>
 
-        <!-- Photo 5: Caravan Construction Site Transport -->
+        <!-- Photo 8: Caravans Transport -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
             <img src="assets/images/hegazy_caravan_transport.jpg" alt="نقل الكرفانات والمكاتب الإدارية ومواقع الإنشاءات على ونش حجازي مسطح" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">نقل الكرفانات وغرف المواقع</h4>
-            <p class="text-slate-400 text-xs">طبالي مسطحة ممتدة لنقل الكرفانات السكنية والمكاتب المتنقلة بين المشاريع.</p>
+            <h4 class="text-white font-extrabold text-sm mb-1">نقل الكرفانات والوحدات المتنقلة</h4>
+            <p class="text-slate-400 text-xs">أبعاد طبلية ممتدة حتى 12 متراً لنقل غرف الحراسة ومكاتب المواقع والمشروعات.</p>
           </div>
         </div>
 
-        <!-- Photo 6: Golf Carts Transport -->
+        <!-- Photo 9: Golf Carts Transport -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
             <img src="assets/images/hegazy_golf_carts_transport.jpg" alt="نقل عربات الجولف كارت للمنتجعات والملاعب والقرى السياحية" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">نقل عربات الجولف كارت للمنتجعات</h4>
-            <p class="text-slate-400 text-xs">نقل آمن بحمولة مزدوجة لعربات الجولف كارت للكمبوندات والقرى السياحية.</p>
+            <h4 class="text-white font-extrabold text-sm mb-1">نقل عربات الجولف كارت (حمولة مزدوجة)</h4>
+            <p class="text-slate-400 text-xs">خدمة مخصصة للمنتجعات والقرى السياحية والمجمعات المغلقة في مدينتي والرحاب.</p>
           </div>
         </div>
 
-        <!-- Photo 7: Food Truck Transport -->
+        <!-- Photo 10: Food Trucks Transport -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
             <img src="assets/images/hegazy_food_truck_transport.jpg" alt="نقل عربات الطعام المتنقلة فود تراك والمقطورات التجارية على ونش حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-4">
             <h4 class="text-white font-extrabold text-sm mb-1">نقل عربات الطعام (Food Trucks)</h4>
-            <p class="text-slate-400 text-xs">نقل وتوصيل مقطورات الفود تراك والأكشاك الحديثة للمعارض والميادين بأمان.</p>
+            <p class="text-slate-400 text-xs">توصيل آمن للمقطورات التجارية وأكشاك الطعام للمعارض والمهرجانات والساحات.</p>
           </div>
         </div>
 
-        <!-- Photo 8: Heavy Forklift Industrial -->
+        <!-- Photo 11: Heavy Forklifts Transport -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
             <img src="assets/images/hegazy_red_truck_heavy.jpg" alt="سحب ونقل الرافعات الشوكية والمعدات الثقيلة في المصانع والصوامع" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">نقل المعدات والرافعات الشوكية</h4>
-            <p class="text-slate-400 text-xs">قدرات جر وسحب فائقة لنقل معدات المصانع، الفورك لفت، والشاحنات.</p>
+            <h4 class="text-white font-extrabold text-sm mb-1">نقل المعدات والرافعات الشوكية (TCM)</h4>
+            <p class="text-slate-400 text-xs">قدرات جر وسحب فائقة لنقل معدات المصانع، الفورك لفت، والشاحنات في المناطق الصناعية.</p>
           </div>
         </div>
-
-      </div>
+</div>
     </div>
   </section>
 
