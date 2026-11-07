@@ -13,7 +13,7 @@ from build_articles_engine import generate_article_file
 cairo_articles = [
     {
         "slug": "winch-enqaz-cairo",
-        "image": "hegazy_red_truck_heavy.jpg",
+        "image": "hegazy_red_truck_heavy.webp",
         "title": "ونش إنقاذ في القاهرة: أسرع خدمة سحب سيارات 24 ساعة في كافة أحياء العاصمة",
         "desc": "دليل ونش إنقاذ سيارات في القاهرة من أوناش أولاد حجازي. تغطية شاملة لجميع أحياء القاهرة الكبرى والجيزة خلال 10 دقائق بأحدث أوناش هيدروليكية وأرخص سعر يبدأ من 600 جنيه.",
         "date": "2026-11-06",
@@ -49,7 +49,7 @@ cairo_articles = [
 
 <!-- Real Photo Embed -->
 <div class="my-8 rounded-3xl overflow-hidden border border-slate-700 bg-slate-950 shadow-2xl">
-  <img src="../assets/images/hegazy_red_truck_branding.jpg" alt="ونش إنقاذ في القاهرة أسطول أوناش أولاد حجازي المعتمد" class="w-full h-auto object-cover max-h-96">
+  <img src="../assets/images/hegazy_red_truck_branding.webp" alt="ونش إنقاذ في القاهرة أسطول أوناش أولاد حجازي المعتمد" class="w-full h-auto object-cover max-h-96">
   <div class="p-4 bg-slate-900/90 border-t border-slate-800 text-xs text-slate-300 flex items-center justify-between">
     <span class="font-bold text-amber-300">أسطول أوناش أولاد حجازي الأصلي المجهز لإنقاذ كافة أحياء القاهرة</span>
     <span class="text-emerald-400">✓ متواجد في كافة مناطق القاهرة 24/7</span>
@@ -128,7 +128,7 @@ cairo_articles = [
     },
     {
         "slug": "winch-nasr-city",
-        "image": "hegazy_orange_truck_porsche.jpg",
+        "image": "hegazy_orange_truck_porsche.webp",
         "title": "ونش إنقاذ في مدينة نصر: أسرع ونش سيارات في مكرم عبيد وعباس العقاد والحي العاشر",
         "desc": "خدمة ونش إنقاذ سيارات في مدينة نصر من أوناش أولاد حجازي 24 ساعة. متمركزون في مكرم عبيد، عباس العقاد، الحي العاشر، وزهراء مدينة نصر. وصول في 10 دقائق بسعر يبدأ من 600 ج.",
         "date": "2026-11-06",
@@ -186,13 +186,13 @@ cairo_articles = [
 
 <!-- Embedded photo -->
 <div class="my-6 rounded-2xl overflow-hidden border border-slate-700 bg-slate-950">
-  <img src="../assets/images/hegazy_luxury_car_flatbed.jpg" alt="سحب السيارات الحديثة في مصر الجديدة أوناش أولاد حجازي" class="w-full h-auto object-cover max-h-80">
+  <img src="../assets/images/hegazy_luxury_car_flatbed.webp" alt="سحب السيارات الحديثة في مصر الجديدة أوناش أولاد حجازي" class="w-full h-auto object-cover max-h-80">
 </div>
 """
     },
     {
         "slug": "winch-maadi",
-        "image": "hegazy_luxury_car_flatbed.jpg",
+        "image": "hegazy_luxury_car_flatbed.webp",
         "title": "ونش إنقاذ في المعادي: أوناش متمركزة على الأوتوستراد ودجلة وكورنيش المعادي وصقر قريش",
         "desc": "ونش إنقاذ سيارات في المعادي من أوناش أولاد حجازي. تغطية سريعة على كورنيش المعادي، دجلة، ثكنات المعادي، زهراء المعادي، وصقر قريش 24/7 بسعر يبدأ من 600 ج. اتصل 01032194206.",
         "date": "2026-11-06",
@@ -243,7 +243,7 @@ cairo_articles = [
     },
     {
         "slug": "winch-mokattam",
-        "image": "hegazy_red_truck_branding.jpg",
+        "image": "hegazy_red_truck_branding.webp",
         "title": "ونش إنقاذ في المقطم: خدمة سريعة في الهضبة الوسطى وشارع 9 وكورنيش المقطم",
         "desc": "خدمات ونش إنقاذ سيارات في المقطم من أوناش أولاد حجازي. أوناش قوية مجهزة للمطالع والمنحدرات الجبلية في الهضبة العليا والوسطى وشارع 9 على مدار 24 ساعة. اتصل 01032194206.",
         "date": "2026-11-06",
@@ -269,7 +269,7 @@ cairo_articles = [
     },
     {
         "slug": "winch-shobra",
-        "image": "hegazy_semi_truck_head.jpg",
+        "image": "hegazy_semi_truck_head.webp",
         "title": "ونش إنقاذ في شبرا: سحب سيارات في شبرا مصر وشبرا الخيمة وروض الفرج ومظلات",
         "desc": "طلب ونش إنقاذ سيارات في شبرا مصر وشبرا الخيمة وروض الفرج والمظلات 24 ساعة من أوناش أولاد حجازي. وصول سريع وأرخص تسعيرة سحب سيارات تبدأ من 600 جنيه. اتصل 01032194206.",
         "date": "2026-11-06",
@@ -295,7 +295,7 @@ cairo_articles = [
     },
     {
         "slug": "winch-rehab-madinaty",
-        "image": "hegazy_golf_carts_transport.jpg",
+        "image": "hegazy_golf_carts_transport.webp",
         "title": "ونش إنقاذ في الرحاب ومدينتي والشروق والعبور: أوناش حديثة شرق القاهرة 24 ساعة",
         "desc": "خدمات ونش إنقاذ سيارات في مدينتي، الرحاب، الشروق، المستقبل سيتي، وبدر والعبور من أوناش أولاد حجازي. أحدث أوناش هيدروليكية لحماية السيارات الفاخرة. اتصل الآن 01032194206.",
         "date": "2026-11-06",
@@ -320,13 +320,13 @@ cairo_articles = [
 
 <!-- Photo Embed -->
 <div class="my-6 rounded-2xl overflow-hidden border border-slate-700 bg-slate-950">
-  <img src="../assets/images/hegazy_orange_truck_porsche.jpg" alt="سحب السيارات الفاخرة على طريق السويس ومدينتي أوناش أولاد حجازي" class="w-full h-auto object-cover max-h-80">
+  <img src="../assets/images/hegazy_orange_truck_porsche.webp" alt="سحب السيارات الفاخرة على طريق السويس ومدينتي أوناش أولاد حجازي" class="w-full h-auto object-cover max-h-80">
 </div>
 """
     },
     {
         "slug": "winch-giza-haram",
-        "image": "hegazy_food_truck_transport.jpg",
+        "image": "hegazy_food_truck_transport.webp",
         "title": "ونش إنقاذ في الجيزة والهرم وفيصل: أسرع ونش سيارات على الدائري وحدائق الأهرام",
         "desc": "طلب ونش إنقاذ سيارات في الجيزة، شارع الهرم، شارع فيصل، حدائق الأهرام، والرماية 24 ساعة من أوناش أولاد حجازي. وصول خلال 10 دقائق وأرخص سعر سحب سيارات. اتصل 01032194206.",
         "date": "2026-11-06",

@@ -270,6 +270,8 @@ html_contact = f"""{get_head(
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
 {get_header("contact")}
 
+  <main id="main-content">
+
   <section class="py-16 bg-gradient-to-b from-dark-900 to-dark-950 border-b border-slate-800 text-center">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <span class="px-3.5 py-1 rounded-full text-xs font-black bg-rescue-500/15 text-rescue-400 border border-rescue-500/30 mb-3 inline-block">خطوط الطوارئ والاتصال المباشر 24 ساعة</span>
@@ -338,6 +340,8 @@ html_contact = f"""{get_head(
   </section>
 
 {get_map_section()}
+
+  </main>
 
 {get_footer()}
 </body>

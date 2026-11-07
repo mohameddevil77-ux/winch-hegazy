@@ -24,8 +24,9 @@ LOCATION_NAME = "مركز ارتكاز أوناش أولاد حجازي - كار
 LOCATION_ADDRESS = "كارفور العبور، جولف سيتي مول، مطلع الطريق الدائري وطريق الإسماعيلية الصحراوي، مصر"
 
 
-def get_head(title, description, canonical_url, is_blog=False):
+def get_head(title, description, canonical_url, is_blog=False, preload_lcp=None):
     prefix = "../" if is_blog else ""
+    preload_lcp_tag = f'  <link rel="preload" as="image" href="{prefix}{preload_lcp}" fetchpriority="high" type="image/webp">\n' if preload_lcp else ""
     return f"""<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -41,7 +42,7 @@ def get_head(title, description, canonical_url, is_blog=False):
   <meta property="og:url" content="{canonical_url}">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
-  <meta property="og:image" content="{prefix}assets/images/og_banner.jpg">
+  <meta property="og:image" content="{prefix}assets/images/og_banner.webp">
   <meta property="og:locale" content="ar_EG">
   <meta property="og:site_name" content="أوناش إنقاذ أولاد حجازي">
 
@@ -49,69 +50,27 @@ def get_head(title, description, canonical_url, is_blog=False):
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{description}">
-  <meta name="twitter:image" content="{prefix}assets/images/og_banner.jpg">
+  <meta name="twitter:image" content="{prefix}assets/images/og_banner.webp">
 
   <!-- Favicon & Touch Icons -->
   <link rel="icon" type="image/png" href="{prefix}assets/images/favicon.png">
-  <link rel="apple-touch-icon" href="{prefix}assets/images/logo.png">
+  <link rel="apple-touch-icon" href="{prefix}assets/images/logo_sm.png">
   <meta name="theme-color" content="#0B0F17">
 
-  <!-- Fonts & Tailwind -->
+  <!-- LCP Preload if specified -->
+{preload_lcp_tag}
+  <!-- Fonts Preconnect & Asynchronous Non-Blocking CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@500;700;800;900&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {{
-      theme: {{
-        extend: {{
-          fontFamily: {{
-            cairo: ['Cairo', 'sans-serif'],
-            tajawal: ['Tajawal', 'sans-serif']
-          }},
-          colors: {{
-            safety: {{
-              50: '#fffbeb',
-              100: '#fef3c7',
-              400: '#fbbf24',
-              500: '#f59e0b',
-              600: '#d97706'
-            }},
-            rescue: {{
-              500: '#ef4444',
-              600: '#dc2626',
-              700: '#b91c1c'
-            }},
-            dark: {{
-              900: '#0f172a',
-              950: '#0b0f17'
-            }}
-          }}
-        }}
-      }}
-    }}
-  </script>
-  <style>
-    body {{
-      font-family: 'Cairo', sans-serif;
-      background-color: #0b0f17;
-      color: #f1f5f9;
-      overflow-x: hidden;
-    }}
-    .glow-amber {{
-      box-shadow: 0 0 25px rgba(245, 158, 11, 0.25);
-    }}
-    .glow-red {{
-      box-shadow: 0 0 25px rgba(239, 68, 68, 0.35);
-    }}
-    .glass {{
-      background: rgba(15, 23, 42, 0.85);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }}
-  </style>
-"""
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@500;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@500;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@500;700;800;900&display=swap">
+  </noscript>
 
+  <!-- Precompiled Minified Pure Tailwind CSS (Zero Runtime Script Overhead) -->
+  <link rel="stylesheet" href="{prefix}assets/css/styles.min.css">
+"""
 def get_header(active_page="home", is_blog=False):
     p = "../" if is_blog else ""
     nav_links = [
@@ -149,7 +108,7 @@ def get_header(active_page="home", is_blog=False):
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <!-- Logo -->
       <a href="{p}index.html" class="flex items-center gap-3 group">
-        <img src="{p}assets/images/logo.png" alt="شعار أوناش إنقاذ أولاد حجازي" class="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-amber-400 shadow-md group-hover:scale-105 transition-transform">
+        <img src="{p}assets/images/logo_sm.png" alt="شعار أوناش إنقاذ أولاد حجازي" width="56" height="56" class="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-amber-400 shadow-md group-hover:scale-105 transition-transform">
         <div>
           <div class="text-lg md:text-2xl font-black text-white tracking-tight flex items-center gap-1.5">
             <span>أوناش إنقاذ</span>
@@ -191,16 +150,16 @@ def get_footer(is_blog=False):
     p = "../" if is_blog else ""
     return f"""
   <!-- Footer -->
-  <footer class="bg-slate-950 border-t border-slate-800/80 pt-16 pb-28 text-slate-400">
+  <footer class="bg-slate-950 border-t border-slate-800/80 pt-16 pb-28 text-slate-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
       
       <!-- Col 1: Brand Info -->
       <div class="space-y-4">
         <div class="flex items-center gap-3">
-          <img src="{p}assets/images/logo.png" alt="شعار أوناش أولاد حجازي" class="w-12 h-12 rounded-full border border-amber-400">
+          <img src="{p}assets/images/logo_sm.png" alt="شعار أوناش أولاد حجازي" width="48" height="48" class="w-12 h-12 rounded-full border border-amber-400">
           <span class="text-xl font-black text-white">أوناش إنقاذ <span class="text-amber-400">أولاد حجازي</span></span>
         </div>
-        <p class="text-sm leading-relaxed text-slate-400">
+        <p class="text-sm leading-relaxed text-slate-300">
           الخيار الأول المعتمد لخدمات إنقاذ وسحب ونقل السيارات في جمهورية مصر العربية على مدار 24 ساعة بأحدث أوناش هيدروليكية مغلقة وأفضل أسعار بدون استغلال.
         </p>
         <div class="pt-2 text-xs text-amber-400/90 font-bold">
@@ -210,7 +169,7 @@ def get_footer(is_blog=False):
 
       <!-- Col 2: Fast Links -->
       <div>
-        <h4 class="text-white font-extrabold text-base mb-4 border-r-4 border-amber-400 pr-2">روابط سريعة</h4>
+        <h3 class="text-white font-extrabold text-base mb-4 border-r-4 border-amber-400 pr-2">روابط سريعة</h3>
         <ul class="space-y-2 text-sm">
           <li><a href="{p}index.html" class="hover:text-amber-400 transition-colors">الرئيسية</a></li>
           <li><a href="{p}services.html" class="hover:text-amber-400 transition-colors">خدمات أوناش الإنقاذ</a></li>
@@ -223,7 +182,7 @@ def get_footer(is_blog=False):
 
       <!-- Col 3: Key Coverage -->
       <div>
-        <h4 class="text-white font-extrabold text-base mb-4 border-r-4 border-rescue-500 pr-2">تغطية المحاور الحيوية</h4>
+        <h3 class="text-white font-extrabold text-base mb-4 border-r-4 border-rescue-500 pr-2">تغطية المحاور الحيوية</h3>
         <ul class="space-y-2 text-sm">
           <li><a href="{p}blog/winch-daeri-cairo.html" class="hover:text-amber-400 transition-colors">ونش إنقاذ الطريق الدائري</a></li>
           <li><a href="{p}blog/winch-tagamoa-new-cairo.html" class="hover:text-amber-400 transition-colors">ونش إنقاذ التجمع والقاهرة الجديدة</a></li>
@@ -236,7 +195,7 @@ def get_footer(is_blog=False):
 
       <!-- Col 4: Contact & Hotlines -->
       <div>
-        <h4 class="text-white font-extrabold text-base mb-4 border-r-4 border-amber-400 pr-2">خطوط الطوارئ 24/7</h4>
+        <h3 class="text-white font-extrabold text-base mb-4 border-r-4 border-amber-400 pr-2">خطوط الطوارئ 24/7</h3>
         <div class="space-y-2 text-sm">
           <p class="text-slate-300 text-xs">لطلب أسرع ونش إنقاذ على مدار الساعة:</p>
           <a href="tel:{PHONE}" class="block bg-slate-900 border border-amber-500/40 p-2.5 rounded-xl text-center font-black text-amber-300 text-base hover:border-amber-400 transition-colors">
@@ -253,11 +212,11 @@ def get_footer(is_blog=False):
     </div>
 
     <!-- Copyright & Disclaimer -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-900 text-center text-xs text-slate-500 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-800 text-center text-xs text-slate-300 flex flex-col md:flex-row items-center justify-between gap-4">
       <div>
-        جميع الحقوق محفوظة © 2026 - <strong class="text-slate-300">أوناش إنقاذ أولاد حجازي</strong> (Hegazy Car Towing Services Egypt).
+        جميع الحقوق محفوظة © 2026 - <strong class="text-white">أوناش إنقاذ أولاد حجازي</strong> (Hegazy Car Towing Services Egypt).
       </div>
-      <div class="flex items-center gap-4 text-slate-400">
+      <div class="flex items-center gap-4 text-slate-300">
         <span>SEO & AI-Engineered by <strong class="text-amber-400">AM Marketing Agency</strong></span>
       </div>
     </div>

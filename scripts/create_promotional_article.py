@@ -13,7 +13,7 @@ from build_articles_engine import generate_article_file
 
 promo_article = {
     "slug": "winch-offers-discounts-cairo",
-    "image": "hegazy_red_truck_branding.jpg",
+    "image": "hegazy_red_truck_branding.webp",
     "title": "عروض وخصومات أوناش إنقاذ أولاد حجازي: خصم 50% لأول 100 عميل، بدون إكرامية للسائق، ومساهمة في رسوم الكارتة",
     "desc": "تعرف على عروض وخصومات أوناش أولاد حجازي لإنقاذ السيارات 2026: خصم يصل إلى 50% لأول 100 عميل، بدون أي إكرامية إجبارية للسائق، ومساهمة في دفع رسوم الكارتة للطرق السريعة مع أسعار حقيقية تبدأ من 600 ج.م.",
     "date": "2026-11-06",

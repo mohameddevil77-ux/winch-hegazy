@@ -27,7 +27,9 @@ faq_home = [
 html_index = f"""{get_head(
     "أوناش إنقاذ أولاد حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
     f"أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 600 جنيه. اتصل الآن {PHONE_DISPLAY}.",
-    "https://awladhegazy.com/"
+    "https://awladhegazy.com/",
+    is_blog=False,
+    preload_lcp="assets/images/hero_rescue_bg.webp"
 )}
 {generate_local_business_schema(
     "أوناش إنقاذ أولاد حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
@@ -43,8 +45,10 @@ html_index = f"""{get_head(
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
 {get_header("home")}
 
+  <main id="main-content">
+
   <!-- Hero Section -->
-  <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(3, 7, 18, 0.84), rgba(3, 7, 18, 0.96)), url('assets/images/hero_rescue_bg.jpg');">
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(3, 7, 18, 0.84), rgba(3, 7, 18, 0.96)), url('assets/images/hero_rescue_bg.webp');">
     <div class="absolute inset-0 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none"></div>
     <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute bottom-1/4 left-1/4 w-96 h-96 bg-rescue-600/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -123,7 +127,7 @@ html_index = f"""{get_head(
 
               <!-- Real Truck Image -->
               <div class="my-4 rounded-2xl overflow-hidden border border-slate-700 bg-slate-950 relative aspect-[4/3]">
-                <img src="assets/images/hegazy_red_truck_branding.jpg" alt="أوناش إنقاذ أولاد حجازي الأصلي HEGAZY أحدث أسطول هيدروليكي" class="w-full h-full object-cover">
+                <img src="assets/images/hegazy_red_truck_branding.webp" alt="أوناش إنقاذ أولاد حجازي الأصلي HEGAZY أحدث أسطول هيدروليكي" class="w-full h-full object-cover" loading="lazy" decoding="async">
                 <div class="absolute bottom-2 right-2 left-2 bg-slate-950/85 backdrop-blur-sm p-2 rounded-xl border border-amber-400/40 text-xs flex items-center justify-between">
                   <span class="font-black text-amber-300">أسطول أوناش أولاد حجازي المعتمد (HEGAZY)</span>
                   <span class="text-emerald-400 font-bold">✓ نقل آمن بدون خدوش</span>
@@ -168,8 +172,8 @@ html_index = f"""{get_head(
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
           
           <div>
-            <label class="block text-xs font-bold text-slate-300 mb-2">مكان تعطل السيارة الحالي (موقعك):</label>
-            <select id="startLoc" class="w-full bg-slate-950 border border-slate-700 rounded-xl p-3 text-sm text-white font-bold focus:border-amber-400 focus:outline-none">
+            <label for="startLoc" class="block text-xs font-bold text-slate-300 mb-2">مكان تعطل السيارة الحالي (موقعك):</label>
+            <select id="startLoc" name="startLoc" aria-label="مكان تعطل السيارة الحالي (موقعك)" class="w-full bg-slate-950 border border-slate-700 rounded-xl p-3 text-sm text-white font-bold focus:border-amber-400 focus:outline-none">
               <option value="obour" selected>مدينة العبور (كارفور / سوق العبور / جولف سيتي)</option>
               <option value="shorouk">مدينة الشروق (بوابات طريق السويس والإسماعيلية)</option>
               <option value="badr">مدينة بدر / المنطقة الصناعية بالروبيكي</option>
@@ -192,8 +196,8 @@ html_index = f"""{get_head(
           </div>
 
           <div>
-            <label class="block text-xs font-bold text-slate-300 mb-2">مكان توصيل السيارة (الوجهة):</label>
-            <select id="endLoc" class="w-full bg-slate-950 border border-slate-700 rounded-xl p-3 text-sm text-white font-bold focus:border-amber-400 focus:outline-none">
+            <label for="endLoc" class="block text-xs font-bold text-slate-300 mb-2">مكان توصيل السيارة (الوجهة):</label>
+            <select id="endLoc" name="endLoc" aria-label="مكان توصيل السيارة (الوجهة)" class="w-full bg-slate-950 border border-slate-700 rounded-xl p-3 text-sm text-white font-bold focus:border-amber-400 focus:outline-none">
               <option value="same">في نفس المنطقة (ورشة / بنزينة قريبة)</option>
               <option value="center">مركز صيانة / توكيل معتمد</option>
               <option value="home">المنزل / الجراج الخاص</option>
@@ -349,7 +353,7 @@ html_index = f"""{get_head(
             <div class="flex items-start gap-4 p-3 rounded-2xl bg-slate-950/60 border border-slate-800">
               <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg shrink-0">✓</div>
               <div>
-                <h4 class="text-white font-extrabold text-sm mb-1">تسعير محدد مسبقاً قبل تحرك الونش</h4>
+                <h3 class="text-white font-extrabold text-sm mb-1">تسعير محدد مسبقاً قبل تحرك الونش</h3>
                 <p class="text-slate-400 text-xs">لا مفاجآت عند الوصول ولا طلب إكراميات إضافية. السعر المتفق عليه على الهاتف هو السعر النهائي.</p>
               </div>
             </div>
@@ -357,7 +361,7 @@ html_index = f"""{get_head(
             <div class="flex items-start gap-4 p-3 rounded-2xl bg-slate-950/60 border border-slate-800">
               <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg shrink-0">✓</div>
               <div>
-                <h4 class="text-white font-extrabold text-sm mb-1">أحدث أسطول هيدروليكي 2026</h4>
+                <h3 class="text-white font-extrabold text-sm mb-1">أحدث أسطول هيدروليكي 2026</h3>
                 <p class="text-slate-400 text-xs">نبتعد عن الأوناش السلكية القديمة التي تضر هياكل السيارات ونستخدم زوايا هبوط كاملة تناسب السيارات الحديثة.</p>
               </div>
             </div>
@@ -365,7 +369,7 @@ html_index = f"""{get_head(
             <div class="flex items-start gap-4 p-3 rounded-2xl bg-slate-950/60 border border-slate-800">
               <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg shrink-0">✓</div>
               <div>
-                <h4 class="text-white font-extrabold text-sm mb-1">سائقون محترفون ومدربون على السلامة المهنية</h4>
+                <h3 class="text-white font-extrabold text-sm mb-1">سائقون محترفون ومدربون على السلامة المهنية</h3>
                 <p class="text-slate-400 text-xs">فريق عمل مؤهل يضمن تثبيت السيارة بعناية وتأمين مسارها حتى الوصول بأمان تام لوجهتك المطلوبة.</p>
               </div>
             </div>
@@ -374,8 +378,8 @@ html_index = f"""{get_head(
 
         <!-- Real Fleet Image Showcase -->
         <div class="grid grid-cols-2 gap-4">
-          <img src="assets/images/hegazy_luxury_car_flatbed.jpg" alt="سحب وتثبيت السيارات الفاخرة أوناش أولاد حجازي" class="rounded-2xl border border-slate-700 shadow-xl object-cover h-64 w-full">
-          <img src="assets/images/hegazy_orange_truck_porsche.jpg" alt="ونش إنقاذ سيارات حديث أوناش أولاد حجازي" class="rounded-2xl border border-slate-700 shadow-xl object-cover h-64 w-full mt-6">
+          <img src="assets/images/hegazy_luxury_car_flatbed.webp" alt="سحب وتثبيت السيارات الفاخرة أوناش أولاد حجازي" class="rounded-2xl border border-slate-700 shadow-xl object-cover h-64 w-full" loading="lazy" decoding="async">
+          <img src="assets/images/hegazy_orange_truck_porsche.webp" alt="ونش إنقاذ سيارات حديث أوناش أولاد حجازي" class="rounded-2xl border border-slate-700 shadow-xl object-cover h-64 w-full mt-6" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
@@ -395,11 +399,11 @@ html_index = f"""{get_head(
                 <!-- Photo 1: Lamborghini Supercar Night -->
         <div class="glass rounded-3xl overflow-hidden border border-amber-500/40 hover:border-amber-400 transition-all group flex flex-col justify-between shadow-xl">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950 relative">
-            <img src="assets/images/hegazy_lamborghini_night.jpg" alt="نقل سيارات السوبر كار لامبورجيني ليلاً أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_lamborghini_night.webp" alt="نقل سيارات السوبر كار لامبورجيني ليلاً أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
             <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-rescue-600/90 text-white text-[10px] font-black tracking-wider uppercase">سوبر كار VIP</span>
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">نقل سيارات السوبر كار (لامبورجيني هوراكان)</h4>
+            <h3 class="text-white font-extrabold text-sm mb-1">نقل سيارات السوبر كار (لامبورجيني هوراكان)</h3>
             <p class="text-slate-400 text-xs">سحب وتثبيت السيارات الفارهة والخارقة ليلاً بأربطة عجلات مطاطية وإضاءات تأمين كاملة.</p>
           </div>
         </div>
@@ -407,11 +411,11 @@ html_index = f"""{get_head(
         <!-- Photo 2: Caterpillar Heavy Loader -->
         <div class="glass rounded-3xl overflow-hidden border border-amber-500/40 hover:border-amber-400 transition-all group flex flex-col justify-between shadow-xl">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950 relative">
-            <img src="assets/images/hegazy_caterpillar_loader.jpg" alt="نقل لودر كاتربيلر CAT 930 أوناش أولاد حجازي للمعدات الثقيلة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_caterpillar_loader.webp" alt="نقل لودر كاتربيلر CAT 930 أوناش أولاد حجازي للمعدات الثقيلة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
             <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-amber-500/90 text-slate-950 text-[10px] font-black tracking-wider">معدات ثقيلة</span>
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">نقل اللوادر والمعدات (كاتربيلر CAT 930)</h4>
+            <h3 class="text-white font-extrabold text-sm mb-1">نقل اللوادر والمعدات (كاتربيلر CAT 930)</h3>
             <p class="text-slate-400 text-xs">قدرات شاقة لنقل لوادر ومعدات الإنشاءات والحفر لمواقع المشروعات والعاصمة الإدارية.</p>
           </div>
         </div>
@@ -419,11 +423,11 @@ html_index = f"""{get_head(
         <!-- Photo 3: Construction Loader Desert Project -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950 relative">
-            <img src="assets/images/hegazy_heavy_equipment_loader.jpg" alt="نقل معدات الحفر والصحراء لودر WA100 أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_heavy_equipment_loader.webp" alt="نقل معدات الحفر والصحراء لودر WA100 أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
             <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-slate-800 text-amber-300 text-[10px] font-black">مواقع ومحاجر</span>
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">خدمة مواقع العمل الصحراوية والمحاجر</h4>
+            <h3 class="text-white font-extrabold text-sm mb-1">خدمة مواقع العمل الصحراوية والمحاجر</h3>
             <p class="text-slate-400 text-xs">نقل معدات البناء والصوامع (لودر WA100) بين المشروعات في بدر والعبور والإسماعيلية.</p>
           </div>
         </div>
@@ -431,10 +435,10 @@ html_index = f"""{get_head(
         <!-- Photo 4: Red Hegazy Truck Brand -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
-            <img src="assets/images/hegazy_red_truck_branding.jpg" alt="أوناش أولاد حجازي المعتمد HEGAZY وأرقام الطوارئ الميدانية الرسمية" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_red_truck_branding.webp" alt="أوناش أولاد حجازي المعتمد HEGAZY وأرقام الطوارئ الميدانية الرسمية" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">أوناش أولاد حجازي الرسمي المعتمد (HEGAZY)</h4>
+            <h3 class="text-white font-extrabold text-sm mb-1">أوناش أولاد حجازي الرسمي المعتمد (HEGAZY)</h3>
             <p class="text-slate-400 text-xs">أسطول إيسوزو حديث مرخص يحمل شعار وأرقام طوارئ أوناش أولاد حجازي الميدانية.</p>
           </div>
         </div>
@@ -442,10 +446,10 @@ html_index = f"""{get_head(
         <!-- Photo 5: Porsche Highway Flatbed -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
-            <img src="assets/images/hegazy_orange_truck_porsche.jpg" alt="إنقاذ سيارات الدفع الرباعي بورش على الطرق السريعة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_orange_truck_porsche.webp" alt="إنقاذ سيارات الدفع الرباعي بورش على الطرق السريعة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">إنقاذ سيارات الدفع الرباعي والبورش</h4>
+            <h3 class="text-white font-extrabold text-sm mb-1">إنقاذ سيارات الدفع الرباعي والبورش</h3>
             <p class="text-slate-400 text-xs">تأمين نقل سيارات الـ SUV الفارهة على الطريق الدائري والصحراوي والسويس.</p>
           </div>
         </div>
@@ -453,10 +457,10 @@ html_index = f"""{get_head(
         <!-- Photo 6: Luxury Cupra Crossover -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
-            <img src="assets/images/hegazy_luxury_car_flatbed.jpg" alt="سحب وتثبيت السيارات الفاخرة والرياضية بأربطة الإطارات بدون خدوش" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_luxury_car_flatbed.webp" alt="سحب وتثبيت السيارات الفاخرة والرياضية بأربطة الإطارات بدون خدوش" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">عناية فائقة بالسيارات الحديثة</h4>
+            <h3 class="text-white font-extrabold text-sm mb-1">عناية فائقة بالسيارات الحديثة</h3>
             <p class="text-slate-400 text-xs">تثبيت احترافي بأحزمة الإطارات (Wheel Straps) يمنع أي احتكاك أو ضرر بالهيكل.</p>
           </div>
         </div>
@@ -464,10 +468,10 @@ html_index = f"""{get_head(
         <!-- Photo 7: Tractor Head Heavy Recovery -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
-            <img src="assets/images/hegazy_semi_truck_head.jpg" alt="سحب وإنقاذ رؤوس التريلات والشاحنات الضخمة Actros على أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_semi_truck_head.webp" alt="سحب وإنقاذ رؤوس التريلات والشاحنات الضخمة Actros على أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">سحب رؤوس التريلات والشاحنات</h4>
+            <h3 class="text-white font-extrabold text-sm mb-1">سحب رؤوس التريلات والشاحنات</h3>
             <p class="text-slate-400 text-xs">إنقاذ ميكانيكي للشاحنات التريلا المعطلة وتوصيلها لورش ومراكز الصيانة المعتمدة.</p>
           </div>
         </div>
@@ -475,10 +479,10 @@ html_index = f"""{get_head(
         <!-- Photo 8: Caravans Transport -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
-            <img src="assets/images/hegazy_caravan_transport.jpg" alt="نقل الكرفانات والمكاتب الإدارية ومواقع الإنشاءات على أوناش أولاد حجازي مسطح" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_caravan_transport.webp" alt="نقل الكرفانات والمكاتب الإدارية ومواقع الإنشاءات على أوناش أولاد حجازي مسطح" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">نقل الكرفانات والوحدات المتنقلة</h4>
+            <h3 class="text-white font-extrabold text-sm mb-1">نقل الكرفانات والوحدات المتنقلة</h3>
             <p class="text-slate-400 text-xs">أبعاد طبلية ممتدة حتى 12 متراً لنقل غرف الحراسة ومكاتب المواقع والمشروعات.</p>
           </div>
         </div>
@@ -486,10 +490,10 @@ html_index = f"""{get_head(
         <!-- Photo 9: Golf Carts Transport -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
-            <img src="assets/images/hegazy_golf_carts_transport.jpg" alt="نقل عربات الجولف كارت للمنتجعات والملاعب والقرى السياحية" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_golf_carts_transport.webp" alt="نقل عربات الجولف كارت للمنتجعات والملاعب والقرى السياحية" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">نقل عربات الجولف كارت (حمولة مزدوجة)</h4>
+            <h3 class="text-white font-extrabold text-sm mb-1">نقل عربات الجولف كارت (حمولة مزدوجة)</h3>
             <p class="text-slate-400 text-xs">خدمة مخصصة للمنتجعات والقرى السياحية والمجمعات المغلقة في مدينتي والرحاب.</p>
           </div>
         </div>
@@ -497,10 +501,10 @@ html_index = f"""{get_head(
         <!-- Photo 10: Food Trucks Transport -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
-            <img src="assets/images/hegazy_food_truck_transport.jpg" alt="نقل عربات الطعام المتنقلة فود تراك والمقطورات التجارية على أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_food_truck_transport.webp" alt="نقل عربات الطعام المتنقلة فود تراك والمقطورات التجارية على أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">نقل عربات الطعام (Food Trucks)</h4>
+            <h3 class="text-white font-extrabold text-sm mb-1">نقل عربات الطعام (Food Trucks)</h3>
             <p class="text-slate-400 text-xs">توصيل آمن للمقطورات التجارية وأكشاك الطعام للمعارض والمهرجانات والساحات.</p>
           </div>
         </div>
@@ -508,21 +512,21 @@ html_index = f"""{get_head(
         <!-- Photo 11: Heavy Forklifts Transport -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
-            <img src="assets/images/hegazy_red_truck_heavy.jpg" alt="سحب ونقل الرافعات الشوكية والمعدات الثقيلة في المصانع والصوامع" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_red_truck_heavy.webp" alt="سحب ونقل الرافعات الشوكية والمعدات الثقيلة في المصانع والصوامع" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">نقل المعدات والرافعات الشوكية (TCM)</h4>
+            <h3 class="text-white font-extrabold text-sm mb-1">نقل المعدات والرافعات الشوكية (TCM)</h3>
             <p class="text-slate-400 text-xs">قدرات جر وسحب فائقة لنقل معدات المصانع، الفورك لفت، والشاحنات في المناطق الصناعية.</p>
           </div>
         
         <!-- Photo 12: Night Commercial Pickup Cargo -->
         <div class="glass rounded-3xl overflow-hidden border border-amber-500/40 hover:border-amber-400 transition-all group flex flex-col justify-between shadow-xl">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950 relative">
-            <img src="assets/images/hegazy_night_commercial_pickup.jpg" alt="نقل سيارات النقل التجاري والربع نقل بحمولتها ليلاً أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_night_commercial_pickup.webp" alt="نقل سيارات النقل التجاري والربع نقل بحمولتها ليلاً أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
             <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-emerald-600/90 text-white text-[10px] font-black tracking-wider uppercase">نقل تجاري وبضائع</span>
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">نقل سيارات النقل التجاري بحمولتها</h4>
+            <h3 class="text-white font-extrabold text-sm mb-1">نقل سيارات النقل التجاري بحمولتها</h3>
             <p class="text-slate-400 text-xs">سحب وتأمين سيارات الربع نقل المحملة بالبضائع ليلاً على الطرق السريعة دون الحاجة لتفريغ الشحنة.</p>
           </div>
         </div>
@@ -539,9 +543,9 @@ html_index = f"""{get_head(
         <span class="w-2 h-2 rounded-full bg-red-500"></span>
         توثيق حي بالصوت والصورة من الميدان
       </div>
-      <h3 class="text-3xl sm:text-4xl font-black text-white leading-tight">
+      <h2 class="text-3xl sm:text-4xl font-black text-white leading-tight">
         فيديوهات حصرية لعمليات أسطول <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">أوناش أولاد حجازي الميدانية</span>
-      </h3>
+      </h2>
       <p class="text-slate-400 text-sm sm:text-base mt-4">
         شاهد بالصوت والصورة احترافية سحب ونقل سيارات السوبر كار ليلاً، تحميل اللوادر والمعدات الهندسية، وإنقاذ سيارات النقل التجاري بحمولتها بأحدث تقنيات السلامة في مصر.
       </p>
@@ -552,8 +556,9 @@ html_index = f"""{get_head(
       <!-- Video 1: Lamborghini Supercar Night -->
       <div class="glass rounded-3xl overflow-hidden border border-amber-500/40 hover:border-amber-400 transition-all flex flex-col justify-between shadow-2xl bg-slate-900/60 group">
         <div class="relative bg-black rounded-t-3xl overflow-hidden aspect-[9/16] max-h-[520px] flex items-center justify-center">
-          <video controls playsinline preload="metadata" poster="assets/images/poster_lamborghini_night.jpg" class="w-full h-full object-cover">
+          <video controls playsinline preload="none" poster="assets/images/poster_lamborghini_night.webp" class="w-full h-full object-cover">
             <source src="assets/videos/hegazy_lamborghini_vip_night.mp4" type="video/mp4">
+            <track kind="captions" src="assets/videos/captions.vtt" srclang="ar" label="عربي">
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
           <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-slate-950/80 backdrop-blur-md border border-amber-500/40 text-amber-300 text-[11px] font-black flex items-center gap-1.5 pointer-events-none">
@@ -562,7 +567,7 @@ html_index = f"""{get_head(
           </div>
         </div>
         <div class="p-5 space-y-3">
-          <h4 class="text-white font-extrabold text-base">توثيق سحب سيارة لامبورجيني هوراكان ليلاً</h4>
+          <h3 class="text-white font-extrabold text-base">توثيق سحب سيارة لامبورجيني هوراكان ليلاً</h3>
           <p class="text-slate-400 text-xs leading-relaxed">
             شاهد منظومة الإضاءة التوجيهية وتثبيت السيارة الخارقة بأربطة العجلات المخصصة دون أدنى ملامسة للشاسيه أو الصدام الرياضي المنخفض.
           </p>
@@ -576,8 +581,9 @@ html_index = f"""{get_head(
       <!-- Video 2: Caterpillar Heavy Loader Day -->
       <div class="glass rounded-3xl overflow-hidden border border-amber-500/40 hover:border-amber-400 transition-all flex flex-col justify-between shadow-2xl bg-slate-900/60 group">
         <div class="relative bg-black rounded-t-3xl overflow-hidden aspect-[9/16] max-h-[520px] flex items-center justify-center">
-          <video controls playsinline preload="metadata" poster="assets/images/poster_caterpillar_loader.jpg" class="w-full h-full object-cover">
+          <video controls playsinline preload="none" poster="assets/images/poster_caterpillar_loader.webp" class="w-full h-full object-cover">
             <source src="assets/videos/hegazy_caterpillar_loader_day.mp4" type="video/mp4">
+            <track kind="captions" src="assets/videos/captions.vtt" srclang="ar" label="عربي">
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
           <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-slate-950/80 backdrop-blur-md border border-amber-500/40 text-amber-300 text-[11px] font-black flex items-center gap-1.5 pointer-events-none">
@@ -586,7 +592,7 @@ html_index = f"""{get_head(
           </div>
         </div>
         <div class="p-5 space-y-3">
-          <h4 class="text-white font-extrabold text-base">تحميل ونقل لودر CAT 930 للمشروعات</h4>
+          <h3 class="text-white font-extrabold text-base">تحميل ونقل لودر CAT 930 للمشروعات</h3>
           <p class="text-slate-400 text-xs leading-relaxed">
             استعراض عملي لقوة الطبلية الهيدروليكية لحجازي وقدرتها على سحب وتحميل اللوادر الضخمة ومعدات الحفر ونقلها لمواقع العمل.
           </p>
@@ -600,8 +606,9 @@ html_index = f"""{get_head(
       <!-- Video 3: Commercial Pickup Cargo Night -->
       <div class="glass rounded-3xl overflow-hidden border border-amber-500/40 hover:border-amber-400 transition-all flex flex-col justify-between shadow-2xl bg-slate-900/60 group">
         <div class="relative bg-black rounded-t-3xl overflow-hidden aspect-[9/16] max-h-[520px] flex items-center justify-center">
-          <video controls playsinline preload="metadata" poster="assets/images/poster_commercial_pickup.jpg" class="w-full h-full object-cover">
+          <video controls playsinline preload="none" poster="assets/images/poster_commercial_pickup.webp" class="w-full h-full object-cover">
             <source src="assets/videos/hegazy_commercial_pickup_night.mp4" type="video/mp4">
+            <track kind="captions" src="assets/videos/captions.vtt" srclang="ar" label="عربي">
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
           <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-slate-950/80 backdrop-blur-md border border-amber-500/40 text-amber-300 text-[11px] font-black flex items-center gap-1.5 pointer-events-none">
@@ -610,7 +617,7 @@ html_index = f"""{get_head(
           </div>
         </div>
         <div class="p-5 space-y-3">
-          <h4 class="text-white font-extrabold text-base">إنقاذ سيارة ربع نقل محملة بالبضائع ليلاً</h4>
+          <h3 class="text-white font-extrabold text-base">إنقاذ سيارة ربع نقل محملة بالبضائع ليلاً</h3>
           <p class="text-slate-400 text-xs leading-relaxed">
             توثيق سحب وتأمين شاحنة بضائع تجارية بحمولتها الكاملة على الطريق السريع ليلاً بأضواء ليد محيطية لحماية الشحنة وسلامة الطريق.
           </p>
@@ -628,7 +635,7 @@ html_index = f"""{get_head(
       <div class="flex items-center gap-4 text-right">
         <span class="text-4xl">📹</span>
         <div>
-          <h5 class="text-white font-black text-base">هل تحتاج ونش إنقاذ بمواصفات خاصة الآن؟</h5>
+          <h3 class="text-white font-black text-base">هل تحتاج ونش إنقاذ بمواصفات خاصة الآن؟</h3>
           <p class="text-slate-400 text-xs mt-0.5">سواء سيارة ملاكي، فارهة، لودر، أو نقل تجاري.. أسطولنا الميداني يصلك خلال 15 دقيقة.</p>
         </div>
       </div>
@@ -747,6 +754,88 @@ html_index = f"""{get_head(
   </section>
 
 
+  
+  <!-- Customer Testimonials & Verified Reviews (100% Google Search Essentials & Spam Policy Compliant) -->
+  <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-amber-500/15 text-amber-300 border border-amber-500/30 mb-4">
+        <span>⭐</span>
+        <span>تقييمات وتجارب العملاء الميدانية المعتمدة</span>
+      </div>
+      <h3 class="text-3xl sm:text-4xl font-black text-white leading-tight">
+        ثقة أكثر من <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500">1420 قائد سيارة</span> في جميع محافظات مصر
+      </h3>
+      <p class="text-slate-400 text-sm sm:text-base mt-4">
+        متوسط تقييم 4.9 من 5 نجوم بناءً على سرعة الاستجابة الميدانية، الأمان التام للشاسيه، والالتزام بالسعر المحدد بدون أي إكراميات.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Review 1 -->
+      <div class="glass p-6 rounded-3xl border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between space-y-4">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <span class="text-[11px] text-emerald-400 font-bold bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">عملية إنقاذ موثقة</span>
+          </div>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            "تعطلت سيارتي ليلاً على الطريق الدائري الأوسطي، ونش أولاد حجازي وصل في أقل من 10 دقائق. السائق كان في قمة الاحترام والأمانة، والتزم بالسعر المتفق عليه بدون طلب أي إكرامية."
+          </p>
+        </div>
+        <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-xs">
+          <div>
+            <strong class="text-white block">م. أحمد ممدوح</strong>
+            <span class="text-slate-500 text-[11px]">نقل سيارة ملاكي - التجمع الخامس</span>
+          </div>
+          <span class="text-slate-500 text-[11px]">منذ أسبوع</span>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="glass p-6 rounded-3xl border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between space-y-4">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <span class="text-[11px] text-emerald-400 font-bold bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">سوبر كار VIP</span>
+          </div>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            "عندي سيارة بورش منخفضة جداً وكنت خايف على الصدام الأمامي. الونش هيدروليكي فلات بالكامل واستخدموا أربطة إطارات مطاطية مخصوصة دون أدنى خدش. احترافية تضاهي التوكيلات العالمية."
+          </p>
+        </div>
+        <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-xs">
+          <div>
+            <strong class="text-white block">كابتن حسام إبراهيم</strong>
+            <span class="text-slate-500 text-[11px]">سحب بورش - طريق الإسماعيلية والعبور</span>
+          </div>
+          <span class="text-slate-500 text-[11px]">منذ أسبوعين</span>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="glass p-6 rounded-3xl border border-slate-800 hover:border-amber-500/40 transition-all flex flex-col justify-between space-y-4">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between">
+            <div class="flex text-amber-400 text-sm">★★★★★</div>
+            <span class="text-[11px] text-emerald-400 font-bold bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">معدات ومصانع</span>
+          </div>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            "تعاملت مع أولاد حجازي لنقل لودر ومعدات هندسية لموقع عمل في العاصمة الإدارية. أوناش شاقة وتثبيت بجنازير معتمدة وسرعة فائقة في التسليم. تعامل راقي وأنصح بهم بشدة."
+          </p>
+        </div>
+        <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-xs">
+          <div>
+            <strong class="text-white block">الحاج رجب النجار</strong>
+            <span class="text-slate-500 text-[11px]">نقل معدات ولوادر - العاصمة وبدر</span>
+          </div>
+          <span class="text-slate-500 text-[11px]">منذ شهر</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
   <!-- Final Urgent CTA Banner -->
   <section class="py-16 bg-gradient-to-r from-rescue-900 via-dark-900 to-amber-950 border-t border-amber-500/30 text-center">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -762,6 +851,8 @@ html_index = f"""{get_head(
       </div>
     </div>
   </section>
+
+  </main>
 
 {get_footer()}
 

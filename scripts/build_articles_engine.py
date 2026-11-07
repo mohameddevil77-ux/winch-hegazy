@@ -16,7 +16,7 @@ services_list = [
         "id": "private-cars",
         "icon": "🚗",
         "title": "إنقاذ وسحب سيارات الملاكي والفاخرة والسوبر كار",
-        "image": "hegazy_lamborghini_night.jpg",
+        "image": "hegazy_lamborghini_night.webp",
         "desc": "خدمة مخصصة لجميع موديلات السيارات الملاكي (سيدان، هاتشباك، كابريوليه، والسيارات الفاخرة والكهربائية). نستخدم أوناش مسطحة (Flatbed) مزودة بروافع هيدروليكية منخفضة الزوايا تضمن عدم احتكاك أو خدش إكصدامات السيارات المنخفضة وحماية كاملة للعفشة ونظام الدفع.",
         "features": ["تحميل مسطح هيدروليكي بالكامل", "تثبيت بأربطة إطارات مطاطية دون مس الهيكل", "مناسب لسيارات كوبرا وبورش ومرسيدس وBMW", "نقل إلى أي توكيل أو مركز صيانة معتمد"]
     },
@@ -24,7 +24,7 @@ services_list = [
         "id": "highways",
         "icon": "⚡",
         "title": "إنقاذ سيارات الدفع الرباعي على الطرق السريعة",
-        "image": "hegazy_orange_truck_porsche.jpg",
+        "image": "hegazy_orange_truck_porsche.webp",
         "desc": "تمركز دائم على مدار 24 ساعة على أهم المحاور الحيوية: الطريق الدائري بكافة قطاعاته، طريق السويس، طريق الإسماعيلية الصحراوي، والدائري الأوسطي والإقليمي. نصلك في أقل من 10 دقائق لتأمين موقع العطل وتفادي أي حوادث على السرعات العالية.",
         "features": ["سحب سيارات الدفع الرباعي والـ SUV والبورش", "إشارات تحذيرية ضوئية ليلية لتأمين موقع العطل", "معرفة دقيقة بمداخل ومخارج الطرق السريعة", "مرافقة السيارة حتى المكان الآمن"]
     },
@@ -32,7 +32,7 @@ services_list = [
         "id": "heavy-machinery",
         "icon": "🏗️",
         "title": "نقل المعدات الثقيلة واللوادر والكلاركات",
-        "image": "hegazy_caterpillar_loader.jpg",
+        "image": "hegazy_caterpillar_loader.webp",
         "desc": "أسطول متخصص في نقل معدات المصانع، خلاطات ومحطات الخرسانة، الروافع الشوكية (Forklifts / كلارك)، والمعدات الهندسية بأعلى حمولات أمان، مع تثبيت بجنازير وسلاسل فولاذية معتمدة لمنع أي انزلاق أثناء النقل بين المناطق الصناعية.",
         "features": ["نقل كلاركات وفورك ليفت مختلف الحمولات", "خدمة المصانع بالعبور وبدر والعاشر من رمضان", "تثبيت ميكانيكي هيدروليكي فائق الأمان", "سائقون وخبراء مؤهلون لنقل المعدات"]
     },
@@ -40,7 +40,7 @@ services_list = [
         "id": "caravans",
         "icon": "🏠",
         "title": "نقل الكرفانات والمكاتب المتنقلة والكونتينرات",
-        "image": "hegazy_caravan_transport.jpg",
+        "image": "hegazy_caravan_transport.webp",
         "desc": "خدمة نقل الكرفانات وغرف الحراسة والمكاتب الإدارية المتنقلة لمواقع الإنشاءات والشركات في المدن الجديدة والعاصمة الإدارية والشروق وبدر. نضمن سلامة الهيكل الخارجي والشبابيك والأسلاك أثناء التحميل والتنزيل.",
         "features": ["أبعاد مسطح ممتدة تناسب أطوال الكرفانات", "تحميل هيدروليكي مرن بدون ميل أو إجهاد", "نقل وتوصيل لمواقع العمل والمشروعات الكبرى", "أسعار تعاقدية لشركات المقاولات والإنشاءات"]
     },
@@ -48,7 +48,7 @@ services_list = [
         "id": "commercial-pickups",
         "icon": "🚚",
         "title": "نقل سيارات النقل التجاري والربع نقل بحمولتها ليلاً ونهاراً",
-        "image": "hegazy_night_commercial_pickup.jpg",
+        "image": "hegazy_night_commercial_pickup.webp",
         "desc": "خدمة حصرية مخصصة لأصحاب سيارات النقل التجاري والربع نقل والجامبو المحملة بالبضائع، الخضار، والطرود المعطلة على الطرق السريعة ليلاً. نقوم بسحب وتأمين السيارة بحمولتها بالكامل دون الحاجة لتفريغ البضاعة أو تعريضها للتلف أو السرقة.",
         "features": ["تأمين كامل للبضائع والمشمعات أثناء السحب", "أحزمة ربط شديدة المتانة ضد الاهتزاز", "إنقاذ ليلي فوري على طريقي السويس والإسماعيلية والدائري", "إضاءة ليد وتحذيرات سلامة ليلية للمقطورة"]
     },
@@ -56,7 +56,7 @@ services_list = [
         "id": "semi-trucks",
         "icon": "🚛",
         "title": "سحب ونقل رؤوس التريلات والشاحنات النقل الثقيل",
-        "image": "hegazy_semi_truck_head.jpg",
+        "image": "hegazy_semi_truck_head.webp",
         "desc": "تجهيزات ميكانيكية ضخمة لسحب ونقل كبائن ورؤوس الشاحنات التريلا المعطلة (Mercedes Actros وغيرها) بأمان تام، مع إمكانية التوصيل لورش الحرفيين، كفر بطا، أو الوكلاء المعتمدين للشاحنات في مصر.",
         "features": ["حمولات ونش شاقة مخصصة للشاحنات", "سحب وإنقاذ أعطال الموتور والفتيس للتريلات", "إنقاذ طريق الإسماعيلية وطريق السويس والإقليمي", "فنيون محترفون في فك عمود الكردان والتعليق"]
     },
@@ -64,7 +64,7 @@ services_list = [
         "id": "golf-carts",
         "icon": "⛳",
         "title": "نقل عربات الجولف والسيارات الكهربائية للكمبوندات",
-        "image": "hegazy_golf_carts_transport.jpg",
+        "image": "hegazy_golf_carts_transport.webp",
         "desc": "نقل سيارات الجولف كارت (Club Cars) والسيارات الترفيهية والكهربائية للمنتجعات والمجمعات السكنية المغلقة في مدينتي، الرحاب، التجمع، والعاصمة الإدارية مع إمكانية نقل أكثر من عربة في النقلة الواحدة بأمان كامل.",
         "features": ["إمكانية نقل سيارتين جولف معاً بنفس المشوار", "حماية العجلات ونظام البطاريات الحساس", "تثبيت محكم بحبال نايلون مخصصة", "توصيل للملاعب والمنتجعات والقرى السياحية"]
     },
@@ -72,7 +72,7 @@ services_list = [
         "id": "food-trucks",
         "icon": "🍔",
         "title": "نقل عربات الطعام المتنقلة (Food Trucks) والمقطورات",
-        "image": "hegazy_food_truck_transport.jpg",
+        "image": "hegazy_food_truck_transport.webp",
         "desc": "نقل وتوصيل عربات الطعام المتنقلة والفود كارت والمقطورات التجارية المخصصة للمطاعم والكافيهات والمعارض والفعاليات في مختلف مناطق القاهرة والمحافظات بأعلى درجات العناية بالديكورات والمعدات الداخلية.",
         "features": ["أوناش مسطحة تتيح سهولة صعود العربة", "تثبيت مانع للاهتزاز للحفاظ على أجهزة المطبخ", "نقل إلى المعارض والمولات ومناطق الفعاليات", "مواعيد دقيقة لتجهيز مشروعات الشباب"]
     },
@@ -80,7 +80,7 @@ services_list = [
         "id": "roadside",
         "icon": "🛞",
         "title": "خدمات المساعدة السريعة (شحن بطاريات وتغيير إطارات)",
-        "image": "hegazy_red_truck_branding.jpg",
+        "image": "hegazy_red_truck_branding.webp",
         "desc": "ليست كل الأعطال تتطلب سحب السيارة؛ وفرنا لك وحدات التدخل السريع المجهزة بأجهزة فحص وشحن البطاريات (Jump Start)، كومبريسور هواء لتزويد وتغيير الإطارات الاحتياطية (الاستبن)، وتزويد وقود طوارئ لاستئناف رحلتك فوراً.",
         "features": ["شحن بطاريات 12V و 24V بأحدث الأجهزة", "تغيير وفك المسامير المستعصية للإطارات", "تزويد وقود طوارئ (بنزين 92 و 95)", "فحص كمبيوتر سريع للأعطال الطارئة"]
     },
@@ -146,6 +146,8 @@ html_services = f"""{get_head(
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
 {get_header("services")}
 
+  <main id="main-content">
+
   <!-- Page Header -->
   <section class="py-16 bg-gradient-to-b from-dark-900 to-dark-950 border-b border-slate-800 text-center relative overflow-hidden">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -159,6 +161,8 @@ html_services = f"""{get_head(
   <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
     {services_cards_rendered}
   </section>
+
+  </main>
 
 {get_footer()}
 </body>
@@ -225,6 +229,8 @@ html_coverage = f"""{get_head(
 </head>
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
 {get_header("coverage")}
+
+  <main id="main-content">
 
   <section class="py-16 bg-gradient-to-b from-dark-900 to-dark-950 border-b border-slate-800 text-center">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -325,6 +331,8 @@ html_coverage = f"""{get_head(
     </div>
   </section>
 
+  </main>
+
 {get_footer()}
 </body>
 </html>
@@ -352,6 +360,8 @@ html_pricing = f"""{get_head(
 </head>
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
 {get_header("pricing")}
+
+  <main id="main-content">
 
   <section class="py-16 bg-gradient-to-b from-dark-900 to-dark-950 border-b border-slate-800 text-center">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -433,6 +443,8 @@ html_pricing = f"""{get_head(
     </div>
 
 
+
+  </main>
 
 {get_footer()}
 </body>
@@ -640,6 +652,8 @@ html_blog_index = f"""{get_head(
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
 {get_header("blog", is_blog=True)}
 
+  <main id="main-content">
+
   <section class="py-16 bg-gradient-to-b from-dark-900 to-dark-950 border-b border-slate-800 text-center">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <span class="px-3.5 py-1 rounded-full text-xs font-black bg-amber-500/15 text-amber-300 border border-amber-500/30 mb-3 inline-block">مركز المعرفة والإنقاذ السريع</span>
@@ -677,6 +691,8 @@ html_blog_index = f"""{get_head(
 
 
 
+  </main>
+
 {get_footer(is_blog=True)}
 </body>
 </html>
@@ -690,7 +706,7 @@ print("SUCCESS: blog/index.html generated")
 
 # Generate Individual Articles
 def generate_article_file(art, content_body):
-    img_filename = art.get("image", "hegazy_red_truck_branding.jpg")
+    img_filename = art.get("image", "hegazy_red_truck_branding.webp")
     
     # 1. Article Schema
     schema_article = {
@@ -778,6 +794,8 @@ def generate_article_file(art, content_body):
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
 {get_header("blog", is_blog=True)}
 
+  <main id="main-content">
+
   <!-- Article Container -->
   <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
     
@@ -862,6 +880,28 @@ def generate_article_file(art, content_body):
       </div>
     </section>
 
+    <!-- Visible FAQ Section (100% Google Search Essentials & Spam Policy Compliant) -->
+    <section class="my-10 p-6 glass rounded-2xl border border-slate-800 space-y-4">
+      <h3 class="text-lg sm:text-xl font-black text-white flex items-center gap-2">
+        <span class="text-amber-400">❓</span>
+        <span>الأسئلة الشائعة حول خدمات أوناش أولاد حجازي:</span>
+      </h3>
+      <div class="space-y-3">
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+          <h4 class="text-sm sm:text-base font-bold text-amber-300 mb-1.5">{localized_faqs[0][0]}</h4>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">{localized_faqs[0][1]}</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+          <h4 class="text-sm sm:text-base font-bold text-amber-300 mb-1.5">{localized_faqs[1][0]}</h4>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">{localized_faqs[1][1]}</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+          <h4 class="text-sm sm:text-base font-bold text-amber-300 mb-1.5">{localized_faqs[2][0]}</h4>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">{localized_faqs[2][1]}</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Authoritative NAP & Local Business Proof (Council Recommendation) -->
     <div class="mt-12 p-6 glass rounded-2xl border border-amber-500/30 text-xs text-slate-300 space-y-2.5 bg-slate-900/70">
       <div class="flex items-center gap-2 text-amber-400 font-black text-sm">
@@ -889,6 +929,8 @@ def generate_article_file(art, content_body):
       </div>
     </div>
   </article>
+
+  </main>
 
 {get_footer(is_blog=True)}
 </body>
