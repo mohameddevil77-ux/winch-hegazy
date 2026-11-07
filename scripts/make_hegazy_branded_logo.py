@@ -48,31 +48,31 @@ def create_hegazy_pro_logo():
     draw.rectangle([70, banner_top - 4, size - 70, banner_bot + 4], fill=gold_bright)
     draw.rectangle([76, banner_top, size - 76, banner_bot], fill=(15, 23, 42, 255)) # Dark slate-900
 
-    # 5. Bold English Brand Name "HEGAZY" in Center Banner
-    font_hegazy = ImageFont.truetype(r"C:\Windows\Fonts\ariblk.ttf", 100)
-    text_en = "H E G A Z Y"
+    # 5. Bold English Brand Name "AWLAD HEGAZY" in Center Banner
+    font_hegazy = ImageFont.truetype(r"C:\Windows\Fonts\ariblk.ttf", 78)
+    text_en = "AWLAD HEGAZY"
     bbox_en = draw.textbbox((0, 0), text_en, font=font_hegazy)
     w_en = bbox_en[2] - bbox_en[0]
     h_en = bbox_en[3] - bbox_en[1]
     
-    # Shadow for HEGAZY
+    # Shadow for AWLAD HEGAZY
     draw.text((center - w_en // 2 + 4, center - h_en // 2 - 12 + 4), text_en, fill=(0, 0, 0, 200), font=font_hegazy)
     # Bright Gold text
     draw.text((center - w_en // 2, center - h_en // 2 - 12), text_en, fill=gold_bright, font=font_hegazy)
 
-    # Subtitle under HEGAZY in banner
+    # Subtitle under AWLAD HEGAZY in banner
     font_sub_en = ImageFont.truetype(r"C:\Windows\Fonts\arialbd.ttf", 26)
     sub_text = "★ CAR TOWING & HEAVY RESCUE 24/7 ★"
     bbox_sub = draw.textbbox((0, 0), sub_text, font=font_sub_en)
     w_sub = bbox_sub[2] - bbox_sub[0]
     draw.text((center - w_sub // 2, banner_bot - 38), sub_text, fill=(226, 232, 240, 255), font=font_sub_en)
 
-    # 6. Upper Arc / Header: Arabic Brand Name "ونش إنقاذ حجازي"
-    text_ar = "ونش إنقاذ حجازي"
+    # 6. Upper Arc / Header: Arabic Brand Name "أوناش إنقاذ أولاد حجازي"
+    text_ar = "أوناش إنقاذ أولاد حجازي"
     reshaped_ar = arabic_reshaper.reshape(text_ar)
     bidi_ar = get_display(reshaped_ar)
     
-    font_ar = ImageFont.truetype(r"C:\Windows\Fonts\arialbd.ttf", 85)
+    font_ar = ImageFont.truetype(r"C:\Windows\Fonts\arialbd.ttf", 72)
     bbox_ar = draw.textbbox((0, 0), bidi_ar, font=font_ar)
     w_ar = bbox_ar[2] - bbox_ar[0]
     h_ar = bbox_ar[3] - bbox_ar[1]
@@ -82,7 +82,6 @@ def create_hegazy_pro_logo():
     draw.text((center - w_ar // 2, 140), bidi_ar, fill=(255, 255, 255, 255), font=font_ar)
 
     # Stylized tow truck silhouette icon above banner
-    # Draw flatbed truck silhouette
     truck_y = center - 160
     # Truck cab
     draw.polygon([
@@ -151,7 +150,7 @@ def create_hegazy_pro_logo():
     out_logo_pro = os.path.join(dst_dir, "hegazy_pro_logo.png")
     img.save(out_png, "PNG")
     img.save(out_logo_pro, "PNG")
-    print(f"SUCCESS: Generated branded Hegazy logo at: {out_png}")
+    print(f"SUCCESS: Generated branded Awlad Hegazy logo at: {out_png}")
 
     # Generate high quality Favicons
     fav_png = os.path.join(dst_dir, "favicon.png")
@@ -161,4 +160,5 @@ def create_hegazy_pro_logo():
     img_fav.save(fav_ico, format="ICO", sizes=[(16, 16), (32, 32), (48, 48), (64, 64)])
     print(f"SUCCESS: Generated crisp favicon at: {fav_png} and {fav_ico}")
 
-create_hegazy_pro_logo()
+if __name__ == "__main__":
+    create_hegazy_pro_logo()

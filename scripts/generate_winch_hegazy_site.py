@@ -12,27 +12,27 @@ from build_winch_helpers import (
 # 1. INDEX.HTML
 # -------------------------------------------------------------
 faq_home = [
-    ("كم تكلفة ونش إنقاذ السيارات في مصر مع ونش حجازي؟", 
-     "تبدأ أسعار ونش حجازي من 600 جنيه مصري فقط للخدمات الأساسية داخل نفس النطاق الجغرافي. نعتمد نظام تسعير عادل وشفاف يعتمد على المسافة الفعلية ونوع السيارة دون أي استغلال لوقت الطوارئ، مع إبلاغك بالسعر النهائي الصافي قبل تحرك الونش إليك."),
-    ("كم يستغرق وصول ونش إنقاذ حجازي إلى موقعي؟",
+    ("كم تكلفة ونش إنقاذ السيارات في مصر مع أوناش أولاد حجازي؟", 
+     "تبدأ أسعار أوناش أولاد حجازي من 600 جنيه مصري فقط للخدمات الأساسية داخل نفس النطاق الجغرافي. نعتمد نظام تسعير عادل وشفاف يعتمد على المسافة الفعلية ونوع السيارة دون أي استغلال لوقت الطوارئ، مع إبلاغك بالسعر النهائي الصافي قبل تحرك الونش إليك."),
+    ("كم يستغرق وصول أوناش إنقاذ أولاد حجازي إلى موقعي؟",
      "متوسط وقت الوصول الفعلي يتراوح بين 8 إلى 12 دقيقة داخل مناطق القاهرة الكبرى والجيزة، وبحد أقصى 15 دقيقة على الطرق السريعة والصحراوية (مثل الدائري، طريق السويس، ومصر إسكندرية الصحراوي)، وذلك بفضل شبكة ارتكاز أوناشنا الموزعة على مدار 24 ساعة."),
     ("كيف أحدد موقعي للونش إذا تعطلت سيارتي ولا أعرف مكاني بدقة؟",
-     "نوفر لك خدمة إرسال الموقع الجغرافي المباشر بنقرة واحدة عبر تطبيق واتساب (Send Current Location). بمجرد إرسال إحداثياتك، يحدد نظام التوجيه أقرب ونش حجازي إليك ويتحرك فوراً مع تتبع مساره حتى الوصول."),
+     "نوفر لك خدمة إرسال الموقع الجغرافي المباشر بنقرة واحدة عبر تطبيق واتساب (Send Current Location). بمجرد إرسال إحداثياتك، يحدد نظام التوجيه أقرب أوناش أولاد حجازي إليك ويتحرك فوراً مع تتبع مساره حتى الوصول."),
     ("هل أوناش حجازي مجهزة لسحب السيارات الحديثة والمنخفضة (المهبطة) والأوتوماتيك؟",
      "نعم، أسطولنا يضم أحدث أوناش هيدروليكية مغلقة ومزودة بزويا تحميل مسطحة (Full Flatbed) تحمي إكصدامات وعفشة السيارات الرياضية والحديثة بدون أي خدش، مع استخدام أربطة إطارات احترافية (Wheel Straps) مطابقة لأعلى معايير السلامة."),
     ("هل تقدمون خدمات المساعدة على الطريق مثل شحن البطارية وتغيير الإطارات وتوصيل الوقود؟",
-     "بالتأكيد، يوفر فريق ونش حجازي وحدات دعم سريع مزودة بمعدات فحص وشحن البطاريات (Jump Start)، كومبريسور هواء وتغيير الإطارات، وتوصيل وقود الطوارئ لإنقاذك في مكانك دون الحاجة لسحب السيارة إذا كان العطل بسيطاً.")
+     "بالتأكيد، يوفر فريق أوناش أولاد حجازي وحدات دعم سريع مزودة بمعدات فحص وشحن البطاريات (Jump Start)، كومبريسور هواء وتغيير الإطارات، وتوصيل وقود الطوارئ لإنقاذك في مكانك دون الحاجة لسحب السيارة إذا كان العطل بسيطاً.")
 ]
 
 html_index = f"""{get_head(
-    "ونش إنقاذ حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
-    f"ونش إنقاذ حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 600 جنيه. اتصل الآن {PHONE_DISPLAY}.",
-    "https://winch-hegazy.com/"
+    "أوناش إنقاذ أولاد حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
+    f"أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 600 جنيه. اتصل الآن {PHONE_DISPLAY}.",
+    "https://awladhegazy.com/"
 )}
 {generate_local_business_schema(
-    "ونش إنقاذ حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
-    f"ونش إنقاذ حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 600 جنيه. اتصل الآن {PHONE_DISPLAY}.",
-    "https://winch-hegazy.com/"
+    "أوناش إنقاذ أولاد حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
+    f"أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 600 جنيه. اتصل الآن {PHONE_DISPLAY}.",
+    "https://awladhegazy.com/"
 )}
 {generate_faq_schema(faq_home)}
 
@@ -68,7 +68,7 @@ html_index = f"""{get_head(
 
           <!-- Lead Paragraph -->
           <p class="text-slate-300 text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
-            تعطلت سيارتك في الطريق؟ لا تقلق! أسطول <strong class="text-white font-extrabold">ونش حجازي</strong> متمركز على مدار 24 ساعة في جميع أنحاء القاهرة الكبرى والجيزة وكافة المحاور السريعة لنصلك في دقائق معدودة بأحدث أوناش هيدروليكية مغلقة وأرخص سعر بدون أي استغلال.
+            تعطلت سيارتك في الطريق؟ لا تقلق! أسطول <strong class="text-white font-extrabold">أوناش أولاد حجازي</strong> متمركز على مدار 24 ساعة في جميع أنحاء القاهرة الكبرى والجيزة وكافة المحاور السريعة لنصلك في دقائق معدودة بأحدث أوناش هيدروليكية مغلقة وأرخص سعر بدون أي استغلال.
           </p>
 
           <!-- Core Call Actions -->
@@ -123,9 +123,9 @@ html_index = f"""{get_head(
 
               <!-- Real Truck Image -->
               <div class="my-4 rounded-2xl overflow-hidden border border-slate-700 bg-slate-950 relative aspect-[4/3]">
-                <img src="assets/images/hegazy_red_truck_branding.jpg" alt="ونش إنقاذ حجازي الأصلي HEGAZY أحدث أسطول هيدروليكي" class="w-full h-full object-cover">
+                <img src="assets/images/hegazy_red_truck_branding.jpg" alt="أوناش إنقاذ أولاد حجازي الأصلي HEGAZY أحدث أسطول هيدروليكي" class="w-full h-full object-cover">
                 <div class="absolute bottom-2 right-2 left-2 bg-slate-950/85 backdrop-blur-sm p-2 rounded-xl border border-amber-400/40 text-xs flex items-center justify-between">
-                  <span class="font-black text-amber-300">أسطول ونش حجازي المعتمد (HEGAZY)</span>
+                  <span class="font-black text-amber-300">أسطول أوناش أولاد حجازي المعتمد (HEGAZY)</span>
                   <span class="text-emerald-400 font-bold">✓ نقل آمن بدون خدوش</span>
                 </div>
               </div>
@@ -160,7 +160,7 @@ html_index = f"""{get_head(
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-10">
         <span class="px-3 py-1 rounded-full text-xs font-black bg-amber-500/15 text-amber-300 border border-amber-500/30 mb-3 inline-block">حاسبة تسعيرة الونش الفورية</span>
-        <h2 class="text-2xl md:text-4xl font-black text-white">احسب تكلفة ووقت وصول ونش حجازي إليك</h2>
+        <h2 class="text-2xl md:text-4xl font-black text-white">احسب تكلفة ووقت وصول أوناش أولاد حجازي إليك</h2>
         <p class="text-slate-400 text-sm mt-2">اختر موقع تعطل السيارة والوجهة المراد السحب إليها لتقدير التكلفة والوقت مسبقاً بكل شفافية.</p>
       </div>
 
@@ -374,19 +374,19 @@ html_index = f"""{get_head(
 
         <!-- Real Fleet Image Showcase -->
         <div class="grid grid-cols-2 gap-4">
-          <img src="assets/images/hegazy_luxury_car_flatbed.jpg" alt="سحب وتثبيت السيارات الفاخرة ونش حجازي" class="rounded-2xl border border-slate-700 shadow-xl object-cover h-64 w-full">
-          <img src="assets/images/hegazy_orange_truck_porsche.jpg" alt="ونش إنقاذ سيارات حديث ونش حجازي" class="rounded-2xl border border-slate-700 shadow-xl object-cover h-64 w-full mt-6">
+          <img src="assets/images/hegazy_luxury_car_flatbed.jpg" alt="سحب وتثبيت السيارات الفاخرة أوناش أولاد حجازي" class="rounded-2xl border border-slate-700 shadow-xl object-cover h-64 w-full">
+          <img src="assets/images/hegazy_orange_truck_porsche.jpg" alt="ونش إنقاذ سيارات حديث أوناش أولاد حجازي" class="rounded-2xl border border-slate-700 shadow-xl object-cover h-64 w-full mt-6">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Real Fleet Photo Gallery (صور حية من أرض الواقع لأسطول ونش حجازي) -->
+  <!-- Real Fleet Photo Gallery (صور حية من أرض الواقع لأسطول أوناش أولاد حجازي) -->
   <section class="py-16 bg-slate-900/60 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-12">
         <span class="px-3.5 py-1 rounded-full text-xs font-black bg-amber-500/15 text-amber-300 border border-amber-500/30 mb-3 inline-block">أسطولنا المعتمد على أرض الواقع</span>
-        <h2 class="text-3xl md:text-5xl font-black text-white">صور حقيقية لعمليات ونش حجازي الميدانية</h2>
+        <h2 class="text-3xl md:text-5xl font-black text-white">صور حقيقية لعمليات أوناش أولاد حجازي الميدانية</h2>
         <p class="text-slate-400 text-sm md:text-base mt-3">لسنا مجرد أرقام وسيطة.. نحن نمتلك وندير أسطول أوناش إنقاذ حقيقي مسجل باسم "HEGAZY" لإنقاذ السيارات الفارهة والمعدات الثقيلة بأعلى درجات الأمان الاحترافي.</p>
       </div>
 
@@ -395,7 +395,7 @@ html_index = f"""{get_head(
                 <!-- Photo 1: Lamborghini Supercar Night -->
         <div class="glass rounded-3xl overflow-hidden border border-amber-500/40 hover:border-amber-400 transition-all group flex flex-col justify-between shadow-xl">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950 relative">
-            <img src="assets/images/hegazy_lamborghini_night.jpg" alt="نقل سيارات السوبر كار لامبورجيني ليلاً ونش حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_lamborghini_night.jpg" alt="نقل سيارات السوبر كار لامبورجيني ليلاً أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-rescue-600/90 text-white text-[10px] font-black tracking-wider uppercase">سوبر كار VIP</span>
           </div>
           <div class="p-4">
@@ -407,7 +407,7 @@ html_index = f"""{get_head(
         <!-- Photo 2: Caterpillar Heavy Loader -->
         <div class="glass rounded-3xl overflow-hidden border border-amber-500/40 hover:border-amber-400 transition-all group flex flex-col justify-between shadow-xl">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950 relative">
-            <img src="assets/images/hegazy_caterpillar_loader.jpg" alt="نقل لودر كاتربيلر CAT 930 ونش حجازي للمعدات الثقيلة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_caterpillar_loader.jpg" alt="نقل لودر كاتربيلر CAT 930 أوناش أولاد حجازي للمعدات الثقيلة" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-amber-500/90 text-slate-950 text-[10px] font-black tracking-wider">معدات ثقيلة</span>
           </div>
           <div class="p-4">
@@ -419,7 +419,7 @@ html_index = f"""{get_head(
         <!-- Photo 3: Construction Loader Desert Project -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950 relative">
-            <img src="assets/images/hegazy_heavy_equipment_loader.jpg" alt="نقل معدات الحفر والصحراء لودر WA100 ونش حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_heavy_equipment_loader.jpg" alt="نقل معدات الحفر والصحراء لودر WA100 أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-slate-800 text-amber-300 text-[10px] font-black">مواقع ومحاجر</span>
           </div>
           <div class="p-4">
@@ -431,11 +431,11 @@ html_index = f"""{get_head(
         <!-- Photo 4: Red Hegazy Truck Brand -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
-            <img src="assets/images/hegazy_red_truck_branding.jpg" alt="ونش حجازي المعتمد HEGAZY وأرقام الطوارئ الميدانية الرسمية" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_red_truck_branding.jpg" alt="أوناش أولاد حجازي المعتمد HEGAZY وأرقام الطوارئ الميدانية الرسمية" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-4">
-            <h4 class="text-white font-extrabold text-sm mb-1">ونش حجازي الرسمي المعتمد (HEGAZY)</h4>
-            <p class="text-slate-400 text-xs">أسطول إيسوزو حديث مرخص يحمل شعار وأرقام طوارئ ونش حجازي الميدانية.</p>
+            <h4 class="text-white font-extrabold text-sm mb-1">أوناش أولاد حجازي الرسمي المعتمد (HEGAZY)</h4>
+            <p class="text-slate-400 text-xs">أسطول إيسوزو حديث مرخص يحمل شعار وأرقام طوارئ أوناش أولاد حجازي الميدانية.</p>
           </div>
         </div>
 
@@ -464,7 +464,7 @@ html_index = f"""{get_head(
         <!-- Photo 7: Tractor Head Heavy Recovery -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
-            <img src="assets/images/hegazy_semi_truck_head.jpg" alt="سحب وإنقاذ رؤوس التريلات والشاحنات الضخمة Actros على ونش حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_semi_truck_head.jpg" alt="سحب وإنقاذ رؤوس التريلات والشاحنات الضخمة Actros على أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-4">
             <h4 class="text-white font-extrabold text-sm mb-1">سحب رؤوس التريلات والشاحنات</h4>
@@ -475,7 +475,7 @@ html_index = f"""{get_head(
         <!-- Photo 8: Caravans Transport -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
-            <img src="assets/images/hegazy_caravan_transport.jpg" alt="نقل الكرفانات والمكاتب الإدارية ومواقع الإنشاءات على ونش حجازي مسطح" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_caravan_transport.jpg" alt="نقل الكرفانات والمكاتب الإدارية ومواقع الإنشاءات على أوناش أولاد حجازي مسطح" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-4">
             <h4 class="text-white font-extrabold text-sm mb-1">نقل الكرفانات والوحدات المتنقلة</h4>
@@ -497,7 +497,7 @@ html_index = f"""{get_head(
         <!-- Photo 10: Food Trucks Transport -->
         <div class="glass rounded-3xl overflow-hidden border border-slate-800 hover:border-amber-400/50 transition-all group flex flex-col justify-between">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950">
-            <img src="assets/images/hegazy_food_truck_transport.jpg" alt="نقل عربات الطعام المتنقلة فود تراك والمقطورات التجارية على ونش حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_food_truck_transport.jpg" alt="نقل عربات الطعام المتنقلة فود تراك والمقطورات التجارية على أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
           <div class="p-4">
             <h4 class="text-white font-extrabold text-sm mb-1">نقل عربات الطعام (Food Trucks)</h4>
@@ -518,7 +518,7 @@ html_index = f"""{get_head(
         <!-- Photo 12: Night Commercial Pickup Cargo -->
         <div class="glass rounded-3xl overflow-hidden border border-amber-500/40 hover:border-amber-400 transition-all group flex flex-col justify-between shadow-xl">
           <div class="aspect-[4/3] overflow-hidden bg-slate-950 relative">
-            <img src="assets/images/hegazy_night_commercial_pickup.jpg" alt="نقل سيارات النقل التجاري والربع نقل بحمولتها ليلاً ونش حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <img src="assets/images/hegazy_night_commercial_pickup.jpg" alt="نقل سيارات النقل التجاري والربع نقل بحمولتها ليلاً أوناش أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
             <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-emerald-600/90 text-white text-[10px] font-black tracking-wider uppercase">نقل تجاري وبضائع</span>
           </div>
           <div class="p-4">
@@ -540,7 +540,7 @@ html_index = f"""{get_head(
         توثيق حي بالصوت والصورة من الميدان
       </div>
       <h3 class="text-3xl sm:text-4xl font-black text-white leading-tight">
-        فيديوهات حصرية لعمليات أسطول <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">ونش حجازي الميدانية</span>
+        فيديوهات حصرية لعمليات أسطول <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">أوناش أولاد حجازي الميدانية</span>
       </h3>
       <p class="text-slate-400 text-sm sm:text-base mt-4">
         شاهد بالصوت والصورة احترافية سحب ونقل سيارات السوبر كار ليلاً، تحميل اللوادر والمعدات الهندسية، وإنقاذ سيارات النقل التجاري بحمولتها بأحدث تقنيات السلامة في مصر.
@@ -648,7 +648,7 @@ html_index = f"""{get_head(
   <section class="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center max-w-2xl mx-auto mb-14">
       <span class="px-3 py-1 rounded-full text-xs font-black bg-amber-500/15 text-amber-300 border border-amber-500/30 mb-3 inline-block">الأسئلة الشائعة وإجابات الطوارئ</span>
-      <h2 class="text-2xl md:text-4xl font-black text-white">كل ما تحتاج معرفته عن خدمات ونش حجازي</h2>
+      <h2 class="text-2xl md:text-4xl font-black text-white">كل ما تحتاج معرفته عن خدمات أوناش أولاد حجازي</h2>
       <p class="text-slate-400 text-sm mt-2">إجابات واضحة ومباشرة تساعدك على اتخاذ القرار الصحيح عند تعطل سيارتك.</p>
     </div>
 
@@ -669,7 +669,7 @@ html_index = f"""{get_head(
   <section class="py-16 bg-gradient-to-r from-rescue-900 via-dark-900 to-amber-950 border-t border-amber-500/30 text-center">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl md:text-4xl font-black text-white mb-4">متعطل على الطريق الآن؟ لا تنتظر!</h2>
-      <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto mb-8">أقرب ونش إنقاذ من ونش حجازي على بُعد دقائق منك. اتصل بنا وسنصلك فوراً لموقعك أينما كنت في مصر.</p>
+      <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto mb-8">أقرب ونش إنقاذ من أوناش أولاد حجازي على بُعد دقائق منك. اتصل بنا وسنصلك فوراً لموقعك أينما كنت في مصر.</p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="tel:{PHONE}" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-rescue-600 to-amber-500 hover:from-rescue-500 hover:to-amber-400 text-white font-black text-lg rounded-2xl shadow-xl glow-red flex items-center justify-center gap-2">
           <span>اتصال طوارئ فوري: {PHONE_DISPLAY}</span>

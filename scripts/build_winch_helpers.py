@@ -20,7 +20,7 @@ MAPS_URL = "https://maps.app.goo.gl/4JvQjcJFPNFqesXS7?g_st=awb"
 MAPS_EMBED_URL = "https://maps.google.com/maps?q=30.1741147,31.4761952&hl=ar&z=16&output=embed"
 GEO_LAT = 30.1741147
 GEO_LNG = 31.4761952
-LOCATION_NAME = "مركز ارتكاز ونش حجازي - كارفور العبور وجولف سيتي مول"
+LOCATION_NAME = "مركز ارتكاز أوناش أولاد حجازي - كارفور العبور وجولف سيتي مول"
 LOCATION_ADDRESS = "كارفور العبور، جولف سيتي مول، مطلع الطريق الدائري وطريق الإسماعيلية الصحراوي، مصر"
 
 
@@ -43,7 +43,7 @@ def get_head(title, description, canonical_url, is_blog=False):
   <meta property="og:description" content="{description}">
   <meta property="og:image" content="{prefix}assets/images/og_banner.jpg">
   <meta property="og:locale" content="ar_EG">
-  <meta property="og:site_name" content="ونش إنقاذ حجازي">
+  <meta property="og:site_name" content="أوناش إنقاذ أولاد حجازي">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -149,13 +149,13 @@ def get_header(active_page="home", is_blog=False):
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <!-- Logo -->
       <a href="{p}index.html" class="flex items-center gap-3 group">
-        <img src="{p}assets/images/logo.png" alt="شعار ونش إنقاذ حجازي" class="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-amber-400 shadow-md group-hover:scale-105 transition-transform">
+        <img src="{p}assets/images/logo.png" alt="شعار أوناش إنقاذ أولاد حجازي" class="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-amber-400 shadow-md group-hover:scale-105 transition-transform">
         <div>
           <div class="text-lg md:text-2xl font-black text-white tracking-tight flex items-center gap-1.5">
-            <span>ونش إنقاذ</span>
-            <span class="text-amber-400">حجازي</span>
+            <span>أوناش إنقاذ</span>
+            <span class="text-amber-400">أولاد حجازي</span>
           </div>
-          <p class="text-[10px] md:text-xs text-slate-400 font-bold">أسرع وأرخص ونش إنقاذ سيارات في مصر</p>
+          <p class="text-[10px] md:text-xs text-slate-400 font-bold">الأسطول الهيدروليكي المعتمد لإنقاذ وسحب السيارات في مصر</p>
         </div>
       </a>
 
@@ -197,8 +197,8 @@ def get_footer(is_blog=False):
       <!-- Col 1: Brand Info -->
       <div class="space-y-4">
         <div class="flex items-center gap-3">
-          <img src="{p}assets/images/logo.png" alt="شعار ونش حجازي" class="w-12 h-12 rounded-full border border-amber-400">
-          <span class="text-xl font-black text-white">ونش إنقاذ <span class="text-amber-400">حجازي</span></span>
+          <img src="{p}assets/images/logo.png" alt="شعار أوناش أولاد حجازي" class="w-12 h-12 rounded-full border border-amber-400">
+          <span class="text-xl font-black text-white">أوناش إنقاذ <span class="text-amber-400">أولاد حجازي</span></span>
         </div>
         <p class="text-sm leading-relaxed text-slate-400">
           المؤسسة الرائدة في خدمات إنقاذ وسحب ونقل السيارات في جمهورية مصر العربية على مدار 24 ساعة بأحدث أوناش هيدروليكية مغلقة وأفضل أسعار بدون استغلال.
@@ -255,7 +255,7 @@ def get_footer(is_blog=False):
     <!-- Copyright & Disclaimer -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-900 text-center text-xs text-slate-500 flex flex-col md:flex-row items-center justify-between gap-4">
       <div>
-        جميع الحقوق محفوظة © 2026 - <strong class="text-slate-300">ونش إنقاذ حجازي</strong> (Hegazy Car Towing Services Egypt).
+        جميع الحقوق محفوظة © 2026 - <strong class="text-slate-300">أوناش إنقاذ أولاد حجازي</strong> (Hegazy Car Towing Services Egypt).
       </div>
       <div class="flex items-center gap-4 text-slate-400">
         <span>SEO & AI-Engineered by <strong class="text-amber-400">AM Marketing Agency</strong></span>
@@ -284,8 +284,8 @@ def generate_local_business_schema(page_title, page_desc, page_url):
     schema = {
         "@context": "https://schema.org",
         "@type": ["EmergencyService", "AutoRepair", "LocalBusiness"],
-        "name": "ونش إنقاذ حجازي - لإنقاذ السيارات 24 ساعة",
-        "alternateName": ["Winch Hegazy", "ونش حجازي", "ونش إنقاذ سيارات مصر"],
+        "name": "أوناش إنقاذ أولاد حجازي - لإنقاذ السيارات 24 ساعة",
+        "alternateName": ["أوناش إنقاذ أولاد حجازي", "ونش إنقاذ أولاد حجازي", "أولاد حجازي", "Awlad Hegazy", "Winch Awlad Hegazy", "ونش أولاد حجازي", "أوناش أولاد حجازي"],
         "description": page_desc,
         "url": page_url,
         "telephone": PHONE_TEL,
@@ -379,10 +379,10 @@ def get_map_section():
             <span>نقطة الارتكاز الميداني المعتمدة (Live GPS)</span>
           </div>
 
-          <h2 class="text-2xl md:text-4xl font-black text-white leading-tight">موقع تمركز ونش إنقاذ حجازي على الخريطة</h2>
+          <h2 class="text-2xl md:text-4xl font-black text-white leading-tight">موقع تمركز أوناش إنقاذ أولاد حجازي على الخريطة</h2>
           
           <p class="text-slate-300 text-sm leading-relaxed">
-            يتمركز أسطول <strong class="text-amber-400">ونش إنقاذ حجازي</strong> عند التقاطع الاستراتيجي الحيوي بين <strong>الطريق الدائري</strong> و<strong>طريق مصر الإسماعيلية الصحراوي</strong> أمام <strong>كارفور العبور وجولف سيتي مول</strong>، مما يتيح لأوناشنا الانطلاق الفوري والوصول خلال <strong>8 إلى 12 دقيقة فقط</strong> لكافة مناطق العبور، الشروق، مدينتي، التجمع، مدينة نصر، مصر الجديدة، والسلام.
+            يتمركز أسطول <strong class="text-amber-400">أوناش إنقاذ أولاد حجازي</strong> عند التقاطع الاستراتيجي الحيوي بين <strong>الطريق الدائري</strong> و<strong>طريق مصر الإسماعيلية الصحراوي</strong> أمام <strong>كارفور العبور وجولف سيتي مول</strong>، مما يتيح لأوناشنا الانطلاق الفوري والوصول خلال <strong>8 إلى 12 دقيقة فقط</strong> لكافة مناطق العبور، الشروق، مدينتي، التجمع، مدينة نصر، مصر الجديدة، والسلام.
           </p>
 
           <div class="space-y-2.5 text-xs text-slate-300 pt-2">
@@ -424,13 +424,13 @@ def get_map_section():
               allowfullscreen="" 
               loading="lazy" 
               referrerpolicy="no-referrer-when-downgrade"
-              title="موقع ونش إنقاذ حجازي كارفور العبور خرائط جوجل"
+              title="موقع أوناش إنقاذ أولاد حجازي كارفور العبور خرائط جوجل"
               class="w-full h-full grayscale-[20%] contrast-[110%] hover:grayscale-0 transition-all duration-300">
             </iframe>
             
             <div class="absolute bottom-3 right-3 bg-slate-950/90 backdrop-blur-md px-3 py-1.5 rounded-xl border border-amber-500/30 text-[11px] text-amber-300 font-bold flex items-center gap-1.5">
               <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>نقطة تمركز ونش حجازي الرسمية (كارفور العبور)</span>
+              <span>نقطة تمركز أوناش أولاد حجازي الرسمية (كارفور العبور)</span>
             </div>
           </div>
         </div>
@@ -447,32 +447,32 @@ def generate_video_schema():
         {
             "@context": "https://schema.org",
             "@type": "VideoObject",
-            "name": "توثيق بالفيديو: نقل سيارة سوبر كار لامبورجيني هوراكان ليلاً - ونش إنقاذ حجازي",
-            "description": "فيديو ميداني يوثق عملية سحب وتثبيت سيارة سوبر كار لامبورجيني ليلاً على ونش إنقاذ حجازي بأربطة إطارات مطاطية مخصصة وإضاءات ليد توجيهية.",
-            "thumbnailUrl": "https://winch-hegazy.com/assets/images/poster_lamborghini_night.jpg",
+            "name": "توثيق بالفيديو: نقل سيارة سوبر كار لامبورجيني هوراكان ليلاً - أوناش إنقاذ أولاد حجازي",
+            "description": "فيديو ميداني يوثق عملية سحب وتثبيت سيارة سوبر كار لامبورجيني ليلاً على أوناش إنقاذ أولاد حجازي بأربطة إطارات مطاطية مخصصة وإضاءات ليد توجيهية.",
+            "thumbnailUrl": "https://awladhegazy.com/assets/images/poster_lamborghini_night.jpg",
             "uploadDate": "2026-11-06T20:00:00+02:00",
-            "contentUrl": "https://winch-hegazy.com/assets/videos/hegazy_lamborghini_vip_night.mp4",
-            "embedUrl": "https://winch-hegazy.com/index.html#videos"
+            "contentUrl": "https://awladhegazy.com/assets/videos/hegazy_lamborghini_vip_night.mp4",
+            "embedUrl": "https://awladhegazy.com/index.html#videos"
         },
         {
             "@context": "https://schema.org",
             "@type": "VideoObject",
-            "name": "توثيق بالفيديو: تحميل ونقل لودر كاتربيلر CAT 930 نهاراً - ونش إنقاذ حجازي",
-            "description": "استعراض لقدرات ونش حجازي الهيدروليكية الثقيلة في سحب ونقل لوادر ومعدات البناء والمشروعات القومية بأمان تام.",
-            "thumbnailUrl": "https://winch-hegazy.com/assets/images/poster_caterpillar_loader.jpg",
+            "name": "توثيق بالفيديو: تحميل ونقل لودر كاتربيلر CAT 930 نهاراً - أوناش إنقاذ أولاد حجازي",
+            "description": "استعراض لقدرات أوناش أولاد حجازي الهيدروليكية الثقيلة في سحب ونقل لوادر ومعدات البناء والمشروعات القومية بأمان تام.",
+            "thumbnailUrl": "https://awladhegazy.com/assets/images/poster_caterpillar_loader.jpg",
             "uploadDate": "2026-11-06T20:00:00+02:00",
-            "contentUrl": "https://winch-hegazy.com/assets/videos/hegazy_caterpillar_loader_day.mp4",
-            "embedUrl": "https://winch-hegazy.com/index.html#videos"
+            "contentUrl": "https://awladhegazy.com/assets/videos/hegazy_caterpillar_loader_day.mp4",
+            "embedUrl": "https://awladhegazy.com/index.html#videos"
         },
         {
             "@context": "https://schema.org",
             "@type": "VideoObject",
-            "name": "توثيق بالفيديو: إنقاذ ونقل سيارة ربع نقل محملة بالبضائع ليلاً - ونش إنقاذ حجازي",
+            "name": "توثيق بالفيديو: إنقاذ ونقل سيارة ربع نقل محملة بالبضائع ليلاً - أوناش إنقاذ أولاد حجازي",
             "description": "توثيق سحب وتأمين شاحنة بضائع تجارية بحمولتها الكاملة على الطريق السريع ليلاً بأضواء ليد محيطية لحماية الشحنة.",
-            "thumbnailUrl": "https://winch-hegazy.com/assets/images/poster_commercial_pickup.jpg",
+            "thumbnailUrl": "https://awladhegazy.com/assets/images/poster_commercial_pickup.jpg",
             "uploadDate": "2026-11-06T20:00:00+02:00",
-            "contentUrl": "https://winch-hegazy.com/assets/videos/hegazy_commercial_pickup_night.mp4",
-            "embedUrl": "https://winch-hegazy.com/index.html#videos"
+            "contentUrl": "https://awladhegazy.com/assets/videos/hegazy_commercial_pickup_night.mp4",
+            "embedUrl": "https://awladhegazy.com/index.html#videos"
         }
     ]
     return f'<script type="application/ld+json">\n{json.dumps(videos, ensure_ascii=False, indent=2)}\n</script>'

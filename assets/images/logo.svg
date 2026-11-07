@@ -48,10 +48,10 @@
   <text x="75" y="525" fill="url(#goldGrad)" font-size="36" font-family="Arial, sans-serif" text-anchor="middle">★</text>
   <text x="949" y="525" fill="url(#goldGrad)" font-size="36" font-family="Arial, sans-serif" text-anchor="middle">★</text>
 
-  <!-- Upper Arc / Arabic Name: ونش إنقاذ حجازي -->
+  <!-- Upper Arc / Arabic Name: أوناش إنقاذ أولاد حجازي -->
   <g filter="url(#shadow)">
-    <text x="512" y="210" fill="#ffffff" font-size="78" font-family="'Cairo', 'Segoe UI', Tahoma, Arial, sans-serif" font-weight="900" text-anchor="middle" letter-spacing="2">
-      ونش إنقاذ حجازي
+    <text x="512" y="210" fill="#ffffff" font-size="68" font-family="'Cairo', 'Segoe UI', Tahoma, Arial, sans-serif" font-weight="900" text-anchor="middle" letter-spacing="1">
+      أوناش إنقاذ أولاد حجازي
     </text>
     <text x="512" y="260" fill="url(#goldGrad)" font-size="28" font-family="'Cairo', 'Segoe UI', Tahoma, Arial, sans-serif" font-weight="700" text-anchor="middle" letter-spacing="3">
       الأسطول الهيدروليكي المعتمد الأول بمصر
@@ -85,7 +85,7 @@
     <circle cx="260" cy="95" r="10" fill="url(#silverGrad)"/>
   </g>
 
-  <!-- Central Brand Banner: HEGAZY -->
+  <!-- Central Brand Banner: AWLAD HEGAZY -->
   <g transform="translate(0, 512)" filter="url(#shadow)">
     <!-- Red Accent Background -->
     <rect x="60" y="-60" width="904" height="120" rx="20" fill="url(#redGrad)"/>
@@ -94,9 +94,9 @@
     <!-- Dark Inner Plaque -->
     <rect x="76" y="-46" width="872" height="92" rx="12" fill="#090d16"/>
 
-    <!-- Brand Name HEGAZY in Gold -->
-    <text x="512" y="24" fill="url(#goldGrad)" font-size="88" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="16" filter="url(#glowGold)">
-      H E G A Z Y
+    <!-- Brand Name AWLAD HEGAZY in Gold -->
+    <text x="512" y="24" fill="url(#goldGrad)" font-size="74" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" text-anchor="middle" letter-spacing="8" filter="url(#glowGold)">
+      AWLAD HEGAZY
     </text>
     <text x="512" y="-18" fill="#f8fafc" font-size="20" font-family="Arial, sans-serif" font-weight="900" text-anchor="middle" letter-spacing="6">
       ★ TOWING &amp; RESCUE SERVICE 24/7 ★

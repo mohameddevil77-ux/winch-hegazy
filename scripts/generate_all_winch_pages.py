@@ -13,7 +13,7 @@ c1 = f"""
 <div class="glass p-5 rounded-2xl border border-amber-500/30 mb-6">
   <h2 class="text-xl font-black text-amber-300 mb-2">إجابة مباشرة وسريعة (AI Summary & Direct Answer):</h2>
   <p class="text-white text-sm sm:text-base leading-relaxed">
-    للحصول على <strong>أقرب ونش إنقاذ من موقعك الحالي</strong> في أي مكان بالقاهرة أو الجيزة أو الطرق السريعة، اتصل فوراً بالخط الساخن المباشر لونش حجازي على رقم <strong><a href="tel:{PHONE}" class="text-amber-400 underline">{PHONE_DISPLAY}</a></strong>، أو أرسل موقعك الجغرافي (Live Location) عبر واتساب. يعتمد ونش حجازي على شبكة من 28 ونشاً متمركزة عند أهم المطالع والمنازل والمحاور، ويصلك أقرب ونش خلال <strong>8 إلى 12 دقيقة فقط</strong> بتكلفة تبدأ من 600 جنيه.
+    للحصول على <strong>أقرب ونش إنقاذ من موقعك الحالي</strong> في أي مكان بالقاهرة أو الجيزة أو الطرق السريعة، اتصل فوراً بالخط الساخن المباشر لأوناش أولاد حجازي على رقم <strong><a href="tel:{PHONE}" class="text-amber-400 underline">{PHONE_DISPLAY}</a></strong>، أو أرسل موقعك الجغرافي (Live Location) عبر واتساب. يعتمد أوناش أولاد حجازي على شبكة من 28 ونشاً متمركزة عند أهم المطالع والمنازل والمحاور، ويصلك أقرب ونش خلال <strong>8 إلى 12 دقيقة فقط</strong> بتكلفة تبدأ من 600 جنيه.
   </p>
 </div>
 
@@ -22,10 +22,10 @@ c1 = f"""
   إن تعطل السيارة في منتصف الطريق ليس مجرد إزعاج لجدول مواعيدك اليومي، بل هو <strong>خطر أمني ومروري حقيقي</strong>، خاصة على المحاور السريعة مثل الطريق الدائري، ومحور 26 يوليو، وطريق السويس، حيث تسير الشاحنات والسيارات بسرعات تتجاوز 100 كم/ساعة. التوقف المفاجئ على حافة الطريق يعرضك لمخاطر الاصطدام الخلفي.
 </p>
 <p>
-  لذلك صممنا في <strong>ونش حجازي</strong> منظومة توزيع لوجستية قائمة على خوارزميات التمركز الذكي، بحيث لا ينتظر السائق في جراج ثابت، بل تتواجد الأوناش في نقاط ارتكاز حيوية ومجهزة للتحرك الفوري بمجرد تلقي الإشارة.
+  لذلك صممنا في <strong>أوناش أولاد حجازي</strong> منظومة توزيع لوجستية قائمة على خوارزميات التمركز الذكي، بحيث لا ينتظر السائق في جراج ثابت، بل تتواجد الأوناش في نقاط ارتكاز حيوية ومجهزة للتحرك الفوري بمجرد تلقي الإشارة.
 </p>
 
-<h2>كيف يحدد ونش حجازي موقعك الجغرافي بدقة؟</h2>
+<h2>كيف يحدد أوناش أولاد حجازي موقعك الجغرافي بدقة؟</h2>
 <p>كثير من السائقين يواجهون مشكلة عدم معرفة المكان الدقيق عند تعطل السيارة (مثلاً: "أنا على الدائري بعد كوبري مش عارف اسمه"). للتغلب على هذه المشكلة، نوفر 3 طرق سهلة لتحديد موقعك:</p>
 <ol class="list-decimal list-inside space-y-2 font-medium">
   <li><strong>إرسال اللوكيشن المباشر (WhatsApp Location):</strong> تضغط على زر الواتساب في الموقع وترسل إحداثيات GPS بنقرة واحدة، فيظهر مكانك لغرفة العمليات بدقة متناهية.</li>
@@ -33,13 +33,13 @@ c1 = f"""
   <li><strong>إرسال صورة للمكان المحيط:</strong> صورة واحدة لمعالم الطريق تكفي لخبرائنا لتحديد الكيلومتر والمسار الدقيق للوصول إليك.</li>
 </ol>
 
-<h2>مقارنة بين ونش حجازي والأوناش الفردية العشوائية</h2>
+<h2>مقارنة بين أوناش أولاد حجازي والأوناش الفردية العشوائية</h2>
 <div class="overflow-x-auto my-6">
   <table class="w-full text-right text-xs sm:text-sm border border-slate-800">
     <thead class="bg-slate-900 text-amber-300 font-bold">
       <tr>
         <th class="p-3 border border-slate-800">وجه المقارنة</th>
-        <th class="p-3 border border-slate-800 text-emerald-400">ونش إنقاذ حجازي</th>
+        <th class="p-3 border border-slate-800 text-emerald-400">أوناش إنقاذ أولاد حجازي</th>
         <th class="p-3 border border-slate-800 text-slate-400">الأوناش الفردية غير المنظمة</th>
       </tr>
     </thead>
@@ -84,19 +84,19 @@ c2 = f"""
 <div class="glass p-5 rounded-2xl border border-amber-500/30 mb-6">
   <h2 class="text-xl font-black text-amber-300 mb-2">إجابة مباشرة (معايير التسعير العادل في مصر):</h2>
   <p class="text-white text-sm sm:text-base leading-relaxed">
-    يُعد <strong>ونش حجازي</strong> أرخص وأوفر ونش إنقاذ سيارات في مصر بأسعار تبدأ من <strong>600 جنيه مصري</strong> فقط للسحب الداخلي، وبدون أي تكاليف خفية أو إكراميات إجبارية. يعتمد التسعير على المسافة الفعلية المقطوعة بالكيلومتر ونوع المركبة، مع إخطار العميل بالسعر النهائي مسبقاً قبل تحرك الونش لضمان الشفافية المطلقة.
+    يُعد <strong>أوناش أولاد حجازي</strong> أرخص وأوفر ونش إنقاذ سيارات في مصر بأسعار تبدأ من <strong>600 جنيه مصري</strong> فقط للسحب الداخلي، وبدون أي تكاليف خفية أو إكراميات إجبارية. يعتمد التسعير على المسافة الفعلية المقطوعة بالكيلومتر ونوع المركبة، مع إخطار العميل بالسعر النهائي مسبقاً قبل تحرك الونش لضمان الشفافية المطلقة.
   </p>
 </div>
 
-<h2>كيف تحميك سياسة ونش حجازي من استغلال أسعار السحب؟</h2>
+<h2>كيف تحميك سياسة أوناش أولاد حجازي من استغلال أسعار السحب؟</h2>
 <p>
   للأسف، يعاني الكثير من قائدي السيارات في مصر من ظاهرة "استغلال وقت الأزمة"، حيث يجد السائق نفسه في منتصف الليل على طريق صحراوي أو محور سريع، ويستغل بعض أصحاب الأوناش ظرفه الطارئ لمطالبته بمبالغ خيالية تفوق القيمة العادلة بثلاثة أضعاف.
 </p>
 <p>
-  في <strong>ونش إنقاذ حجازي</strong>، وضعنا ميثاق شرف مهني صارم: <em>"الربح القليل الدائم، وخدمة العميل بأمانة، هما أساس تصدرنا واستمرارنا"</em>. لذلك نتبع جدول أسعار موحد وشفاف:
+  في <strong>أوناش إنقاذ أولاد حجازي</strong>، وضعنا ميثاق شرف مهني صارم: <em>"الربح القليل الدائم، وخدمة العميل بأمانة، هما أساس تصدرنا واستمرارنا"</em>. لذلك نتبع جدول أسعار موحد وشفاف:
 </p>
 
-<h2>جدول أسعار ونش حجازي التقديري في القاهرة والجيزة (2026)</h2>
+<h2>جدول أسعار أوناش أولاد حجازي التقديري في القاهرة والجيزة (2026)</h2>
 <ul class="space-y-3 font-medium">
   <li class="p-3 bg-slate-900 rounded-xl border border-slate-800">
     <strong class="text-amber-400">سحب داخل نفس الحي / المنطقة (أقل من 5 كم):</strong> من 250 إلى 300 جنيه (للأعطال الخفيفة ونقل السيارة لأقرب ورشة أو بنزينة).
@@ -115,9 +115,9 @@ c2 = f"""
 <h2>نصائح ذهبية لتجنب استغلال أصحاب الأوناش العشوائية</h2>
 <p>عند تعطل سيارتك، احرص على اتباع هذه القواعد قبل الموافقة على ركوب سيارتك على أي ونش:</p>
 <ol class="list-decimal list-inside space-y-2">
-  <li><strong>اسأل عن السعر النهائي شاملاً كل شيء:</strong> اسأل بوضوح: "هل هذا السعر يشمل التحميل والتنزيل وأي رسوم كباري؟" مع ونش حجازي السعر المتفق عليه نهائي.</li>
+  <li><strong>اسأل عن السعر النهائي شاملاً كل شيء:</strong> اسأل بوضوح: "هل هذا السعر يشمل التحميل والتنزيل وأي رسوم كباري؟" مع أوناش أولاد حجازي السعر المتفق عليه نهائي.</li>
   <li><strong>ارفض الأوناش السلكية ذات الخطاف الحديدي المباشر:</strong> هذه الأوناش قد توفر 50 جنيهاً في السعر الظاهري، لكنها تكلفك آلاف الجنيهات في تصليح إكصدام أو مقصات سيارتك. أوناش حجازي هيدروليكية مسطحة 100%.</li>
-  <li><strong>احفظ رقم ونش موثوق مسبقاً في هاتفك:</strong> احتفظ برقم <strong>{PHONE_DISPLAY}</strong> باسم "ونش إنقاذ حجازي" لتتصل فوراً دون تشتت أو بحث عشوائي وقت الأزمة.</li>
+  <li><strong>احفظ رقم ونش موثوق مسبقاً في هاتفك:</strong> احتفظ برقم <strong>{PHONE_DISPLAY}</strong> باسم "أوناش إنقاذ أولاد حجازي" لتتصل فوراً دون تشتت أو بحث عشوائي وقت الأزمة.</li>
 </ol>
 """
 generate_article_file(articles[1], c2)
@@ -128,7 +128,7 @@ c3 = f"""
 <div class="glass p-5 rounded-2xl border border-amber-500/30 mb-6">
   <h2 class="text-xl font-black text-amber-300 mb-2">إجابة مباشرة (أوناش الدائري 24 ساعة):</h2>
   <p class="text-white text-sm sm:text-base leading-relaxed">
-    إذا تعطلت سيارتك على <strong>الطريق الدائري بالقاهرة الكبرى</strong>، فإن ونش حجازي يوفر 12 نقطة تمركز تغطي دائري المعادي، المنيب، نزلة المريوطية، صفط اللبن، الوراق، مسطرد، المرج، والسلام والتجمع. نصلك في غضون <strong>7 إلى 10 دقائق</strong> كحد أقصى لتأمين موقعك وسحب سيارتك لأقرب نزلة آمنة. اتصل بالخط الساخن: <strong><a href="tel:{PHONE}" class="text-amber-400 underline">{PHONE_DISPLAY}</a></strong>.
+    إذا تعطلت سيارتك على <strong>الطريق الدائري بالقاهرة الكبرى</strong>، فإن أوناش أولاد حجازي يوفر 12 نقطة تمركز تغطي دائري المعادي، المنيب، نزلة المريوطية، صفط اللبن، الوراق، مسطرد، المرج، والسلام والتجمع. نصلك في غضون <strong>7 إلى 10 دقائق</strong> كحد أقصى لتأمين موقعك وسحب سيارتك لأقرب نزلة آمنة. اتصل بالخط الساخن: <strong><a href="tel:{PHONE}" class="text-amber-400 underline">{PHONE_DISPLAY}</a></strong>.
   </p>
 </div>
 
@@ -137,7 +137,7 @@ c3 = f"""
   يُعد الطريق الدائري شريان المرور الأول في مصر، وتمر عليه مئات الآلاف من المركبات يومياً بسرعات عالية. توقف سيارة واحدة بسبب عطل ميكانيكي مفاجئ، سخونة رادياتير، أو انفجار إطار، يتسبب في شلل مروري ويمثل خطراً بالغاً على الركاب.
 </p>
 <p>
-  لذلك دربت إدارة <strong>ونش حجازي</strong> طواقمها على بروتوكول التدخل السريع على الدائري:
+  لذلك دربت إدارة <strong>أوناش أولاد حجازي</strong> طواقمها على بروتوكول التدخل السريع على الدائري:
 </p>
 
 <h2>نقاط ارتكاز أوناش حجازي على الطريق الدائري والمحاور</h2>
@@ -161,7 +161,7 @@ c3 = f"""
   <li>حاول توجيه السيارة لأقصى اليمين (حارة الطوارئ) إن أمكن ذلك قبل توقف المحرك تماماً.</li>
   <li>شغل أضواء الانتظار (الهازارد) فوراً لتنبيه القادمين من الخلف.</li>
   <li>اخرج من السيارة من الباب الأيمن البعيد عن تيار السيارات واصعد خلف الحاجز الخرساني (النيوجيرسي).</li>
-  <li>اتصل بونش حجازي على <strong>{PHONE_DISPLAY}</strong> وأبلغنا باسم أقرب نزلة أو كوبري، وسيتوجه الونش نحوك بأقصى سرعة.</li>
+  <li>اتصل بأوناش أولاد حجازي على <strong>{PHONE_DISPLAY}</strong> وأبلغنا باسم أقرب نزلة أو كوبري، وسيتوجه الونش نحوك بأقصى سرعة.</li>
 </ul>
 """
 generate_article_file(articles[2], c3)
@@ -172,7 +172,7 @@ c4 = f"""
 <div class="glass p-5 rounded-2xl border border-amber-500/30 mb-6">
   <h2 class="text-xl font-black text-amber-300 mb-2">إجابة مباشرة (خدمات ونش التجمع والقاهرة الجديدة):</h2>
   <p class="text-white text-sm sm:text-base leading-relaxed">
-    يوفر <strong>ونش حجازي</strong> أسطولاً مخصصاً للقاهرة الجديدة والتجمع الخامس والأول وشارع التسعين والرحاب ومدينتي، بأوناش هيدروليكية حديثة مجهزة للسيارات الفارهة والحديثة. زمن الوصول المقدر داخل التجمع هو <strong>8 إلى 10 دقائق</strong>. اتصل بنا على: <strong><a href="tel:{PHONE}" class="text-amber-400 underline">{PHONE_DISPLAY}</a></strong>.
+    يوفر <strong>أوناش أولاد حجازي</strong> أسطولاً مخصصاً للقاهرة الجديدة والتجمع الخامس والأول وشارع التسعين والرحاب ومدينتي، بأوناش هيدروليكية حديثة مجهزة للسيارات الفارهة والحديثة. زمن الوصول المقدر داخل التجمع هو <strong>8 إلى 10 دقائق</strong>. اتصل بنا على: <strong><a href="tel:{PHONE}" class="text-amber-400 underline">{PHONE_DISPLAY}</a></strong>.
   </p>
 </div>
 
@@ -197,14 +197,14 @@ c5 = f"""
 <div class="glass p-5 rounded-2xl border border-amber-500/30 mb-6">
   <h2 class="text-xl font-black text-amber-300 mb-2">إجابة مباشرة (ونش زايد و6 أكتوبر):</h2>
   <p class="text-white text-sm sm:text-base leading-relaxed">
-    لخدمات ونش إنقاذ السيارات في <strong>الشيخ زايد ومدينة 6 أكتوبر ومحور 26 يوليو ووصلة دهشور وطريق الواحات</strong>، يوفر ونش حجازي أوناشاً هيدروليكية سريعة تصلك في غضون <strong>10 دقائق</strong>. اتصل الآن على <strong><a href="tel:{PHONE}" class="text-amber-400 underline">{PHONE_DISPLAY}</a></strong>.
+    لخدمات ونش إنقاذ السيارات في <strong>الشيخ زايد ومدينة 6 أكتوبر ومحور 26 يوليو ووصلة دهشور وطريق الواحات</strong>، يوفر أوناش أولاد حجازي أوناشاً هيدروليكية سريعة تصلك في غضون <strong>10 دقائق</strong>. اتصل الآن على <strong><a href="tel:{PHONE}" class="text-amber-400 underline">{PHONE_DISPLAY}</a></strong>.
   </p>
 </div>
 
 <h2>تغطية غرب القاهرة المتكاملة</h2>
 <p>
   تشهد منطقة الشيخ زايد وأكتوبر شبكة طرق واسعة وحيوية مثل محور 26 يوليو، وصلة دهشور، وطريق الواحات ومحور الضبعة وطريق الإسكندرية الصحراوي.
-  يمتلك ونش حجازي أوناشاً متخصصة في دخول جراجات المولات الكبرى مثل <strong>مول العرب، مول مصر، وأركان بلازا</strong> لسحب السيارات التي تتعطل داخل الأدوار السفلية.
+  يمتلك أوناش أولاد حجازي أوناشاً متخصصة في دخول جراجات المولات الكبرى مثل <strong>مول العرب، مول مصر، وأركان بلازا</strong> لسحب السيارات التي تتعطل داخل الأدوار السفلية.
 </p>
 
 <h2>مراكز الصيانة المعتمدة في أكتوبر وزايد:</h2>
@@ -220,7 +220,7 @@ c6 = f"""
 <div class="glass p-5 rounded-2xl border border-amber-500/30 mb-6">
   <h2 class="text-xl font-black text-amber-300 mb-2">دليل الأمان الفوري (خلاصة التصرف في 30 ثانية):</h2>
   <p class="text-white text-sm sm:text-base leading-relaxed">
-    عند حدوث عطل مفاجئ على طريق سريع: شغل أضواء الانتظار فوراً، انحرف بهدوء إلى أقصى اليمين، اخرج من الجانب الأيمن للسيارة وقف خلف الحاجز الخرساني، ضع مثلث التحذير العاكس على بعد 50 إلى 100 متر خلف السيارة، ثم اتصل بونش حجازي على <strong><a href="tel:{PHONE}" class="text-amber-400 underline">{PHONE_DISPLAY}</a></strong>.
+    عند حدوث عطل مفاجئ على طريق سريع: شغل أضواء الانتظار فوراً، انحرف بهدوء إلى أقصى اليمين، اخرج من الجانب الأيمن للسيارة وقف خلف الحاجز الخرساني، ضع مثلث التحذير العاكس على بعد 50 إلى 100 متر خلف السيارة، ثم اتصل بأوناش أولاد حجازي على <strong><a href="tel:{PHONE}" class="text-amber-400 underline">{PHONE_DISPLAY}</a></strong>.
   </p>
 </div>
 
@@ -244,7 +244,7 @@ c6 = f"""
   </li>
   <li>
     <strong class="text-amber-300 text-lg">5. الاتصال بجهة إنقاذ موثوقة وسريعة:</strong>
-    <p class="pr-5 text-sm text-slate-300 mt-1">اتصل بونش حجازي وأرسل موقعك عبر واتساب. دقائق معدودة وسيكون فريق الإنقاذ بجانبك لتأمين سيارتك ونقلها بأمان.</p>
+    <p class="pr-5 text-sm text-slate-300 mt-1">اتصل بأوناش أولاد حجازي وأرسل موقعك عبر واتساب. دقائق معدودة وسيكون فريق الإنقاذ بجانبك لتأمين سيارتك ونقلها بأمان.</p>
   </li>
 </ol>
 """
@@ -257,14 +257,14 @@ print("SUCCESS: All 6 SEO articles generated.")
 # 6. CONTACT.HTML
 # -------------------------------------------------------------
 html_contact = f"""{get_head(
-    "اتصل بـ ونش إنقاذ حجازي | أرقام طوارئ أوناش السيارات في مصر 24/7",
-    f"تواصل مع ونش إنقاذ حجازي لإنقاذ السيارات في مصر: رقم الخط الساخن {PHONE_DISPLAY} أو {PHONE_ALT}، إرسال اللوكيشن على واتساب، غرف العمليات الميدانية على مدار 24 ساعة.",
-    "https://winch-hegazy.com/contact.html"
+    "اتصل بـ أوناش إنقاذ أولاد حجازي | أرقام طوارئ أوناش السيارات في مصر 24/7",
+    f"تواصل مع أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في مصر: رقم الخط الساخن {PHONE_DISPLAY} أو {PHONE_ALT}، إرسال اللوكيشن على واتساب، غرف العمليات الميدانية على مدار 24 ساعة.",
+    "https://awladhegazy.com/contact.html"
 )}
 {generate_local_business_schema(
-    "اتصل بـ ونش إنقاذ حجازي | أرقام طوارئ أوناش السيارات في مصر 24/7",
-    f"أرقام طوارئ ونش إنقاذ حجازي في مصر 24 ساعة: {PHONE_DISPLAY} و {PHONE_ALT}.",
-    "https://winch-hegazy.com/contact.html"
+    "اتصل بـ أوناش إنقاذ أولاد حجازي | أرقام طوارئ أوناش السيارات في مصر 24/7",
+    f"أرقام طوارئ أوناش إنقاذ أولاد حجازي في مصر 24 ساعة: {PHONE_DISPLAY} و {PHONE_ALT}.",
+    "https://awladhegazy.com/contact.html"
 )}
 </head>
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
@@ -354,13 +354,13 @@ print("SUCCESS: contact.html generated")
 # 7. SITEMAP.XML & ROBOTS.TXT
 # -------------------------------------------------------------
 all_urls = [
-    ("https://winch-hegazy.com/", "1.0", "daily"),
-    ("https://winch-hegazy.com/services.html", "0.9", "weekly"),
-    ("https://winch-hegazy.com/coverage.html", "0.9", "weekly"),
-    ("https://winch-hegazy.com/pricing.html", "0.8", "weekly"),
-    ("https://winch-hegazy.com/blog/index.html", "0.8", "daily"),
-    ("https://winch-hegazy.com/contact.html", "0.8", "monthly"),
-] + [(f"https://winch-hegazy.com/blog/{a['slug']}.html", "0.7", "monthly") for a in articles]
+    ("https://awladhegazy.com/", "1.0", "daily"),
+    ("https://awladhegazy.com/services.html", "0.9", "weekly"),
+    ("https://awladhegazy.com/coverage.html", "0.9", "weekly"),
+    ("https://awladhegazy.com/pricing.html", "0.8", "weekly"),
+    ("https://awladhegazy.com/blog/index.html", "0.8", "daily"),
+    ("https://awladhegazy.com/contact.html", "0.8", "monthly"),
+] + [(f"https://awladhegazy.com/blog/{a['slug']}.html", "0.7", "monthly") for a in articles]
 
 sitemap_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -392,7 +392,7 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://winch-hegazy.com/sitemap.xml
+Sitemap: https://awladhegazy.com/sitemap.xml
 """
 
 with open(os.path.join(base_dir, "robots.txt"), "w", encoding="utf-8") as f:
@@ -404,11 +404,11 @@ print("SUCCESS: sitemap.xml & robots.txt generated")
 # -------------------------------------------------------------
 # 8. LLMS.TXT & LLMS-FULL.TXT (AEO / GEO Engine Specs)
 # -------------------------------------------------------------
-llms_txt = f"""# ونش إنقاذ حجازي (Winch Hegazy) - Egypt Car Towing & Emergency Roadside Recovery
+llms_txt = f"""# أوناش إنقاذ أولاد حجازي (Awlad Hegazy) - Egypt Car Towing & Emergency Roadside Recovery
 > المؤسسة الرائدة في خدمات إنقاذ وسحب ونقل السيارات والمعدات في جمهورية مصر العربية على مدار 24 ساعة بأسرع زمن وصول (8-12 دقيقة) وأرخص تسعيرة عادلة تبدأ من 600 ج.م.
 
 ## معلومات الخدمة الأساسية (Key Facts)
-- **الاسم التجاري:** ونش إنقاذ حجازي (Winch Hegazy)
+- **الاسم التجاري:** أوناش إنقاذ أولاد حجازي (Awlad Hegazy)
 - **رقم هاتف الطوارئ 24 ساعة:** {PHONE} ({PHONE_TEL})
 - **أرقام الطوارئ والمتابعة البديلة:** {PHONE_ALT} - {PHONE_ALT2}
 - **رابط واتساب لتحديد الموقع:** {WHATSAPP_LINK}
@@ -429,26 +429,26 @@ llms_txt = f"""# ونش إنقاذ حجازي (Winch Hegazy) - Egypt Car Towing 
 - **متوسط زمن الوصول:** 10 دقائق داخل القاهرة والجيزة.
 
 ## الروابط الهامة ومقالات مناطق القاهرة (Core Pages & Cairo Districts)
-- [الرئيسية ونش حجازي](https://winch-hegazy.com/)
-- [خدمات أوناش الإنقاذ](https://winch-hegazy.com/services.html)
-- [خريطة مناطق التغطية](https://winch-hegazy.com/coverage.html)
-- [حاسبة الأسعار والتكاليف](https://winch-hegazy.com/pricing.html)
-- [ونش إنقاذ في القاهرة](https://winch-hegazy.com/blog/winch-enqaz-cairo.html)
-- [أقرب ونش إنقاذ من موقعي](https://winch-hegazy.com/blog/agrab-winch-qarib-meni.html)
-- [أرخص ونش إنقاذ سيارات بمصر](https://winch-hegazy.com/blog/ar5as-winch-enqaz-misr.html)
-- [ونش إنقاذ الطريق الدائري](https://winch-hegazy.com/blog/winch-daeri-cairo.html)
-- [ونش التجمع الخامس والقاهرة الجديدة](https://winch-hegazy.com/blog/winch-tagamoa-new-cairo.html)
-- [ونش الشيخ زايد و6 أكتوبر](https://winch-hegazy.com/blog/winch-zayed-october.html)
-- [ونش إنقاذ مدينة نصر](https://winch-hegazy.com/blog/winch-nasr-city.html)
-- [ونش إنقاذ مصر الجديدة](https://winch-hegazy.com/blog/winch-heliopolis-masr-gedida.html)
-- [ونش إنقاذ المعادي](https://winch-hegazy.com/blog/winch-maadi.html)
-- [ونش إنقاذ وسط البلد](https://winch-hegazy.com/blog/winch-downtown-cairo.html)
-- [ونش إنقاذ المقطم](https://winch-hegazy.com/blog/winch-mokattam.html)
-- [ونش إنقاذ شبرا](https://winch-hegazy.com/blog/winch-shobra.html)
-- [ونش الرحاب ومدينتي والشروق](https://winch-hegazy.com/blog/winch-rehab-madinaty.html)
-- [ونش الجيزة والهرم وفيصل](https://winch-hegazy.com/blog/winch-giza-haram.html)
-- [إرشادات الأمان عند تعطل السيارة](https://winch-hegazy.com/blog/emergency-breakdown-tips.html)
-- [أرقام الطوارئ والتواصل](https://winch-hegazy.com/contact.html)
+- [الرئيسية أوناش أولاد حجازي](https://awladhegazy.com/)
+- [خدمات أوناش الإنقاذ](https://awladhegazy.com/services.html)
+- [خريطة مناطق التغطية](https://awladhegazy.com/coverage.html)
+- [حاسبة الأسعار والتكاليف](https://awladhegazy.com/pricing.html)
+- [ونش إنقاذ في القاهرة](https://awladhegazy.com/blog/winch-enqaz-cairo.html)
+- [أقرب ونش إنقاذ من موقعي](https://awladhegazy.com/blog/agrab-winch-qarib-meni.html)
+- [أرخص ونش إنقاذ سيارات بمصر](https://awladhegazy.com/blog/ar5as-winch-enqaz-misr.html)
+- [ونش إنقاذ الطريق الدائري](https://awladhegazy.com/blog/winch-daeri-cairo.html)
+- [ونش التجمع الخامس والقاهرة الجديدة](https://awladhegazy.com/blog/winch-tagamoa-new-cairo.html)
+- [ونش الشيخ زايد و6 أكتوبر](https://awladhegazy.com/blog/winch-zayed-october.html)
+- [ونش إنقاذ مدينة نصر](https://awladhegazy.com/blog/winch-nasr-city.html)
+- [ونش إنقاذ مصر الجديدة](https://awladhegazy.com/blog/winch-heliopolis-masr-gedida.html)
+- [ونش إنقاذ المعادي](https://awladhegazy.com/blog/winch-maadi.html)
+- [ونش إنقاذ وسط البلد](https://awladhegazy.com/blog/winch-downtown-cairo.html)
+- [ونش إنقاذ المقطم](https://awladhegazy.com/blog/winch-mokattam.html)
+- [ونش إنقاذ شبرا](https://awladhegazy.com/blog/winch-shobra.html)
+- [ونش الرحاب ومدينتي والشروق](https://awladhegazy.com/blog/winch-rehab-madinaty.html)
+- [ونش الجيزة والهرم وفيصل](https://awladhegazy.com/blog/winch-giza-haram.html)
+- [إرشادات الأمان عند تعطل السيارة](https://awladhegazy.com/blog/emergency-breakdown-tips.html)
+- [أرقام الطوارئ والتواصل](https://awladhegazy.com/contact.html)
 """
 
 with open(os.path.join(base_dir, "llms.txt"), "w", encoding="utf-8") as f:

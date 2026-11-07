@@ -89,7 +89,7 @@ services_list = [
         "icon": "🏢",
         "title": "إنقاذ الجراجات السفلية والبدرومات الضيقة",
         "image": "hegazy_cupra_rear.jpg",
-        "desc": "تعطلت سيارتك داخل جراج مول تجاري أو بدروم عمارة سكنية بارتفاع منخفض؟ ونش حجازي يمتلك أوناشاً هيدروليكية خاصة ذات ارتفاعات منخفضة (Low Clearance) مصممة خصيصاً للدخول وسحب السيارات من داخل البدرومات.",
+        "desc": "تعطلت سيارتك داخل جراج مول تجاري أو بدروم عمارة سكنية بارتفاع منخفض؟ أوناش أولاد حجازي يمتلك أوناشاً هيدروليكية خاصة ذات ارتفاعات منخفضة (Low Clearance) مصممة خصيصاً للدخول وسحب السيارات من داخل البدرومات.",
         "features": ["دخول جراجات ارتفاع 2 متر وما دون", "سحب آمن بدون لمس الأسقف المنخفضة", "وايرات مرنة وزوايا دوران ذكية", "خدمة متوفرة في مولات التجمع والعبور وأكتوبر"]
     }
 ]
@@ -105,7 +105,7 @@ for s in services_list:
     card = f'''
     <div id="{s["id"]}" class="glass p-6 sm:p-8 rounded-3xl border border-slate-800 hover:border-amber-500/40 transition-all grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
       <div class="lg:col-span-4 rounded-2xl overflow-hidden border border-slate-700/80 shadow-xl aspect-video lg:aspect-square bg-slate-900 group">
-        <img src="assets/images/{s["image"]}" alt="{s["title"]} - ونش إنقاذ حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+        <img src="assets/images/{s["image"]}" alt="{s["title"]} - أوناش إنقاذ أولاد حجازي" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
       </div>
       <div class="lg:col-span-5 space-y-4">
         <div class="flex items-center gap-3">
@@ -133,14 +133,14 @@ for s in services_list:
 services_cards_rendered = "\n".join(services_cards_list)
 
 html_services = f"""{get_head(
-    "خدمات ونش إنقاذ حجازي | سحب ملاكي، نقل ثقيل، وحوادث 24 ساعة",
-    "تعرف على خدمات ونش إنقاذ حجازي: سحب وإنقاذ السيارات الملاكي والفاخرة، نقل المعدات والكلاركات، نقل الكرفانات، وسحب التريلات والشاحنات، والمساعدة السريعة على الطريق على مدار 24 ساعة.",
-    "https://winch-hegazy.com/services.html"
+    "خدمات أوناش إنقاذ أولاد حجازي | سحب ملاكي، نقل ثقيل، وحوادث 24 ساعة",
+    "تعرف على خدمات أوناش إنقاذ أولاد حجازي: سحب وإنقاذ السيارات الملاكي والفاخرة، نقل المعدات والكلاركات، نقل الكرفانات، وسحب التريلات والشاحنات، والمساعدة السريعة على الطريق على مدار 24 ساعة.",
+    "https://awladhegazy.com/services.html"
 )}
 {generate_local_business_schema(
-    "خدمات ونش إنقاذ حجازي | سحب ملاكي، نقل ثقيل، وحوادث 24 ساعة",
-    "خدمات ونش حجازي لإنقاذ وسحب السيارات في مصر بأحدث أوناش هيدروليكية.",
-    "https://winch-hegazy.com/services.html"
+    "خدمات أوناش إنقاذ أولاد حجازي | سحب ملاكي، نقل ثقيل، وحوادث 24 ساعة",
+    "خدمات أوناش أولاد حجازي لإنقاذ وسحب السيارات في مصر بأحدث أوناش هيدروليكية.",
+    "https://awladhegazy.com/services.html"
 )}
 </head>
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
@@ -151,7 +151,7 @@ html_services = f"""{get_head(
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <span class="px-3.5 py-1 rounded-full text-xs font-black bg-amber-500/15 text-amber-300 border border-amber-500/30 mb-3 inline-block">خدمات الإنقاذ والنقل المتخصص المتكاملة</span>
       <h1 class="text-3xl sm:text-5xl font-black text-white leading-tight">حلول إنقاذ وسحب سيارات ومعدات لكافة الحالات والأعطال</h1>
-      <p class="text-slate-400 text-sm sm:text-base mt-4 max-w-2xl mx-auto">أسطول ونش حجازي مجهز لنقل السيارات الفاخرة، المعدات الثقيلة، الكرفانات، التريلات، وعربات الجولف والفود ترك بأعلى معايير الأمان 24 ساعة.</p>
+      <p class="text-slate-400 text-sm sm:text-base mt-4 max-w-2xl mx-auto">أسطول أوناش أولاد حجازي مجهز لنقل السيارات الفاخرة، المعدات الثقيلة، الكرفانات، التريلات، وعربات الجولف والفود ترك بأعلى معايير الأمان 24 ساعة.</p>
     </div>
   </section>
 
@@ -213,14 +213,14 @@ zones = [
 ]
 
 html_coverage = f"""{get_head(
-    "مناطق تغطية ونش إنقاذ حجازي | الدائري، التجمع، أكتوبر، والمحافظات",
-    "خريطة تغطية ونش إنقاذ حجازي في مصر: أوناش متمركزة في التجمع الخامس، الشيخ زايد، 6 أكتوبر، الطريق الدائري، طريق السويس، وطريق الإسكندرية الصحراوي 24 ساعة.",
-    "https://winch-hegazy.com/coverage.html"
+    "مناطق تغطية أوناش إنقاذ أولاد حجازي | الدائري، التجمع، أكتوبر، والمحافظات",
+    "خريطة تغطية أوناش إنقاذ أولاد حجازي في مصر: أوناش متمركزة في التجمع الخامس، الشيخ زايد، 6 أكتوبر، الطريق الدائري، طريق السويس، وطريق الإسكندرية الصحراوي 24 ساعة.",
+    "https://awladhegazy.com/coverage.html"
 )}
 {generate_local_business_schema(
-    "مناطق تغطية ونش إنقاذ حجازي | الدائري، التجمع، أكتوبر، والمحافظات",
-    "تغطية ونش حجازي لإنقاذ السيارات في كافة محاور مصر.",
-    "https://winch-hegazy.com/coverage.html"
+    "مناطق تغطية أوناش إنقاذ أولاد حجازي | الدائري، التجمع، أكتوبر، والمحافظات",
+    "تغطية أوناش أولاد حجازي لإنقاذ السيارات في كافة محاور مصر.",
+    "https://awladhegazy.com/coverage.html"
 )}
 </head>
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
@@ -229,7 +229,7 @@ html_coverage = f"""{get_head(
   <section class="py-16 bg-gradient-to-b from-dark-900 to-dark-950 border-b border-slate-800 text-center">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <span class="px-3.5 py-1 rounded-full text-xs font-black bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 mb-3 inline-block">خريطة الانتشار الميداني الأوسع في مصر</span>
-      <h1 class="text-3xl sm:text-5xl font-black text-white leading-tight">أينما تعطلت.. ونش حجازي متمركز بالقرب منك</h1>
+      <h1 class="text-3xl sm:text-5xl font-black text-white leading-tight">أينما تعطلت.. أوناش أولاد حجازي متمركز بالقرب منك</h1>
       <p class="text-slate-400 text-sm sm:text-base mt-4 max-w-2xl mx-auto">نوزع أسطولنا استراتيجياً عند مطالع ومنازل الكباري والمحاور السريعة لنضمن الوصول إليك في زمن قياسي لا يتجاوز 10 دقائق.</p>
     </div>
 
@@ -340,14 +340,14 @@ print("SUCCESS: coverage.html generated")
 # 4. PRICING.HTML
 # -------------------------------------------------------------
 html_pricing = f"""{get_head(
-    "أسعار ونش إنقاذ السيارات في مصر | تسعيرة ونش حجازي بدون استغلال",
-    "تعرف على أسعار ونش إنقاذ السيارات في مصر مع ونش حجازي. تسعيرة عادلة تبدأ من 600 ج.م، حساب سعر الكيلومتر بشفافية تامة دون أي تكاليف خفية أو إكراميات إجبارية.",
-    "https://winch-hegazy.com/pricing.html"
+    "أسعار ونش إنقاذ السيارات في مصر | تسعيرة أوناش أولاد حجازي بدون استغلال",
+    "تعرف على أسعار ونش إنقاذ السيارات في مصر مع أوناش أولاد حجازي. تسعيرة عادلة تبدأ من 600 ج.م، حساب سعر الكيلومتر بشفافية تامة دون أي تكاليف خفية أو إكراميات إجبارية.",
+    "https://awladhegazy.com/pricing.html"
 )}
 {generate_local_business_schema(
-    "أسعار ونش إنقاذ السيارات في مصر | تسعيرة ونش حجازي بدون استغلال",
+    "أسعار ونش إنقاذ السيارات في مصر | تسعيرة أوناش أولاد حجازي بدون استغلال",
     "تسعيرة ونش إنقاذ سيارات عادلة ومحددة مسبقاً في مصر.",
-    "https://winch-hegazy.com/pricing.html"
+    "https://awladhegazy.com/pricing.html"
 )}
 </head>
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
@@ -451,7 +451,7 @@ print("SUCCESS: pricing.html generated")
 articles = [
     {
         "slug": "agrab-winch-qarib-meni",
-        "title": "أقرب ونش إنقاذ من موقعي: كيف يصلك ونش حجازي في أقل من 10 دقائق؟",
+        "title": "أقرب ونش إنقاذ من موقعي: كيف يصلك أوناش أولاد حجازي في أقل من 10 دقائق؟",
         "desc": "تعرف على كيفية طلب أقرب ونش إنقاذ سيارات من موقعك الجغرافي الحالي في مصر، وكيف تضمن أسرع وصول بدون تأخير أو استغلال على الطرق السريعة والمحاور.",
         "date": "2026-11-06",
         "category": "دليل الإنقاذ السريع",
@@ -461,7 +461,7 @@ articles = [
     {
         "slug": "ar5as-winch-enqaz-misr",
         "title": "أرخص ونش إنقاذ سيارات في مصر: أسعار حقيقية وكيف تتجنب استغلال الطرق؟",
-        "desc": "دليل تسعيرة أوناش إنقاذ السيارات في مصر لعام 2026: كيف يتم حساب التكلفة العادلة؟ ولماذا يعتبر ونش حجازي الخيار الأوفر والأكثر أماناً لسيارتك؟",
+        "desc": "دليل تسعيرة أوناش إنقاذ السيارات في مصر لعام 2026: كيف يتم حساب التكلفة العادلة؟ ولماذا يعتبر أوناش أولاد حجازي الخيار الأوفر والأكثر أماناً لسيارتك؟",
         "date": "2026-11-06",
         "category": "شفافية الأسعار",
         "read_time": "5 دقائق",
@@ -506,7 +506,7 @@ articles = [
     {
         "slug": "winch-enqaz-cairo",
         "title": "ونش إنقاذ في القاهرة: أسرع خدمة سحب سيارات 24 ساعة في كافة أحياء العاصمة",
-        "desc": "دليل ونش إنقاذ سيارات في القاهرة من ونش حجازي. تغطية شاملة لجميع أحياء القاهرة الكبرى والجيزة خلال 10 دقائق بأحدث أوناش هيدروليكية وأرخص سعر يبدأ من 600 جنيه.",
+        "desc": "دليل ونش إنقاذ سيارات في القاهرة من أوناش أولاد حجازي. تغطية شاملة لجميع أحياء القاهرة الكبرى والجيزة خلال 10 دقائق بأحدث أوناش هيدروليكية وأرخص سعر يبدأ من 600 جنيه.",
         "date": "2026-11-06",
         "category": "أوناش القاهرة الكبرى",
         "read_time": "6 دقائق",
@@ -515,7 +515,7 @@ articles = [
     {
         "slug": "winch-nasr-city",
         "title": "ونش إنقاذ في مدينة نصر: أسرع ونش سيارات في مكرم عبيد وعباس العقاد والحي العاشر",
-        "desc": "خدمة ونش إنقاذ سيارات في مدينة نصر من ونش حجازي 24 ساعة. متمركزون في مكرم عبيد، عباس العقاد، الحي العاشر، وزهراء مدينة نصر. وصول في 10 دقائق بسعر يبدأ من 600 ج.",
+        "desc": "خدمة ونش إنقاذ سيارات في مدينة نصر من أوناش أولاد حجازي 24 ساعة. متمركزون في مكرم عبيد، عباس العقاد، الحي العاشر، وزهراء مدينة نصر. وصول في 10 دقائق بسعر يبدأ من 600 ج.",
         "date": "2026-11-06",
         "category": "أوناش القاهرة الكبرى",
         "read_time": "5 دقائق",
@@ -525,7 +525,7 @@ articles = [
         "slug": "winch-heliopolis-masr-gedida",
         "image": "hegazy_porsche_highway_rear.jpg",
         "title": "ونش إنقاذ في مصر الجديدة: خدمة سريعة في الكوربة وروكسي والنزهة وشيراتون",
-        "desc": "طلب ونش إنقاذ سيارات في مصر الجديدة من ونش حجازي. أوناش حديثة متمركزة في روكسي، الكوربة، الميرغني، تريومف، وميدان الحجاز 24 ساعة. اتصل الآن 01032194206.",
+        "desc": "طلب ونش إنقاذ سيارات في مصر الجديدة من أوناش أولاد حجازي. أوناش حديثة متمركزة في روكسي، الكوربة، الميرغني، تريومف، وميدان الحجاز 24 ساعة. اتصل الآن 01032194206.",
         "date": "2026-11-06",
         "category": "أوناش القاهرة الكبرى",
         "read_time": "5 دقائق",
@@ -534,7 +534,7 @@ articles = [
     {
         "slug": "winch-maadi",
         "title": "ونش إنقاذ في المعادي: أوناش متمركزة على الأوتوستراد ودجلة وكورنيش المعادي وصقر قريش",
-        "desc": "ونش إنقاذ سيارات في المعادي من ونش حجازي. تغطية سريعة على كورنيش المعادي، دجلة، ثكنات المعادي، زهراء المعادي، وصقر قريش 24/7 بسعر يبدأ من 600 ج. اتصل 01032194206.",
+        "desc": "ونش إنقاذ سيارات في المعادي من أوناش أولاد حجازي. تغطية سريعة على كورنيش المعادي، دجلة، ثكنات المعادي، زهراء المعادي، وصقر قريش 24/7 بسعر يبدأ من 600 ج. اتصل 01032194206.",
         "date": "2026-11-06",
         "category": "أوناش القاهرة الكبرى",
         "read_time": "5 دقائق",
@@ -543,7 +543,7 @@ articles = [
     {
         "slug": "winch-downtown-cairo",
         "title": "ونش إنقاذ في وسط البلد: سحب فوري في التحرير ورمسيس والزمالك وجاردن سيتي",
-        "desc": "ونش إنقاذ سيارات في وسط البلد، ميدان التحرير، طلعت حرب، رمسيس، العتبة، وجزيرة الزمالك 24 ساعة. مناورة سريعة وأرخص سعر سحب مع ونش حجازي. اتصل 01032194206.",
+        "desc": "ونش إنقاذ سيارات في وسط البلد، ميدان التحرير، طلعت حرب، رمسيس، العتبة، وجزيرة الزمالك 24 ساعة. مناورة سريعة وأرخص سعر سحب مع أوناش أولاد حجازي. اتصل 01032194206.",
         "date": "2026-11-06",
         "category": "أوناش القاهرة الكبرى",
         "read_time": "5 دقائق",
@@ -552,7 +552,7 @@ articles = [
     {
         "slug": "winch-mokattam",
         "title": "ونش إنقاذ في المقطم: خدمة سريعة في الهضبة الوسطى وشارع 9 وكورنيش المقطم",
-        "desc": "خدمات ونش إنقاذ سيارات في المقطم من ونش حجازي. أوناش قوية مجهزة للمطالع والمنحدرات الجبلية في الهضبة العليا والوسطى وشارع 9 على مدار 24 ساعة. اتصل 01032194206.",
+        "desc": "خدمات ونش إنقاذ سيارات في المقطم من أوناش أولاد حجازي. أوناش قوية مجهزة للمطالع والمنحدرات الجبلية في الهضبة العليا والوسطى وشارع 9 على مدار 24 ساعة. اتصل 01032194206.",
         "date": "2026-11-06",
         "category": "أوناش القاهرة الكبرى",
         "read_time": "5 دقائق",
@@ -561,7 +561,7 @@ articles = [
     {
         "slug": "winch-shobra",
         "title": "ونش إنقاذ في شبرا: سحب سيارات في شبرا مصر وشبرا الخيمة وروض الفرج ومظلات",
-        "desc": "طلب ونش إنقاذ سيارات في شبرا مصر وشبرا الخيمة وروض الفرج والمظلات 24 ساعة من ونش حجازي. وصول سريع وأرخص تسعيرة سحب سيارات تبدأ من 600 جنيه. اتصل 01032194206.",
+        "desc": "طلب ونش إنقاذ سيارات في شبرا مصر وشبرا الخيمة وروض الفرج والمظلات 24 ساعة من أوناش أولاد حجازي. وصول سريع وأرخص تسعيرة سحب سيارات تبدأ من 600 جنيه. اتصل 01032194206.",
         "date": "2026-11-06",
         "category": "أوناش القاهرة الكبرى",
         "read_time": "5 دقائق",
@@ -570,7 +570,7 @@ articles = [
     {
         "slug": "winch-rehab-madinaty",
         "title": "ونش إنقاذ في الرحاب ومدينتي والشروق والعبور: أوناش حديثة شرق القاهرة 24 ساعة",
-        "desc": "خدمات ونش إنقاذ سيارات في مدينتي، الرحاب، الشروق، المستقبل سيتي، وبدر والعبور من ونش حجازي. أحدث أوناش هيدروليكية لحماية السيارات الفاخرة. اتصل الآن 01032194206.",
+        "desc": "خدمات ونش إنقاذ سيارات في مدينتي، الرحاب، الشروق، المستقبل سيتي، وبدر والعبور من أوناش أولاد حجازي. أحدث أوناش هيدروليكية لحماية السيارات الفاخرة. اتصل الآن 01032194206.",
         "date": "2026-11-06",
         "category": "أوناش المدن الجديدة",
         "read_time": "5 دقائق",
@@ -579,7 +579,7 @@ articles = [
     {
         "slug": "winch-giza-haram",
         "title": "ونش إنقاذ في الجيزة والهرم وفيصل: أسرع ونش سيارات على الدائري وحدائق الأهرام",
-        "desc": "طلب ونش إنقاذ سيارات في الجيزة، شارع الهرم، شارع فيصل، حدائق الأهرام، والرماية 24 ساعة من ونش حجازي. وصول خلال 10 دقائق وأرخص سعر سحب سيارات. اتصل 01032194206.",
+        "desc": "طلب ونش إنقاذ سيارات في الجيزة، شارع الهرم، شارع فيصل، حدائق الأهرام، والرماية 24 ساعة من أوناش أولاد حجازي. وصول خلال 10 دقائق وأرخص سعر سحب سيارات. اتصل 01032194206.",
         "date": "2026-11-06",
         "category": "أوناش غرب القاهرة والجيزة",
         "read_time": "5 دقائق",
@@ -588,7 +588,7 @@ articles = [
     {
         "slug": "winch-obour-city",
         "title": "ونش إنقاذ مدينة العبور: أسرع ونش سيارات عند كارفور وجولف سيتي وسوق العبور 24 ساعة",
-        "desc": "خدمات ونش إنقاذ سيارات في مدينة العبور من ونش حجازي. ارتكاز رئيسي أمام كارفور العبور وجولف سيتي وسوق العبور والحي الأول حتى التاسع. وصول خلال 5 إلى 8 دقائق. اتصل 01032194206.",
+        "desc": "خدمات ونش إنقاذ سيارات في مدينة العبور من أوناش أولاد حجازي. ارتكاز رئيسي أمام كارفور العبور وجولف سيتي وسوق العبور والحي الأول حتى التاسع. وصول خلال 5 إلى 8 دقائق. اتصل 01032194206.",
         "date": "2026-11-06",
         "category": "أوناش شرق القاهرة والمدن الجديدة",
         "read_time": "5 دقائق",
@@ -597,7 +597,7 @@ articles = [
     {
         "slug": "winch-shorouk-badr",
         "title": "ونش إنقاذ مدينة الشروق ومدينة بدر: أوناش متمركزة على طريق السويس والإسماعيلية والروبيكي",
-        "desc": "طلب ونش إنقاذ سيارات في مدينة الشروق ومدينة بدر من ونش حجازي 24 ساعة. أوناش حديثة تغطي الروبيكي، هليوبوليس الجديدة، الجامعة البريطانية والروسية. اتصل الآن 01032194206.",
+        "desc": "طلب ونش إنقاذ سيارات في مدينة الشروق ومدينة بدر من أوناش أولاد حجازي 24 ساعة. أوناش حديثة تغطي الروبيكي، هليوبوليس الجديدة، الجامعة البريطانية والروسية. اتصل الآن 01032194206.",
         "date": "2026-11-06",
         "category": "أوناش شرق القاهرة والمدن الجديدة",
         "read_time": "5 دقائق",
@@ -606,7 +606,7 @@ articles = [
     {
         "slug": "winch-new-capital",
         "title": "ونش إنقاذ العاصمة الإدارية الجديدة: خدمة VIP على محور بن زايد والحي الحكومي والمال والأعمال",
-        "desc": "خدمات ونش إنقاذ سيارات في العاصمة الإدارية الجديدة من ونش حجازي. أحدث أسطول هيدروليكي مسطح لنقل السيارات الفاخرة في الحي الحكومي والبرج الأيقوني والدائري الأوسطي 24/7. اتصل 01032194206.",
+        "desc": "خدمات ونش إنقاذ سيارات في العاصمة الإدارية الجديدة من أوناش أولاد حجازي. أحدث أسطول هيدروليكي مسطح لنقل السيارات الفاخرة في الحي الحكومي والبرج الأيقوني والدائري الأوسطي 24/7. اتصل 01032194206.",
         "date": "2026-11-06",
         "category": "أوناش شرق القاهرة والمدن الجديدة",
         "read_time": "5 دقائق",
@@ -615,7 +615,7 @@ articles = [
     {
         "slug": "winch-salam-herfeyein-nahda",
         "title": "ونش إنقاذ مدينة السلام والحرفيين والنهضة: أسرع سحب عند موقف العاشر ومحطة عدلي منصور",
-        "desc": "طلب ونش إنقاذ سيارات في مدينة السلام، الحرفيين، مساكن النهضة، وموقف العاشر من ونش حجازي 24 ساعة. سحب فوري ونقل مباشر لأكبر ورش الصيانة والتوكيلات بأرخص سعر. اتصل 01032194206.",
+        "desc": "طلب ونش إنقاذ سيارات في مدينة السلام، الحرفيين، مساكن النهضة، وموقف العاشر من أوناش أولاد حجازي 24 ساعة. سحب فوري ونقل مباشر لأكبر ورش الصيانة والتوكيلات بأرخص سعر. اتصل 01032194206.",
         "date": "2026-11-06",
         "category": "أوناش شرق القاهرة والمدن الجديدة",
         "read_time": "5 دقائق",
@@ -626,15 +626,15 @@ articles = [
 
 # Blog Index Page
 html_blog_index = f"""{get_head(
-    "دليل ومقالات أوناش إنقاذ السيارات في مصر | مدونة ونش حجازي",
+    "دليل ومقالات أوناش إنقاذ السيارات في مصر | مدونة أوناش أولاد حجازي",
     "مقالات وإرشادات شاملة عن خدمات أوناش إنقاذ السيارات في مصر: كيفية العثور على أقرب ونش، أسعار السحب العادلة، تغطية الطريق الدائري والمحاور، وإرشادات السلامة عند الأعطال.",
-    "https://winch-hegazy.com/blog/index.html",
+    "https://awladhegazy.com/blog/index.html",
     is_blog=True
 )}
 {generate_local_business_schema(
-    "دليل ومقالات أوناش إنقاذ السيارات في مصر | مدونة ونش حجازي",
-    "مقالات ونش حجازي لإنقاذ السيارات في مصر.",
-    "https://winch-hegazy.com/blog/index.html"
+    "دليل ومقالات أوناش إنقاذ السيارات في مصر | مدونة أوناش أولاد حجازي",
+    "مقالات أوناش أولاد حجازي لإنقاذ السيارات في مصر.",
+    "https://awladhegazy.com/blog/index.html"
 )}
 </head>
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
@@ -698,34 +698,34 @@ def generate_article_file(art, content_body):
         "description": art["desc"],
         "image": {
             "@type": "ImageObject",
-            "url": f"https://winch-hegazy.com/assets/images/{img_filename}",
+            "url": f"https://awladhegazy.com/assets/images/{img_filename}",
             "caption": art["title"]
         },
-        "url": f"https://winch-hegazy.com/blog/{art['slug']}.html",
+        "url": f"https://awladhegazy.com/blog/{art['slug']}.html",
         "datePublished": "2026-11-06T10:00:00+02:00",
         "dateModified": "2026-11-06T10:00:00+02:00",
         "author": {
             "@type": "Organization",
-            "name": "فريق طوارئ ونش حجازي الميداني",
-            "url": "https://winch-hegazy.com/"
+            "name": "فريق طوارئ أوناش أولاد حجازي الميداني",
+            "url": "https://awladhegazy.com/"
         },
         "publisher": {
             "@type": "Organization",
-            "name": "ونش إنقاذ حجازي",
+            "name": "أوناش إنقاذ أولاد حجازي",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://winch-hegazy.com/assets/images/logo.png"
+                "url": "https://awladhegazy.com/assets/images/logo.png"
             }
         },
-        "mainEntityOfPage": f"https://winch-hegazy.com/blog/{art['slug']}.html"
+        "mainEntityOfPage": f"https://awladhegazy.com/blog/{art['slug']}.html"
     }
 
     schema_str = f'<script type="application/ld+json">\n{json.dumps(schema_article, ensure_ascii=False, indent=2)}\n</script>'
     
     html = f"""{get_head(
-        f"{art['title']} | ونش حجازي",
+        f"{art['title']} | أوناش أولاد حجازي",
         art["desc"],
-        f"https://winch-hegazy.com/blog/{art['slug']}.html",
+        f"https://awladhegazy.com/blog/{art['slug']}.html",
         is_blog=True
     )}
 {schema_str}
@@ -762,7 +762,7 @@ def generate_article_file(art, content_body):
       </p>
 
       <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 pt-2 border-t border-slate-800">
-        <div>بواسطة: <strong class="text-white">فريق العمليات الميدانية - ونش حجازي</strong></div>
+        <div>بواسطة: <strong class="text-white">فريق العمليات الميدانية - أوناش أولاد حجازي</strong></div>
         <div>آخر تحديث: <strong>{art['date']}</strong></div>
       </div>
     </header>
@@ -774,7 +774,7 @@ def generate_article_file(art, content_body):
           <span class="w-2.5 h-2.5 rounded-full bg-rescue-500 animate-ping"></span>
           <span>هل أنت متعطل الآن وتحتاج ونش فوري؟</span>
         </div>
-        <p class="text-xs text-slate-300 mt-1">لا تضيع وقتك في البحث.. أسطول ونش حجازي متواجد بالقرب منك ويصلك خلال دقائق.</p>
+        <p class="text-xs text-slate-300 mt-1">لا تضيع وقتك في البحث.. أسطول أوناش أولاد حجازي متواجد بالقرب منك ويصلك خلال دقائق.</p>
       </div>
       <a href="tel:{PHONE}" class="px-6 py-3 bg-rescue-600 hover:bg-rescue-500 text-white font-black rounded-xl text-sm shrink-0 shadow-lg glow-red flex items-center gap-2">
         <span>اتصل الآن ({PHONE_DISPLAY})</span>
@@ -783,10 +783,10 @@ def generate_article_file(art, content_body):
 
     <!-- Featured Real Operational Image -->
     <figure class="my-8 rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl bg-slate-900">
-      <img src="../assets/images/{img_filename}" alt="{art['title']} - ونش إنقاذ حجازي" class="w-full h-64 sm:h-96 object-cover hover:scale-[1.01] transition-transform duration-500" loading="eager">
+      <img src="../assets/images/{img_filename}" alt="{art['title']} - أوناش إنقاذ أولاد حجازي" class="w-full h-64 sm:h-96 object-cover hover:scale-[1.01] transition-transform duration-500" loading="eager">
       <figcaption class="p-3 text-center text-xs text-slate-400 bg-slate-950/80 border-t border-slate-800 flex items-center justify-center gap-2">
         <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-        <span>صورة حية وموثقة من أسطول ونش إنقاذ حجازي الميداني أثناء تنفيذ عمليات السحب والإنقاذ</span>
+        <span>صورة حية وموثقة من أسطول أوناش إنقاذ أولاد حجازي الميداني أثناء تنفيذ عمليات السحب والإنقاذ</span>
       </figcaption>
     </figure>
 
@@ -797,7 +797,7 @@ def generate_article_file(art, content_body):
 
     <!-- Bottom Action Box -->
     <div class="mt-12 p-8 rounded-3xl glass border border-amber-500/30 text-center space-y-4">
-      <h3 class="text-2xl font-black text-white">ونش إنقاذ حجازي في خدمتك 24 ساعة</h3>
+      <h3 class="text-2xl font-black text-white">أوناش إنقاذ أولاد حجازي في خدمتك 24 ساعة</h3>
       <p class="text-slate-400 text-sm max-w-xl mx-auto">أرخص سعر، أحدث أوناش هيدروليكية، وأسرع استجابة في جميع محافظات مصر والطرق السريعة.</p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
         <a href="tel:{PHONE}" class="w-full sm:w-auto px-8 py-3.5 bg-gradient-to-r from-rescue-600 to-amber-500 text-white font-black rounded-xl shadow-lg glow-red">

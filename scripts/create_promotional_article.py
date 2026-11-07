@@ -14,8 +14,8 @@ from build_articles_engine import generate_article_file
 promo_article = {
     "slug": "winch-offers-discounts-cairo",
     "image": "hegazy_red_truck_branding.jpg",
-    "title": "عروض وخصومات ونش إنقاذ حجازي: خصم 50% لأول 100 عميل، بدون إكرامية للسائق، ومساهمة في رسوم الكارتة",
-    "desc": "تعرف على عروض وخصومات ونش حجازي لإنقاذ السيارات 2026: خصم يصل إلى 50% لأول 100 عميل، بدون أي إكرامية إجبارية للسائق، ومساهمة في دفع رسوم الكارتة للطرق السريعة مع أسعار حقيقية تبدأ من 600 ج.م.",
+    "title": "عروض وخصومات أوناش إنقاذ أولاد حجازي: خصم 50% لأول 100 عميل، بدون إكرامية للسائق، ومساهمة في رسوم الكارتة",
+    "desc": "تعرف على عروض وخصومات أوناش أولاد حجازي لإنقاذ السيارات 2026: خصم يصل إلى 50% لأول 100 عميل، بدون أي إكرامية إجبارية للسائق، ومساهمة في دفع رسوم الكارتة للطرق السريعة مع أسعار حقيقية تبدأ من 600 ج.م.",
     "date": "2026-11-06",
     "category": "عروض وشفافية الأسعار 2026",
     "read_time": "5 دقائق",
@@ -28,7 +28,7 @@ promo_article = {
   </div>
   <h2 class="text-2xl sm:text-3xl font-black text-white mb-3">كود الخصم الحصري: <span class="text-amber-400 font-mono tracking-wider bg-slate-950 px-3 py-1 rounded-xl border border-amber-500/40">HEGAZY50</span></h2>
   <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6 font-medium">
-    احصل فوراً على <strong>خصم يصل إلى 50%</strong> على مشوار سحب وإنقاذ سيارتك من أسطول <strong>ونش إنقاذ حجازي</strong>. اذكر كود الخصم <strong>(HEGAZY50)</strong> لمسؤول العمليات أثناء المكالمة وسيتم تطبيق الخصم مباشرة على الفاتورة التقديرية.
+    احصل فوراً على <strong>خصم يصل إلى 50%</strong> على مشوار سحب وإنقاذ سيارتك من أسطول <strong>أوناش إنقاذ أولاد حجازي</strong>. اذكر كود الخصم <strong>(HEGAZY50)</strong> لمسؤول العمليات أثناء المكالمة وسيتم تطبيق الخصم مباشرة على الفاتورة التقديرية.
   </p>
   <div class="flex flex-wrap items-center gap-3">
     <a href="tel:{PHONE}" class="px-6 py-3.5 bg-gradient-to-r from-rescue-600 to-amber-500 text-white font-black rounded-xl text-sm shadow-lg glow-red hover:opacity-95 transition flex items-center gap-2">
@@ -41,7 +41,7 @@ promo_article = {
   </div>
 </div>
 
-<h2 class="text-xl sm:text-2xl font-black text-amber-300 mt-10 mb-4">1. الشفافية والمصداقية: لماذا تبدأ أسعار ونش حجازي من 600 جنيه؟</h2>
+<h2 class="text-xl sm:text-2xl font-black text-amber-300 mt-10 mb-4">1. الشفافية والمصداقية: لماذا تبدأ أسعار أوناش أولاد حجازي من 600 جنيه؟</h2>
 <p class="leading-relaxed">
   مع الارتفاعات المتتالية في <strong>أسعار البنزين والسولار وتكاليف تشغيل وصيانة أوناش الإنقاذ الهيدروليكية الحديثة لعام 2026</strong>، يلاحظ الكثير من قائدي السيارات وجود إعلانات مضللة على الإنترنت تدعي أسعاراً وهمية مثل <em>"ونش إنقاذ بـ 200 أو 600 جنيه"</em>.
 </p>
@@ -49,17 +49,17 @@ promo_article = {
   ولكن ما يحدث على أرض الواقع عند الاتصال بهذه الأرقام، هو أن السائق يفاجئ العميل بعد وصوله بمضاعفة السعر أو طلب 800 إلى 1200 جنيه تحت مسميات "فرق مسافة" أو "سعر السولار الجديد"، مما يضع العميل في موقف حرج وهو متعطل في الشارع.
 </p>
 <p class="leading-relaxed">
-  في <strong>ونش إنقاذ حجازي</strong>، نؤمن بأن <strong>المصداقية والأمانة هي رأس مالنا الحقيقي</strong>. لذلك، حددنا تسعيرة واقعية ومحسوبة بدقة تبدأ من <strong>600 جنيه مصري</strong> للسحب الداخلي، ونبلغ العميل بالسعر النهائي الصافي قبل تحرك الونش إليه، وما نتفق عليه في الهاتف هو ما يتم دفعه بالضبط بدون زيادة مليم واحد.
+  في <strong>أوناش إنقاذ أولاد حجازي</strong>، نؤمن بأن <strong>المصداقية والأمانة هي رأس مالنا الحقيقي</strong>. لذلك، حددنا تسعيرة واقعية ومحسوبة بدقة تبدأ من <strong>600 جنيه مصري</strong> للسحب الداخلي، ونبلغ العميل بالسعر النهائي الصافي قبل تحرك الونش إليه، وما نتفق عليه في الهاتف هو ما يتم دفعه بالضبط بدون زيادة مليم واحد.
 </p>
 
 <h2 class="text-xl sm:text-2xl font-black text-amber-300 mt-10 mb-4">2. سياسة "بدون أي إكرامية إجبارية للسائق" (No Mandatory Tips)</h2>
 <p class="leading-relaxed">
-  نعلم أن لحظة تعطل السيارة أو وقوع حادث لا قدر الله هي لحظة ضغط عصبي وتوتر. لذلك وضعنا قاعدة صارمة في إدارة ونش حجازي:
+  نعلم أن لحظة تعطل السيارة أو وقوع حادث لا قدر الله هي لحظة ضغط عصبي وتوتر. لذلك وضعنا قاعدة صارمة في إدارة أوناش أولاد حجازي:
 </p>
 <div class="glass p-5 rounded-2xl border border-slate-700 bg-slate-900/60 my-4 space-y-3">
   <div class="flex items-center gap-3 text-emerald-400 font-bold">
     <span class="text-xl">✓</span>
-    <span>رواتب وحوافز مجزية: سائقو وفنيو أسطول ونش حجازي يتقاضون أجوراً كريمة ومكافآت عن كل عملية إنقاذ ناجحة.</span>
+    <span>رواتب وحوافز مجزية: سائقو وفنيو أسطول أوناش أولاد حجازي يتقاضون أجوراً كريمة ومكافآت عن كل عملية إنقاذ ناجحة.</span>
   </div>
   <div class="flex items-center gap-3 text-emerald-400 font-bold">
     <span class="text-xl">✓</span>
@@ -71,18 +71,18 @@ promo_article = {
   </div>
 </div>
 
-<h2 class="text-xl sm:text-2xl font-black text-amber-300 mt-10 mb-4">3. مساهمة ونش حجازي في دفع رسوم الكارتة للطرق السريعة</h2>
+<h2 class="text-xl sm:text-2xl font-black text-amber-300 mt-10 mb-4">3. مساهمة أوناش أولاد حجازي في دفع رسوم الكارتة للطرق السريعة</h2>
 <p class="leading-relaxed">
-  إذا تعطلت سيارتك على أحد الطرق السريعة المزودة ببوابات رسوم (مثل <strong>طريق مصر - الإسماعيلية الصحراوي، طريق القاهرة - السويس الصحراوي، طريق العين السخنة، أو الطريق الدائري الإقليمي</strong>)، فإننا في ونش حجازي نتحمل أو نساهم في دفع جزء من رسوم الكارتة لتخفيف العبء المالي الإجمالي عنك، وضمان مرور الونش وسيارتك بسلاسة وسرعة فائقة حتى الوصول لبيتك أو مركز الصيانة.
+  إذا تعطلت سيارتك على أحد الطرق السريعة المزودة ببوابات رسوم (مثل <strong>طريق مصر - الإسماعيلية الصحراوي، طريق القاهرة - السويس الصحراوي، طريق العين السخنة، أو الطريق الدائري الإقليمي</strong>)، فإننا في أوناش أولاد حجازي نتحمل أو نساهم في دفع جزء من رسوم الكارتة لتخفيف العبء المالي الإجمالي عنك، وضمان مرور الونش وسيارتك بسلاسة وسرعة فائقة حتى الوصول لبيتك أو مركز الصيانة.
 </p>
 
-<h2 class="text-xl sm:text-2xl font-black text-amber-300 mt-10 mb-4">4. جدول مقارنة: ونش حجازي مقابل الأوناش الأخرى</h2>
+<h2 class="text-xl sm:text-2xl font-black text-amber-300 mt-10 mb-4">4. جدول مقارنة: أوناش أولاد حجازي مقابل الأوناش الأخرى</h2>
 <div class="overflow-x-auto my-6">
   <table class="w-full text-right text-xs sm:text-sm border border-slate-800 rounded-2xl overflow-hidden">
     <thead class="bg-slate-900 text-amber-300 font-bold">
       <tr>
         <th class="p-3 border-b border-slate-800">وجه المقارنة</th>
-        <th class="p-3 border-b border-slate-800 text-emerald-400">ونش إنقاذ حجازي</th>
+        <th class="p-3 border-b border-slate-800 text-emerald-400">أوناش إنقاذ أولاد حجازي</th>
         <th class="p-3 border-b border-slate-800 text-slate-400">الأوناش الفردية الأخرى</th>
       </tr>
     </thead>
@@ -175,7 +175,7 @@ with open(sitemap_path, "r", encoding="utf-8") as f:
     s_code = f.read()
 
 new_sitemap_entry = f'''  <url>
-    <loc>https://winch-hegazy.com/blog/winch-offers-discounts-cairo.html</loc>
+    <loc>https://awladhegazy.com/blog/winch-offers-discounts-cairo.html</loc>
     <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -193,7 +193,7 @@ llms_path = os.path.join(base_dir, "llms.txt")
 with open(llms_path, "r", encoding="utf-8") as f:
     l_code = f.read()
 
-new_llms_entry = "- [عروض وخصومات ونش حجازي (خصم 50% وبدون إكرامية)](https://winch-hegazy.com/blog/winch-offers-discounts-cairo.html)\n"
+new_llms_entry = "- [عروض وخصومات أوناش أولاد حجازي (خصم 50% وبدون إكرامية)](https://awladhegazy.com/blog/winch-offers-discounts-cairo.html)\n"
 if "winch-offers-discounts-cairo.html" not in l_code:
     l_code = l_code.replace("- [أرقام الطوارئ والتواصل]", new_llms_entry + "- [أرقام الطوارئ والتواصل]")
     with open(llms_path, "w", encoding="utf-8") as f:
