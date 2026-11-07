@@ -30,7 +30,7 @@ eastern_articles = [
     <h2 class="text-xl font-black text-amber-300 m-0">نقطة الارتكاز الميداني المباشر (Home Base):</h2>
   </div>
   <p class="text-white text-base leading-relaxed mb-4 font-medium">
-    تعتبر <strong>مدينة العبور</strong> المقر الميداني الرئيسي لأسطول <strong>أوناش إنقاذ أولاد حجازي</strong>. نحن متمركزون مباشرة أمام <strong>كارفور العبور وجولف سيتي مول</strong> ومطلع الطريق الدائري ومحور العبور الرئيسي، مما يتيح لنا الوصول إلى أي نقطة داخل العبور أو سوق العبور في زمن قياسي يتراوح بين <strong>5 إلى 8 دقائق فقط</strong> بأرخص سعر يبدأ من <strong>600 جنيه مصري</strong>.
+    تعتبر <strong>مدينة العبور</strong> المقر الميداني الرئيسي لأسطول <strong>أوناش إنقاذ أولاد حجازي</strong>. نحن متمركزون مباشرة أمام <strong>كارفور العبور وجولف سيتي مول</strong> ومطلع الطريق الدائري ومحور العبور الرئيسي، مما يتيح لنا الوصول إلى أي نقطة داخل العبور أو سوق العبور في زمن قياسي يتراوح بين <strong>5 إلى 8 دقائق فقط</strong> بأرخص سعر يبدأ من <strong>750 جنيه مصري</strong>.
   </p>
   <div class="flex flex-wrap items-center gap-3 pt-2">
     <a href="tel:{PHONE}" class="px-5 py-2.5 bg-gradient-to-r from-rescue-600 to-amber-500 text-white font-black text-sm rounded-xl shadow-lg glow-red">

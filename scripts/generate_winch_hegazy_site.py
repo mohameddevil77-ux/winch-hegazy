@@ -13,7 +13,7 @@ from build_winch_helpers import (
 # -------------------------------------------------------------
 faq_home = [
     ("كم تكلفة ونش إنقاذ السيارات في مصر مع أوناش أولاد حجازي؟", 
-     "تبدأ أسعار أوناش أولاد حجازي من 600 جنيه مصري فقط للخدمات الأساسية داخل نفس النطاق الجغرافي. نعتمد نظام تسعير عادل وشفاف يعتمد على المسافة الفعلية ونوع السيارة دون أي استغلال لوقت الطوارئ، مع إبلاغك بالسعر النهائي الصافي قبل تحرك الونش إليك."),
+     "تبدأ أسعار أوناش أولاد حجازي من 750 جنيه مصري فقط للخدمات الأساسية داخل نفس النطاق الجغرافي. نعتمد نظام تسعير عادل وشفاف يعتمد على المسافة الفعلية ونوع السيارة دون أي استغلال لوقت الطوارئ، مع إبلاغك بالسعر النهائي الصافي قبل تحرك الونش إليك."),
     ("كم يستغرق وصول أوناش إنقاذ أولاد حجازي إلى موقعي؟",
      "متوسط وقت الوصول الفعلي يتراوح بين 8 إلى 12 دقيقة داخل مناطق القاهرة الكبرى والجيزة، وبحد أقصى 15 دقيقة على الطرق السريعة والصحراوية (مثل الدائري، طريق السويس، ومصر إسكندرية الصحراوي)، وذلك بفضل شبكة ارتكاز أوناشنا الموزعة على مدار 24 ساعة."),
     ("كيف أحدد موقعي للونش إذا تعطلت سيارتي ولا أعرف مكاني بدقة؟",
@@ -26,14 +26,14 @@ faq_home = [
 
 html_index = f"""{get_head(
     "أوناش إنقاذ أولاد حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
-    f"أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 600 جنيه. اتصل الآن {PHONE_DISPLAY}.",
+    f"أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 750 جنيه. اتصل الآن {PHONE_DISPLAY}.",
     "https://awladhegazy.com/",
     is_blog=False,
     preload_lcp="assets/images/hero_rescue_bg.webp"
 )}
 {generate_local_business_schema(
     "أوناش إنقاذ أولاد حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
-    f"أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 600 جنيه. اتصل الآن {PHONE_DISPLAY}.",
+    f"أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 750 جنيه. اتصل الآن {PHONE_DISPLAY}.",
     "https://awladhegazy.com/"
 )}
 {generate_faq_schema(faq_home)}
@@ -47,8 +47,15 @@ html_index = f"""{get_head(
 
   <main id="main-content">
 
-  <!-- Hero Section -->
-  <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(to bottom, rgba(3, 7, 18, 0.84), rgba(3, 7, 18, 0.96)), url('assets/images/hero_rescue_bg.webp');">
+  <!-- Hero Section (Optimized for Sub-2.0s Mobile LCP) -->
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+    <!-- Eager Responsive LCP Background Picture (Discovered Instantly by Scanner) -->
+    <picture class="absolute inset-0 w-full h-full -z-20 pointer-events-none">
+      <source media="(max-width: 640px)" srcset="assets/images/hero_rescue_mobile.webp" type="image/webp">
+      <img src="assets/images/hero_rescue_bg.webp" alt="ونش إنقاذ سيارات أوناش أولاد حجازي" width="1376" height="768" fetchpriority="high" decoding="sync" loading="eager" class="w-full h-full object-cover">
+    </picture>
+    <!-- Dark Vignette Overlay for Text Legibility -->
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0b0f17]/85 via-[#0b0f17]/90 to-[#0b0f17] -z-10 pointer-events-none"></div>
     <div class="absolute inset-0 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none"></div>
     <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute bottom-1/4 left-1/4 w-96 h-96 bg-rescue-600/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -99,7 +106,7 @@ html_index = f"""{get_head(
               <div class="text-[11px] md:text-xs text-slate-400 font-bold">متوسط وقت الوصول</div>
             </div>
             <div class="glass p-3 rounded-xl border border-emerald-500/20">
-              <div class="text-xl md:text-2xl font-black text-emerald-400">600 ج.م</div>
+              <div class="text-xl md:text-2xl font-black text-emerald-400">750 ج.م</div>
               <div class="text-[11px] md:text-xs text-slate-400 font-bold">أرخص سعر بدء خدمة</div>
             </div>
             <div class="glass p-3 rounded-xl border border-cyan-500/20">
@@ -220,7 +227,7 @@ html_index = f"""{get_head(
         <div class="bg-slate-950/80 p-5 rounded-2xl border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <div>
             <div class="text-xs text-slate-400">التكلفة التقديرية العادلة:</div>
-            <div class="text-2xl md:text-3xl font-black text-amber-400" id="calcPrice">600 - 750 ج.م</div>
+            <div class="text-2xl md:text-3xl font-black text-amber-400" id="calcPrice">750 - 950 ج.م</div>
             <div class="text-[11px] text-emerald-400 font-semibold" id="calcTime">✓ زمن الوصول المقدر: 8 - 12 دقيقة</div>
           </div>
           <a href="tel:{PHONE}" class="w-full md:w-auto px-6 py-3.5 bg-gradient-to-r from-rescue-600 to-amber-500 text-white font-black text-sm rounded-xl shadow-lg glow-red hover:opacity-95 transition text-center">
@@ -236,7 +243,7 @@ html_index = f"""{get_head(
               <span>ميثاق الشفافية والمصداقية مع تغيرات أسعار الوقود 2026:</span>
             </div>
             <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-2xl">
-              حددنا تسعيرة واقعية تبدأ من <strong>600 ج.م</strong> لضمان الأمانة وعدم المفاجأة عند الاتصال. السعر المتفق عليه نهائي وشامل <strong>بدون أي إكرامية إجبارية للسائق</strong>، مع <strong>مساهمة في دفع رسوم الكارتة</strong> على الطرق السريعة.
+              حددنا تسعيرة واقعية تبدأ من <strong>750 ج.م</strong> لضمان الأمانة وعدم المفاجأة عند الاتصال. السعر المتفق عليه نهائي وشامل <strong>بدون أي إكرامية إجبارية للسائق</strong>، مع <strong>مساهمة في دفع رسوم الكارتة</strong> على الطرق السريعة.
             </p>
           </div>
           <a href="blog/winch-offers-discounts-cairo.html" class="px-5 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-black rounded-xl text-xs sm:text-sm whitespace-nowrap shadow-lg transition flex items-center gap-1.5">
@@ -859,14 +866,14 @@ html_index = f"""{get_head(
 <script>
   let currentCar = 'sedan';
   const priceMap = {{
-    sedan: {{ same: '600 - 750 ج.م', center: '750 - 950 ج.م', home: '950 - 1300 ج.م', cross: 'يبدأ من 1500 ج.م' }},
-    suv: {{ same: '750 - 900 ج.م', center: '900 - 1200 ج.م', home: '1200 - 1600 ج.م', cross: 'يبدأ من 1800 ج.م' }},
-    heavy: {{ same: '1200 - 1600 ج.م', center: '1600 - 2200 ج.م', home: '2200 - 3000 ج.م', cross: 'يبدأ من 3000 ج.م' }}
+    sedan: {{ same: '750 - 950 ج.م', center: '750 - 950 ج.م', home: '950 - 1300 ج.م', cross: 'يبدأ من 1500 ج.م' }},
+    suv: {{ same: '750 - 900 ج.م', center: '900 - 1200 ج.م', home: '1200 - 1750 ج.م', cross: 'يبدأ من 1800 ج.م' }},
+    heavy: {{ same: '1200 - 1750 ج.م', center: '1600 - 2200 ج.م', home: '2200 - 3000 ج.م', cross: 'يبدأ من 3000 ج.م' }}
   }};
   
   function updateCalc() {{
     const end = document.getElementById('endLoc').value;
-    const priceText = priceMap[currentCar][end] || '600 - 750 ج.م';
+    const priceText = priceMap[currentCar][end] || '750 - 950 ج.م';
     document.getElementById('calcPrice').innerText = priceText;
   }}
 

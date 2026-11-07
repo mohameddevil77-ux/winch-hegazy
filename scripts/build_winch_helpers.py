@@ -26,7 +26,12 @@ LOCATION_ADDRESS = "كارفور العبور، جولف سيتي مول، مط�
 
 def get_head(title, description, canonical_url, is_blog=False, preload_lcp=None):
     prefix = "../" if is_blog else ""
-    preload_lcp_tag = f'  <link rel="preload" as="image" href="{prefix}{preload_lcp}" fetchpriority="high" type="image/webp">\n' if preload_lcp else ""
+    if preload_lcp:
+        preload_lcp_tag = f'''  <!-- Ultra-Fast Responsive LCP Image Preload -->
+  <link rel="preload" as="image" href="{prefix}assets/images/hero_rescue_mobile.webp" media="(max-width: 640px)" fetchpriority="high" type="image/webp">
+  <link rel="preload" as="image" href="{prefix}assets/images/hero_rescue_bg.webp" media="(min-width: 641px)" fetchpriority="high" type="image/webp">\n'''
+    else:
+        preload_lcp_tag = ""
     return f"""<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -261,7 +266,7 @@ def generate_local_business_schema(page_title, page_desc, page_url):
         "description": page_desc,
         "url": page_url,
         "telephone": PHONE_TEL,
-        "priceRange": "EGP 600 - EGP 3500",
+        "priceRange": "EGP 750 - EGP 3500",
         "currenciesAccepted": "EGP",
         "paymentAccepted": "Cash, Vodafone Cash, InstaPay, Visa, Mastercard",
         "openingHoursSpecification": [
