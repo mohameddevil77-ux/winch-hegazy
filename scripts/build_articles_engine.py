@@ -691,6 +691,8 @@ print("SUCCESS: blog/index.html generated")
 # Generate Individual Articles
 def generate_article_file(art, content_body):
     img_filename = art.get("image", "hegazy_red_truck_branding.jpg")
+    
+    # 1. Article Schema
     schema_article = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -720,8 +722,51 @@ def generate_article_file(art, content_body):
         "mainEntityOfPage": f"https://awladhegazy.com/blog/{art['slug']}.html"
     }
 
-    schema_str = f'<script type="application/ld+json">\n{json.dumps(schema_article, ensure_ascii=False, indent=2)}\n</script>'
-    
+    # 2. BreadcrumbList Schema
+    schema_breadcrumbs = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "الرئيسية",
+                "item": "https://awladhegazy.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "دليل مقالات أوناش الإنقاذ",
+                "item": "https://awladhegazy.com/blog/index.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": art["title"],
+                "item": f"https://awladhegazy.com/blog/{art['slug']}.html"
+            }
+        ]
+    }
+
+    # 3. Localized FAQPage Schema
+    localized_faqs = [
+        (f"ما هي تكلفة طلب ونش إنقاذ سيارات في {art['title'][:35]}؟",
+         "تبدأ أسعار أوناش أولاد حجازي من 600 جنيه مصري فقط للخدمات الأساسية. نعتمد نظام تسعير شفاف وعادل يعتمد على الكيلومتر والمسافة الفعلية بدون أي استغلال للظروف الطارئة، مع عدم وجود أي إكرامية إجبارية للسائق ومساهمة المؤسسة في رسوم الكارتة."),
+        (f"كم يستغرق وصول ونش أولاد حجازي إلى موقعي؟",
+         "متوسط زمن الوصول الفعلي يتراوح بين 8 إلى 12 دقيقة بفضل شبكة التمركز الميداني لأوناشنا على مدار 24 ساعة بمحيط كارفور العبور ومحاور القاهرة الكبرى والجيزة والطرق السريعة."),
+        (f"كيف أطلب ونش أولاد حجازي وأرسل موقعي المباشر؟",
+         f"يمكنك الاتصال فوراً برقم الطوارئ المعتمد 01032194206 أو 01283038303، أو الضغط على زر واتساب لإرسال إحداثيات موقعك الجغرافي (Send Current Location) ليتحرك أقرب ونش إليك فوراً.")
+    ]
+
+    schema_str = f"""<script type="application/ld+json">
+{json.dumps(schema_article, ensure_ascii=False, indent=2)}
+</script>
+<script type="application/ld+json">
+{json.dumps(schema_breadcrumbs, ensure_ascii=False, indent=2)}
+</script>
+{generate_faq_schema(localized_faqs)}
+{generate_local_business_schema(art['title'], art['desc'], f"https://awladhegazy.com/blog/{art['slug']}.html")}"""
+
     html = f"""{get_head(
         f"{art['title']} | أوناش أولاد حجازي",
         art["desc"],
@@ -795,8 +840,21 @@ def generate_article_file(art, content_body):
       {content_body}
     </div>
 
+    <!-- Authoritative NAP & Local Business Proof (Council Recommendation) -->
+    <div class="mt-12 p-6 glass rounded-2xl border border-amber-500/30 text-xs text-slate-300 space-y-2.5 bg-slate-900/70">
+      <div class="flex items-center gap-2 text-amber-400 font-black text-sm">
+        <span>📍</span>
+        <span>بيانات نقطة الارتكاز الميداني والاعتماد الرسمي:</span>
+      </div>
+      <p><strong class="text-white">المؤسسة:</strong> أوناش إنقاذ أولاد حجازي (Awlad Hegazy Rescue Winch)</p>
+      <p><strong class="text-white">نقطة الارتكاز الرئيسية:</strong> كارفور العبور - جولف سيتي مول (مطلع الطريق الدائري ومحور الإسماعيلية الصحراوي)</p>
+      <p><strong class="text-white">إحداثيات الملاحة المباشرة GPS:</strong> <a href="https://maps.app.goo.gl/4JvQjcJFPNFqesXS7?g_st=awb" target="_blank" class="text-amber-400 font-bold hover:underline">30.1741147, 31.4761952 (اضغط لفتح خريطة التمركز)</a></p>
+      <p><strong class="text-white">هواتف طوارئ العمليات 24/7:</strong> <a href="tel:01032194206" class="text-emerald-400 font-black hover:underline">01032194206</a> - <a href="tel:01283038303" class="text-slate-300 font-black hover:underline">01283038303</a></p>
+      <p><strong class="text-white">سياسة التسعير المعتمدة 2026:</strong> تبدأ من 600 جنيه | كود خصم 50%: <span class="text-amber-300 font-mono font-bold">HEGAZY50</span> | بدون أي إكرامية إجبارية للسائق</p>
+    </div>
+
     <!-- Bottom Action Box -->
-    <div class="mt-12 p-8 rounded-3xl glass border border-amber-500/30 text-center space-y-4">
+    <div class="mt-8 p-8 rounded-3xl glass border border-amber-500/30 text-center space-y-4">
       <h3 class="text-2xl font-black text-white">أوناش إنقاذ أولاد حجازي في خدمتك 24 ساعة</h3>
       <p class="text-slate-400 text-sm max-w-xl mx-auto">أرخص سعر، أحدث أوناش هيدروليكية، وأسرع استجابة في جميع محافظات مصر والطرق السريعة.</p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
