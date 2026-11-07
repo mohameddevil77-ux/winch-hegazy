@@ -840,6 +840,28 @@ def generate_article_file(art, content_body):
       {content_body}
     </div>
 
+    <!-- Visible FAQ Section (100% Google Search Essentials & Spam Policy Compliant) -->
+    <section class="my-10 p-6 glass rounded-2xl border border-slate-800 space-y-4">
+      <h3 class="text-lg sm:text-xl font-black text-white flex items-center gap-2">
+        <span class="text-amber-400">❓</span>
+        <span>الأسئلة الشائعة حول خدمات أوناش أولاد حجازي:</span>
+      </h3>
+      <div class="space-y-3">
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+          <h4 class="text-sm sm:text-base font-bold text-amber-300 mb-1.5">{localized_faqs[0][0]}</h4>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">{localized_faqs[0][1]}</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+          <h4 class="text-sm sm:text-base font-bold text-amber-300 mb-1.5">{localized_faqs[1][0]}</h4>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">{localized_faqs[1][1]}</p>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+          <h4 class="text-sm sm:text-base font-bold text-amber-300 mb-1.5">{localized_faqs[2][0]}</h4>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">{localized_faqs[2][1]}</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Authoritative NAP & Local Business Proof (Council Recommendation) -->
     <div class="mt-12 p-6 glass rounded-2xl border border-amber-500/30 text-xs text-slate-300 space-y-2.5 bg-slate-900/70">
       <div class="flex items-center gap-2 text-amber-400 font-black text-sm">
