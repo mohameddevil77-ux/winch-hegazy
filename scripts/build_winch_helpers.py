@@ -439,3 +439,40 @@ def get_map_section():
     </div>
   </section>
 '''
+
+
+
+def generate_video_schema():
+    videos = [
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "توثيق بالفيديو: نقل سيارة سوبر كار لامبورجيني هوراكان ليلاً - ونش إنقاذ حجازي",
+            "description": "فيديو ميداني يوثق عملية سحب وتثبيت سيارة سوبر كار لامبورجيني ليلاً على ونش إنقاذ حجازي بأربطة إطارات مطاطية مخصصة وإضاءات ليد توجيهية.",
+            "thumbnailUrl": "https://winch-hegazy.com/assets/images/poster_lamborghini_night.jpg",
+            "uploadDate": "2026-11-06T20:00:00+02:00",
+            "contentUrl": "https://winch-hegazy.com/assets/videos/hegazy_lamborghini_vip_night.mp4",
+            "embedUrl": "https://winch-hegazy.com/index.html#videos"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "توثيق بالفيديو: تحميل ونقل لودر كاتربيلر CAT 930 نهاراً - ونش إنقاذ حجازي",
+            "description": "استعراض لقدرات ونش حجازي الهيدروليكية الثقيلة في سحب ونقل لوادر ومعدات البناء والمشروعات القومية بأمان تام.",
+            "thumbnailUrl": "https://winch-hegazy.com/assets/images/poster_caterpillar_loader.jpg",
+            "uploadDate": "2026-11-06T20:00:00+02:00",
+            "contentUrl": "https://winch-hegazy.com/assets/videos/hegazy_caterpillar_loader_day.mp4",
+            "embedUrl": "https://winch-hegazy.com/index.html#videos"
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "توثيق بالفيديو: إنقاذ ونقل سيارة ربع نقل محملة بالبضائع ليلاً - ونش إنقاذ حجازي",
+            "description": "توثيق سحب وتأمين شاحنة بضائع تجارية بحمولتها الكاملة على الطريق السريع ليلاً بأضواء ليد محيطية لحماية الشحنة.",
+            "thumbnailUrl": "https://winch-hegazy.com/assets/images/poster_commercial_pickup.jpg",
+            "uploadDate": "2026-11-06T20:00:00+02:00",
+            "contentUrl": "https://winch-hegazy.com/assets/videos/hegazy_commercial_pickup_night.mp4",
+            "embedUrl": "https://winch-hegazy.com/index.html#videos"
+        }
+    ]
+    return f'<script type="application/ld+json">\n{json.dumps(videos, ensure_ascii=False, indent=2)}\n</script>'
