@@ -1,10 +1,12 @@
 {
   "technical_seo": {
     "status": "PASS",
-    "total_files": 26,
+    "total_files": 27,
     "valid_json_ld_schemas": 88,
     "schema_errors": [],
-    "missing_canonicals": [],
+    "missing_canonicals": [
+      "googlecbf6409e07fc8111.html"
+    ],
     "broken_images": [],
     "missing_alts": [],
     "mobile_viewport_ok": 26
@@ -14,6 +16,7 @@
     "h1_counts": {
       "contact.html": 1,
       "coverage.html": 1,
+      "googlecbf6409e07fc8111.html": 0,
       "index.html": 1,
       "pricing.html": 1,
       "services.html": 1,
@@ -39,10 +42,13 @@
       "blog/winch-tagamoa-new-cairo.html": 1,
       "blog/winch-zayed-october.html": 1
     },
-    "missing_h1": [],
+    "missing_h1": [
+      "googlecbf6409e07fc8111.html"
+    ],
     "titles": {
       "contact.html": "اتصل بـ أوناش إنقاذ أولاد حجازي | أرقام طوارئ أوناش السيارات في مصر 24/7",
       "coverage.html": "مناطق تغطية أوناش إنقاذ أولاد حجازي | الدائري، التجمع، أكتوبر، والمحافظات",
+      "googlecbf6409e07fc8111.html": null,
       "index.html": "أوناش إنقاذ أولاد حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
       "pricing.html": "أسعار ونش إنقاذ السيارات في مصر | تسعيرة أوناش أولاد حجازي بدون استغلال",
       "services.html": "خدمات أوناش إنقاذ أولاد حجازي | سحب ملاكي، نقل ثقيل، وحوادث 24 ساعة",
@@ -71,6 +77,7 @@
     "meta_descriptions": {
       "contact.html": 168,
       "coverage.html": 161,
+      "googlecbf6409e07fc8111.html": 0,
       "index.html": 179,
       "pricing.html": 164,
       "services.html": 188,
@@ -96,7 +103,9 @@
       "blog/winch-tagamoa-new-cairo.html": 142,
       "blog/winch-zayed-october.html": 143
     },
-    "short_descriptions": [],
+    "short_descriptions": [
+      "googlecbf6409e07fc8111.html"
+    ],
     "keyword_coverage": {}
   },
   "aeo_geo": {

@@ -27,14 +27,14 @@ faq_home = [
 html_index = f"""{get_head(
     "أوناش إنقاذ أولاد حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
     f"أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 750 جنيه. اتصل الآن {PHONE_DISPLAY}.",
-    "https://awladhegazy.com/",
+    "https://winchwinchawladhegazy.com/",
     is_blog=False,
     preload_lcp="assets/images/hero_rescue_bg.webp"
 )}
 {generate_local_business_schema(
     "أوناش إنقاذ أولاد حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
     f"أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 750 جنيه. اتصل الآن {PHONE_DISPLAY}.",
-    "https://awladhegazy.com/"
+    "https://winchwinchawladhegazy.com/"
 )}
 {generate_faq_schema(faq_home)}
 
@@ -582,6 +582,9 @@ html_index = f"""{get_head(
             <span class="text-amber-400 font-bold">✓ أربطة عجلات مطاطية</span>
             <span>تأمين شامل 100%</span>
           </div>
+          <a href="videos/lamborghini-night-rescue.html" class="mt-2 block w-full py-2 text-center text-xs font-black text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 rounded-xl transition">
+            🎬 صفحة مشاهدة الفيديو والتقرير الفني الكامل ←
+          </a>
         </div>
       </div>
 
@@ -607,6 +610,9 @@ html_index = f"""{get_head(
             <span class="text-amber-400 font-bold">✓ حمولات هيدروليكية شاقة</span>
             <span>تثبيت بجنازير صلب</span>
           </div>
+          <a href="videos/caterpillar-loader-transport.html" class="mt-2 block w-full py-2 text-center text-xs font-black text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 rounded-xl transition">
+            🎬 صفحة مشاهدة الفيديو والتقرير الفني الكامل ←
+          </a>
         </div>
       </div>
 
@@ -632,6 +638,9 @@ html_index = f"""{get_head(
             <span class="text-amber-400 font-bold">✓ بدون تفريغ الشحنة</span>
             <span>إضاءات ليلية تحذيرية</span>
           </div>
+          <a href="videos/commercial-truck-rescue.html" class="mt-2 block w-full py-2 text-center text-xs font-black text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/30 rounded-xl transition">
+            🎬 صفحة مشاهدة الفيديو والتقرير الفني الكامل ←
+          </a>
         </div>
       </div>
 

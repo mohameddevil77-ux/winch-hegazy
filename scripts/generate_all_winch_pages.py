@@ -259,12 +259,12 @@ print("SUCCESS: All 6 SEO articles generated.")
 html_contact = f"""{get_head(
     "اتصل بـ أوناش إنقاذ أولاد حجازي | أرقام طوارئ أوناش السيارات في مصر 24/7",
     f"تواصل مع أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في مصر: رقم الخط الساخن {PHONE_DISPLAY} أو {PHONE_ALT}، إرسال اللوكيشن على واتساب، غرف العمليات الميدانية على مدار 24 ساعة.",
-    "https://awladhegazy.com/contact.html"
+    "https://winchwinchawladhegazy.com/contact.html"
 )}
 {generate_local_business_schema(
     "اتصل بـ أوناش إنقاذ أولاد حجازي | أرقام طوارئ أوناش السيارات في مصر 24/7",
     f"أرقام طوارئ أوناش إنقاذ أولاد حجازي في مصر 24 ساعة: {PHONE_DISPLAY} و {PHONE_ALT}.",
-    "https://awladhegazy.com/contact.html"
+    "https://winchwinchawladhegazy.com/contact.html"
 )}
 </head>
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
@@ -358,13 +358,13 @@ print("SUCCESS: contact.html generated")
 # 7. SITEMAP.XML & ROBOTS.TXT
 # -------------------------------------------------------------
 all_urls = [
-    ("https://awladhegazy.com/", "1.0", "daily"),
-    ("https://awladhegazy.com/services.html", "0.9", "weekly"),
-    ("https://awladhegazy.com/coverage.html", "0.9", "weekly"),
-    ("https://awladhegazy.com/pricing.html", "0.8", "weekly"),
-    ("https://awladhegazy.com/blog/index.html", "0.8", "daily"),
-    ("https://awladhegazy.com/contact.html", "0.8", "monthly"),
-] + [(f"https://awladhegazy.com/blog/{a['slug']}.html", "0.7", "monthly") for a in articles]
+    ("https://winchwinchawladhegazy.com/", "1.0", "daily"),
+    ("https://winchwinchawladhegazy.com/services.html", "0.9", "weekly"),
+    ("https://winchwinchawladhegazy.com/coverage.html", "0.9", "weekly"),
+    ("https://winchwinchawladhegazy.com/pricing.html", "0.8", "weekly"),
+    ("https://winchwinchawladhegazy.com/blog/index.html", "0.8", "daily"),
+    ("https://winchwinchawladhegazy.com/contact.html", "0.8", "monthly"),
+] + [(f"https://winchwinchawladhegazy.com/blog/{a['slug']}.html", "0.7", "monthly") for a in articles]
 
 sitemap_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -396,7 +396,7 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://awladhegazy.com/sitemap.xml
+Sitemap: https://winchwinchawladhegazy.com/sitemap.xml
 """
 
 with open(os.path.join(base_dir, "robots.txt"), "w", encoding="utf-8") as f:
@@ -433,26 +433,26 @@ llms_txt = f"""# أوناش إنقاذ أولاد حجازي (Awlad Hegazy) - Eg
 - **متوسط زمن الوصول:** 10 دقائق داخل القاهرة والجيزة.
 
 ## الروابط الهامة ومقالات مناطق القاهرة (Core Pages & Cairo Districts)
-- [الرئيسية أوناش أولاد حجازي](https://awladhegazy.com/)
-- [خدمات أوناش الإنقاذ](https://awladhegazy.com/services.html)
-- [خريطة مناطق التغطية](https://awladhegazy.com/coverage.html)
-- [حاسبة الأسعار والتكاليف](https://awladhegazy.com/pricing.html)
-- [ونش إنقاذ في القاهرة](https://awladhegazy.com/blog/winch-enqaz-cairo.html)
-- [أقرب ونش إنقاذ من موقعي](https://awladhegazy.com/blog/agrab-winch-qarib-meni.html)
-- [أرخص ونش إنقاذ سيارات بمصر](https://awladhegazy.com/blog/ar5as-winch-enqaz-misr.html)
-- [ونش إنقاذ الطريق الدائري](https://awladhegazy.com/blog/winch-daeri-cairo.html)
-- [ونش التجمع الخامس والقاهرة الجديدة](https://awladhegazy.com/blog/winch-tagamoa-new-cairo.html)
-- [ونش الشيخ زايد و6 أكتوبر](https://awladhegazy.com/blog/winch-zayed-october.html)
-- [ونش إنقاذ مدينة نصر](https://awladhegazy.com/blog/winch-nasr-city.html)
-- [ونش إنقاذ مصر الجديدة](https://awladhegazy.com/blog/winch-heliopolis-masr-gedida.html)
-- [ونش إنقاذ المعادي](https://awladhegazy.com/blog/winch-maadi.html)
-- [ونش إنقاذ وسط البلد](https://awladhegazy.com/blog/winch-downtown-cairo.html)
-- [ونش إنقاذ المقطم](https://awladhegazy.com/blog/winch-mokattam.html)
-- [ونش إنقاذ شبرا](https://awladhegazy.com/blog/winch-shobra.html)
-- [ونش الرحاب ومدينتي والشروق](https://awladhegazy.com/blog/winch-rehab-madinaty.html)
-- [ونش الجيزة والهرم وفيصل](https://awladhegazy.com/blog/winch-giza-haram.html)
-- [إرشادات الأمان عند تعطل السيارة](https://awladhegazy.com/blog/emergency-breakdown-tips.html)
-- [أرقام الطوارئ والتواصل](https://awladhegazy.com/contact.html)
+- [الرئيسية أوناش أولاد حجازي](https://winchwinchawladhegazy.com/)
+- [خدمات أوناش الإنقاذ](https://winchwinchawladhegazy.com/services.html)
+- [خريطة مناطق التغطية](https://winchwinchawladhegazy.com/coverage.html)
+- [حاسبة الأسعار والتكاليف](https://winchwinchawladhegazy.com/pricing.html)
+- [ونش إنقاذ في القاهرة](https://winchwinchawladhegazy.com/blog/winch-enqaz-cairo.html)
+- [أقرب ونش إنقاذ من موقعي](https://winchwinchawladhegazy.com/blog/agrab-winch-qarib-meni.html)
+- [أرخص ونش إنقاذ سيارات بمصر](https://winchwinchawladhegazy.com/blog/ar5as-winch-enqaz-misr.html)
+- [ونش إنقاذ الطريق الدائري](https://winchwinchawladhegazy.com/blog/winch-daeri-cairo.html)
+- [ونش التجمع الخامس والقاهرة الجديدة](https://winchwinchawladhegazy.com/blog/winch-tagamoa-new-cairo.html)
+- [ونش الشيخ زايد و6 أكتوبر](https://winchwinchawladhegazy.com/blog/winch-zayed-october.html)
+- [ونش إنقاذ مدينة نصر](https://winchwinchawladhegazy.com/blog/winch-nasr-city.html)
+- [ونش إنقاذ مصر الجديدة](https://winchwinchawladhegazy.com/blog/winch-heliopolis-masr-gedida.html)
+- [ونش إنقاذ المعادي](https://winchwinchawladhegazy.com/blog/winch-maadi.html)
+- [ونش إنقاذ وسط البلد](https://winchwinchawladhegazy.com/blog/winch-downtown-cairo.html)
+- [ونش إنقاذ المقطم](https://winchwinchawladhegazy.com/blog/winch-mokattam.html)
+- [ونش إنقاذ شبرا](https://winchwinchawladhegazy.com/blog/winch-shobra.html)
+- [ونش الرحاب ومدينتي والشروق](https://winchwinchawladhegazy.com/blog/winch-rehab-madinaty.html)
+- [ونش الجيزة والهرم وفيصل](https://winchwinchawladhegazy.com/blog/winch-giza-haram.html)
+- [إرشادات الأمان عند تعطل السيارة](https://winchwinchawladhegazy.com/blog/emergency-breakdown-tips.html)
+- [أرقام الطوارئ والتواصل](https://winchwinchawladhegazy.com/contact.html)
 """
 
 with open(os.path.join(base_dir, "llms.txt"), "w", encoding="utf-8") as f:

@@ -175,7 +175,7 @@ with open(sitemap_path, "r", encoding="utf-8") as f:
     s_code = f.read()
 
 new_sitemap_entry = f'''  <url>
-    <loc>https://awladhegazy.com/blog/winch-offers-discounts-cairo.html</loc>
+    <loc>https://winchwinchawladhegazy.com/blog/winch-offers-discounts-cairo.html</loc>
     <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -193,7 +193,7 @@ llms_path = os.path.join(base_dir, "llms.txt")
 with open(llms_path, "r", encoding="utf-8") as f:
     l_code = f.read()
 
-new_llms_entry = "- [عروض وخصومات أوناش أولاد حجازي (خصم 50% وبدون إكرامية)](https://awladhegazy.com/blog/winch-offers-discounts-cairo.html)\n"
+new_llms_entry = "- [عروض وخصومات أوناش أولاد حجازي (خصم 50% وبدون إكرامية)](https://winchwinchawladhegazy.com/blog/winch-offers-discounts-cairo.html)\n"
 if "winch-offers-discounts-cairo.html" not in l_code:
     l_code = l_code.replace("- [أرقام الطوارئ والتواصل]", new_llms_entry + "- [أرقام الطوارئ والتواصل]")
     with open(llms_path, "w", encoding="utf-8") as f:
