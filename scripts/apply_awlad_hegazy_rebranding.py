@@ -12,7 +12,7 @@ with open(helpers_path, "r", encoding="utf-8") as f:
     h = f.read()
 
 # Replace Domain & Location name
-h = h.replace('winch-hegazy.com', 'awladhegazy.com')
+h = h.replace('winch-hegazy.com', 'winchawladhegazy.com')
 h = h.replace('مركز ارتكاز ونش حجازي - كارفور العبور وجولف سيتي مول', 'مركز ارتكاز أوناش أولاد حجازي - كارفور العبور وجولف سيتي مول')
 h = h.replace('نقطة تمركز ونش حجازي الرسمية (كارفور العبور)', 'نقطة تمركز أوناش أولاد حجازي الرسمية (كارفور العبور)')
 
@@ -59,7 +59,7 @@ site_gen_path = os.path.join(scripts_dir, "generate_winch_hegazy_site.py")
 with open(site_gen_path, "r", encoding="utf-8") as f:
     s = f.read()
 
-s = s.replace('winch-hegazy.com', 'awladhegazy.com')
+s = s.replace('winch-hegazy.com', 'winchawladhegazy.com')
 s = s.replace('ونش إنقاذ حجازي', 'أوناش إنقاذ أولاد حجازي')
 s = s.replace('ونش حجازي', 'أوناش أولاد حجازي')
 s = s.replace('Winch Hegazy', 'Awlad Hegazy')
@@ -76,7 +76,7 @@ engine_path = os.path.join(scripts_dir, "build_articles_engine.py")
 with open(engine_path, "r", encoding="utf-8") as f:
     e = f.read()
 
-e = e.replace('winch-hegazy.com', 'awladhegazy.com')
+e = e.replace('winch-hegazy.com', 'winchawladhegazy.com')
 e = e.replace('ونش إنقاذ حجازي', 'أوناش إنقاذ أولاد حجازي')
 e = e.replace('ونش حجازي', 'أوناش أولاد حجازي')
 e = e.replace('Winch Hegazy', 'Awlad Hegazy')
@@ -93,7 +93,7 @@ all_pages_path = os.path.join(scripts_dir, "generate_all_winch_pages.py")
 with open(all_pages_path, "r", encoding="utf-8") as f:
     a = f.read()
 
-a = a.replace('winch-hegazy.com', 'awladhegazy.com')
+a = a.replace('winch-hegazy.com', 'winchawladhegazy.com')
 a = a.replace('ونش إنقاذ حجازي', 'أوناش إنقاذ أولاد حجازي')
 a = a.replace('ونش حجازي', 'أوناش أولاد حجازي')
 a = a.replace('Winch Hegazy', 'Awlad Hegazy')
@@ -110,7 +110,7 @@ cairo_path = os.path.join(scripts_dir, "generate_cairo_competitor_pages.py")
 with open(cairo_path, "r", encoding="utf-8") as f:
     c = f.read()
 
-c = c.replace('winch-hegazy.com', 'awladhegazy.com')
+c = c.replace('winch-hegazy.com', 'winchawladhegazy.com')
 c = c.replace('ونش إنقاذ حجازي', 'أوناش إنقاذ أولاد حجازي')
 c = c.replace('ونش حجازي', 'أوناش أولاد حجازي')
 c = c.replace('Winch Hegazy', 'Awlad Hegazy')
@@ -127,7 +127,7 @@ east_path = os.path.join(scripts_dir, "expand_eastern_cities.py")
 with open(east_path, "r", encoding="utf-8") as f:
     east = f.read()
 
-east = east.replace('winch-hegazy.com', 'awladhegazy.com')
+east = east.replace('winch-hegazy.com', 'winchawladhegazy.com')
 east = east.replace('ونش إنقاذ حجازي', 'أوناش إنقاذ أولاد حجازي')
 east = east.replace('ونش حجازي', 'أوناش أولاد حجازي')
 east = east.replace('Winch Hegazy', 'Awlad Hegazy')
@@ -144,7 +144,7 @@ promo_path = os.path.join(scripts_dir, "create_promotional_article.py")
 with open(promo_path, "r", encoding="utf-8") as f:
     pr = f.read()
 
-pr = pr.replace('winch-hegazy.com', 'awladhegazy.com')
+pr = pr.replace('winch-hegazy.com', 'winchawladhegazy.com')
 pr = pr.replace('ونش إنقاذ حجازي', 'أوناش إنقاذ أولاد حجازي')
 pr = pr.replace('ونش حجازي', 'أوناش أولاد حجازي')
 pr = pr.replace('Winch Hegazy', 'Awlad Hegazy')
@@ -163,7 +163,7 @@ for root_target in [os.path.join(base_dir, "backlinks"), os.path.join(base_dir, 
             fp = os.path.join(root_target, fname)
             with open(fp, "r", encoding="utf-8") as f:
                 content = f.read()
-            content = content.replace('winch-hegazy.com', 'awladhegazy.com')
+            content = content.replace('winch-hegazy.com', 'winchawladhegazy.com')
             content = content.replace('ونش إنقاذ حجازي', 'أوناش إنقاذ أولاد حجازي')
             content = content.replace('ونش حجازي', 'أوناش أولاد حجازي')
             content = content.replace('Winch Hegazy', 'Awlad Hegazy')

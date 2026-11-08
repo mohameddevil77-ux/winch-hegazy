@@ -135,12 +135,12 @@ services_cards_rendered = "\n".join(services_cards_list)
 html_services = f"""{get_head(
     "خدمات أوناش إنقاذ أولاد حجازي | سحب ملاكي، نقل ثقيل، وحوادث 24 ساعة",
     "تعرف على خدمات أوناش إنقاذ أولاد حجازي: سحب وإنقاذ السيارات الملاكي والفاخرة، نقل المعدات والكلاركات، نقل الكرفانات، وسحب التريلات والشاحنات، والمساعدة السريعة على الطريق على مدار 24 ساعة.",
-    "https://winchwinchawladhegazy.com/services.html"
+    "https://winchawladhegazy.com/services.html"
 )}
 {generate_local_business_schema(
     "خدمات أوناش إنقاذ أولاد حجازي | سحب ملاكي، نقل ثقيل، وحوادث 24 ساعة",
     "خدمات أوناش أولاد حجازي لإنقاذ وسحب السيارات في مصر بأحدث أوناش هيدروليكية.",
-    "https://winchwinchawladhegazy.com/services.html"
+    "https://winchawladhegazy.com/services.html"
 )}
 </head>
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
@@ -219,12 +219,12 @@ zones = [
 html_coverage = f"""{get_head(
     "مناطق تغطية أوناش إنقاذ أولاد حجازي | الدائري، التجمع، أكتوبر، والمحافظات",
     "خريطة تغطية أوناش إنقاذ أولاد حجازي في مصر: أوناش متمركزة في التجمع الخامس، الشيخ زايد، 6 أكتوبر، الطريق الدائري، طريق السويس، وطريق الإسكندرية الصحراوي 24 ساعة.",
-    "https://winchwinchawladhegazy.com/coverage.html"
+    "https://winchawladhegazy.com/coverage.html"
 )}
 {generate_local_business_schema(
     "مناطق تغطية أوناش إنقاذ أولاد حجازي | الدائري، التجمع، أكتوبر، والمحافظات",
     "تغطية أوناش أولاد حجازي لإنقاذ السيارات في كافة محاور مصر.",
-    "https://winchwinchawladhegazy.com/coverage.html"
+    "https://winchawladhegazy.com/coverage.html"
 )}
 </head>
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
@@ -350,12 +350,12 @@ print("SUCCESS: coverage.html generated")
 html_pricing = f"""{get_head(
     "أسعار ونش إنقاذ السيارات في مصر | تسعيرة أوناش أولاد حجازي بدون استغلال",
     "تعرف على أسعار ونش إنقاذ السيارات في مصر مع أوناش أولاد حجازي. تسعيرة عادلة تبدأ من 750 ج.م، حساب سعر الكيلومتر بشفافية تامة دون أي تكاليف خفية أو إكراميات إجبارية.",
-    "https://winchwinchawladhegazy.com/pricing.html"
+    "https://winchawladhegazy.com/pricing.html"
 )}
 {generate_local_business_schema(
     "أسعار ونش إنقاذ السيارات في مصر | تسعيرة أوناش أولاد حجازي بدون استغلال",
     "تسعيرة ونش إنقاذ سيارات عادلة ومحددة مسبقاً في مصر.",
-    "https://winchwinchawladhegazy.com/pricing.html"
+    "https://winchawladhegazy.com/pricing.html"
 )}
 </head>
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
@@ -640,13 +640,13 @@ articles = [
 html_blog_index = f"""{get_head(
     "دليل ومقالات أوناش إنقاذ السيارات في مصر | مدونة أوناش أولاد حجازي",
     "مقالات وإرشادات شاملة عن خدمات أوناش إنقاذ السيارات في مصر: كيفية العثور على أقرب ونش، أسعار السحب العادلة، تغطية الطريق الدائري والمحاور، وإرشادات السلامة عند الأعطال.",
-    "https://winchwinchawladhegazy.com/blog/index.html",
+    "https://winchawladhegazy.com/blog/index.html",
     is_blog=True
 )}
 {generate_local_business_schema(
     "دليل ومقالات أوناش إنقاذ السيارات في مصر | مدونة أوناش أولاد حجازي",
     "مقالات أوناش أولاد حجازي لإنقاذ السيارات في مصر.",
-    "https://winchwinchawladhegazy.com/blog/index.html"
+    "https://winchawladhegazy.com/blog/index.html"
 )}
 </head>
 <body class="bg-dark-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-black">
@@ -716,26 +716,26 @@ def generate_article_file(art, content_body):
         "description": art["desc"],
         "image": {
             "@type": "ImageObject",
-            "url": f"https://winchwinchawladhegazy.com/assets/images/{img_filename}",
+            "url": f"https://winchawladhegazy.com/assets/images/{img_filename}",
             "caption": art["title"]
         },
-        "url": f"https://winchwinchawladhegazy.com/blog/{art['slug']}.html",
+        "url": f"https://winchawladhegazy.com/blog/{art['slug']}.html",
         "datePublished": "2026-11-06T10:00:00+02:00",
         "dateModified": "2026-11-06T10:00:00+02:00",
         "author": {
             "@type": "Organization",
             "name": "فريق طوارئ أوناش أولاد حجازي الميداني",
-            "url": "https://winchwinchawladhegazy.com/"
+            "url": "https://winchawladhegazy.com/"
         },
         "publisher": {
             "@type": "Organization",
             "name": "أوناش إنقاذ أولاد حجازي",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://winchwinchawladhegazy.com/assets/images/logo.png"
+                "url": "https://winchawladhegazy.com/assets/images/logo.png"
             }
         },
-        "mainEntityOfPage": f"https://winchwinchawladhegazy.com/blog/{art['slug']}.html"
+        "mainEntityOfPage": f"https://winchawladhegazy.com/blog/{art['slug']}.html"
     }
 
     # 2. BreadcrumbList Schema
@@ -747,19 +747,19 @@ def generate_article_file(art, content_body):
                 "@type": "ListItem",
                 "position": 1,
                 "name": "الرئيسية",
-                "item": "https://winchwinchawladhegazy.com/"
+                "item": "https://winchawladhegazy.com/"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "دليل مقالات أوناش الإنقاذ",
-                "item": "https://winchwinchawladhegazy.com/blog/index.html"
+                "item": "https://winchawladhegazy.com/blog/index.html"
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": art["title"],
-                "item": f"https://winchwinchawladhegazy.com/blog/{art['slug']}.html"
+                "item": f"https://winchawladhegazy.com/blog/{art['slug']}.html"
             }
         ]
     }
@@ -781,12 +781,12 @@ def generate_article_file(art, content_body):
 {json.dumps(schema_breadcrumbs, ensure_ascii=False, indent=2)}
 </script>
 {generate_faq_schema(localized_faqs)}
-{generate_local_business_schema(art['title'], art['desc'], f"https://winchwinchawladhegazy.com/blog/{art['slug']}.html")}"""
+{generate_local_business_schema(art['title'], art['desc'], f"https://winchawladhegazy.com/blog/{art['slug']}.html")}"""
 
     html = f"""{get_head(
         f"{art['title']} | أوناش أولاد حجازي",
         art["desc"],
-        f"https://winchwinchawladhegazy.com/blog/{art['slug']}.html",
+        f"https://winchawladhegazy.com/blog/{art['slug']}.html",
         is_blog=True
     )}
 {schema_str}

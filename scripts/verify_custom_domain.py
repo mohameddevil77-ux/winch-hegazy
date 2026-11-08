@@ -1,6 +1,6 @@
 import urllib.request
 
-url = 'http://winchawladhegazy.com/'
+url = 'https://winchawladhegazy.com/'
 try:
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     with urllib.request.urlopen(req, timeout=10) as resp:

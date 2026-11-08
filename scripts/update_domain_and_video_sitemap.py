@@ -13,15 +13,15 @@ active_scripts = [
     os.path.join(scripts_dir, "create_promotional_article.py")
 ]
 
-# 1. Replace awladhegazy.com with winchawladhegazy.com
+# 1. Replace winchawladhegazy.com with winchawladhegazy.com
 for s in active_scripts:
     with open(s, "r", encoding="utf-8") as f:
         text = f.read()
     
-    if "awladhegazy.com" in text:
-        text = text.replace("https://awladhegazy.com", "https://winchawladhegazy.com")
-        text = text.replace("http://awladhegazy.com", "https://winchawladhegazy.com")
-        text = text.replace("awladhegazy.com", "winchawladhegazy.com")
+    if "winchawladhegazy.com" in text:
+        text = text.replace("https://winchawladhegazy.com", "https://winchawladhegazy.com")
+        text = text.replace("https://winchawladhegazy.com", "https://winchawladhegazy.com")
+        text = text.replace("winchawladhegazy.com", "winchawladhegazy.com")
         with open(s, "w", encoding="utf-8") as f:
             f.write(text)
         print(f"✓ Updated domain in {os.path.basename(s)}")
@@ -73,7 +73,7 @@ with open(pages_script, "r", encoding="utf-8") as f:
     pages_code = f.read()
 
 # Make sure all_urls in generate_all_winch_pages has winchawladhegazy.com
-pages_code = pages_code.replace("https://awladhegazy.com", "https://winchawladhegazy.com")
+pages_code = pages_code.replace("https://winchawladhegazy.com", "https://winchawladhegazy.com")
 
 with open(pages_script, "w", encoding="utf-8") as f:
     f.write(pages_code)

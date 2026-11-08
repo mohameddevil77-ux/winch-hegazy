@@ -23,26 +23,26 @@ new_fn_code = '''def generate_article_file(art, content_body):
         "description": art["desc"],
         "image": {
             "@type": "ImageObject",
-            "url": f"https://awladhegazy.com/assets/images/{img_filename}",
+            "url": f"https://winchawladhegazy.com/assets/images/{img_filename}",
             "caption": art["title"]
         },
-        "url": f"https://awladhegazy.com/blog/{art['slug']}.html",
+        "url": f"https://winchawladhegazy.com/blog/{art['slug']}.html",
         "datePublished": "2026-11-06T10:00:00+02:00",
         "dateModified": "2026-11-06T10:00:00+02:00",
         "author": {
             "@type": "Organization",
             "name": "فريق طوارئ أوناش أولاد حجازي الميداني",
-            "url": "https://awladhegazy.com/"
+            "url": "https://winchawladhegazy.com/"
         },
         "publisher": {
             "@type": "Organization",
             "name": "أوناش إنقاذ أولاد حجازي",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://awladhegazy.com/assets/images/logo.png"
+                "url": "https://winchawladhegazy.com/assets/images/logo.png"
             }
         },
-        "mainEntityOfPage": f"https://awladhegazy.com/blog/{art['slug']}.html"
+        "mainEntityOfPage": f"https://winchawladhegazy.com/blog/{art['slug']}.html"
     }
 
     # 2. BreadcrumbList Schema
@@ -54,19 +54,19 @@ new_fn_code = '''def generate_article_file(art, content_body):
                 "@type": "ListItem",
                 "position": 1,
                 "name": "الرئيسية",
-                "item": "https://awladhegazy.com/"
+                "item": "https://winchawladhegazy.com/"
             },
             {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "دليل مقالات أوناش الإنقاذ",
-                "item": "https://awladhegazy.com/blog/index.html"
+                "item": "https://winchawladhegazy.com/blog/index.html"
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": art["title"],
-                "item": f"https://awladhegazy.com/blog/{art['slug']}.html"
+                "item": f"https://winchawladhegazy.com/blog/{art['slug']}.html"
             }
         ]
     }
@@ -88,12 +88,12 @@ new_fn_code = '''def generate_article_file(art, content_body):
 {json.dumps(schema_breadcrumbs, ensure_ascii=False, indent=2)}
 </script>
 {generate_faq_schema(localized_faqs)}
-{generate_local_business_schema(art['title'], art['desc'], f"https://awladhegazy.com/blog/{art['slug']}.html")}"""
+{generate_local_business_schema(art['title'], art['desc'], f"https://winchawladhegazy.com/blog/{art['slug']}.html")}"""
 
     html = f"""{get_head(
         f"{art['title']} | أوناش أولاد حجازي",
         art["desc"],
-        f"https://awladhegazy.com/blog/{art['slug']}.html",
+        f"https://winchawladhegazy.com/blog/{art['slug']}.html",
         is_blog=True
     )}
 {schema_str}

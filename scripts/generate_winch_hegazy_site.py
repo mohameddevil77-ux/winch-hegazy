@@ -27,14 +27,14 @@ faq_home = [
 html_index = f"""{get_head(
     "أوناش إنقاذ أولاد حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
     f"أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 750 جنيه. اتصل الآن {PHONE_DISPLAY}.",
-    "https://winchwinchawladhegazy.com/",
+    "https://winchawladhegazy.com/",
     is_blog=False,
     preload_lcp="assets/images/hero_rescue_bg.webp"
 )}
 {generate_local_business_schema(
     "أوناش إنقاذ أولاد حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
     f"أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 750 جنيه. اتصل الآن {PHONE_DISPLAY}.",
-    "https://winchwinchawladhegazy.com/"
+    "https://winchawladhegazy.com/"
 )}
 {generate_faq_schema(faq_home)}
 

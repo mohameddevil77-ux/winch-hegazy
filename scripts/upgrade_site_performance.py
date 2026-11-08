@@ -8,13 +8,13 @@ with open(path, "r", encoding="utf-8") as f:
 old_head_call = '''html_index = f"""{get_head(
     "أوناش إنقاذ أولاد حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
     f"أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 600 جنيه. اتصل الآن {PHONE_DISPLAY}.",
-    "https://awladhegazy.com/"
+    "https://winchawladhegazy.com/"
 )}'''
 
 new_head_call = '''html_index = f"""{get_head(
     "أوناش إنقاذ أولاد حجازي | أسرع وأرخص ونش إنقاذ سيارات في مصر 24 ساعة",
     f"أوناش إنقاذ أولاد حجازي لإنقاذ السيارات في القاهرة والجيزة والطرق السريعة. وصول خلال 10 دقائق، أحدث أوناش هيدروليكية، وأرخص سعر سحب سيارات يبدأ من 600 جنيه. اتصل الآن {PHONE_DISPLAY}.",
-    "https://awladhegazy.com/",
+    "https://winchawladhegazy.com/",
     is_blog=False,
     preload_lcp="assets/images/hero_rescue_bg.webp"
 )}'''

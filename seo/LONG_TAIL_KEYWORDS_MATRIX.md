@@ -42,7 +42,7 @@ pie title توزيع عمليات البحث ونسبة التحويل لمكا�
 * `ونش سيارات الحي الأول والحي التاسع مدينة العبور`
 * `اسرع ونش انقاذ في خط العبور وطريق بلبيس`
 * `ونش انقاذ سيارات معطلة امام كارفور العبور`
-* **الصفحة المتصدرة:** [`/blog/winch-obour-city.html`](https://awladhegazy.com/blog/winch-obour-city.html)
+* **الصفحة المتصدرة:** [`/blog/winch-obour-city.html`](https://winchawladhegazy.com/blog/winch-obour-city.html)
 
 ### ب) نطاق مدينة الشروق وبدر والمستقبل:
 * `ونش انقاذ سيارات مدينة الشروق بوابة 1 و 2 و 3`
@@ -50,7 +50,7 @@ pie title توزيع عمليات البحث ونسبة التحويل لمكا�
 * `ونش لنقل السيارات المعطلة في المستقبل سيتي`
 * `ونش سحب سيارات على طريق مصر الاسماعيلية الصحراوي امام المركز الطبي`
 * `ونش انقاذ سريع امام الروبيكي وطريق بدر`
-* **الصفحة المتصدرة:** [`/blog/winch-shorouk-badr.html`](https://awladhegazy.com/blog/winch-shorouk-badr.html)
+* **الصفحة المتصدرة:** [`/blog/winch-shorouk-badr.html`](https://winchawladhegazy.com/blog/winch-shorouk-badr.html)
 
 ### ج) نطاق العاصمة الإدارية ومدينتي:
 * `ونش انقاذ العاصمة الادارية الجديدة الحي الحكومي`
@@ -58,14 +58,14 @@ pie title توزيع عمليات البحث ونسبة التحويل لمكا�
 * `رقم ونش انقاذ في مدينتي ساوث بارك والكرافت زون`
 * `ونش انقاذ سريع عند البرج الايقوني ومحور بن زايد`
 * `ونش هيدروليك لسحب سيارات العاصمة الادارية 24 ساعة`
-* **الصفحة المتصدرة:** [`/blog/winch-new-capital.html`](https://awladhegazy.com/blog/winch-new-capital.html) و [`/blog/winch-rehab-madinaty.html`](https://awladhegazy.com/blog/winch-rehab-madinaty.html)
+* **الصفحة المتصدرة:** [`/blog/winch-new-capital.html`](https://winchawladhegazy.com/blog/winch-new-capital.html) و [`/blog/winch-rehab-madinaty.html`](https://winchawladhegazy.com/blog/winch-rehab-madinaty.html)
 
 ### د) نطاق السلام والحرفيين والنهضة:
 * `ونش انقاذ لنقل العربيات لورش الحرفيين`
 * `رقم ونش انقاذ عند محطة عدلي منصور التبادلية وموقف العاشر`
 * `ونش سحب سيارات في مدينة السلام ومساكن النهضة`
 * `ونش لنقل السيارات الحوادث لكفر بطا والحرفيين`
-* **الصفحة المتصدرة:** [`/blog/winch-salam-herfeyein-nahda.html`](https://awladhegazy.com/blog/winch-salam-herfeyein-nahda.html)
+* **الصفحة المتصدرة:** [`/blog/winch-salam-herfeyein-nahda.html`](https://winchawladhegazy.com/blog/winch-salam-herfeyein-nahda.html)
 
 ---
 
@@ -77,31 +77,31 @@ pie title توزيع عمليات البحث ونسبة التحويل لمكا�
 * `تكلفة نقل فورك ليفت على ونش طبلية هيدروليك`
 * `ونش نقل معدات ثقيلة وخلاطات صوامع خرسانة`
 * `شركة نقل كلاركات ومعدات مصانع في مدينة بدر`
-* **الصفحة المستهدفة:** [`/services.html#heavy-machinery`](https://awladhegazy.com/services.html#heavy-machinery)
+* **الصفحة المستهدفة:** [`/services.html#heavy-machinery`](https://winchawladhegazy.com/services.html#heavy-machinery)
 
 ### ب) نقل الكرفانات والوحدات المتنقلة:
 * `ونش لنقل الكرفانات والمكاتب المتنقلة لمواقع المقاولات`
 * `سعر نقل كرفان 6 متر و 12 متر في العاصمة الادارية`
 * `ونش طبلية عريضة لنقل غرف الحراسة والكونتينرات`
-* **الصفحة المستهدفة:** [`/services.html#caravans`](https://awladhegazy.com/services.html#caravans)
+* **الصفحة المستهدفة:** [`/services.html#caravans`](https://winchawladhegazy.com/services.html#caravans)
 
 ### ج) سحب رؤوس التريلات والشاحنات (Tractor Heads):
 * `ونش لسحب ونقل كابينة تريلا مرسيدس اكتروس`
 * `سحب شاحنة نقل ثقيل معطلة على الدائري الاقليمي`
 * `ونش شاحنات كبير لنقل اعطال الفتيس والموتور للتريلات`
-* **الصفحة المستهدفة:** [`/services.html#semi-trucks`](https://awladhegazy.com/services.html#semi-trucks)
+* **الصفحة المستهدفة:** [`/services.html#semi-trucks`](https://winchawladhegazy.com/services.html#semi-trucks)
 
 ### د) سيارات الجولف والفود تراك:
 * `ونش لنقل عربات الجولف كارت لكمبوندات مدينتي والرحاب`
 * `نقل سيارتين جولف مع بعض في نفس المشوار`
 * `ونش لنقل عربات الطعام المتنقلة فود ترك للمعارض`
-* **الصفحة المستهدفة:** [`/services.html#golf-carts`](https://awladhegazy.com/services.html#golf-carts) و [`/services.html#food-trucks`](https://awladhegazy.com/services.html#food-trucks)
+* **الصفحة المستهدفة:** [`/services.html#golf-carts`](https://winchawladhegazy.com/services.html#golf-carts) و [`/services.html#food-trucks`](https://winchawladhegazy.com/services.html#food-trucks)
 
 ### هـ) السيارات الفاخرة والمنخفضة (Porsche / Cupra):
 * `ونش لسحب سيارات بورش كايين بدون خدوش`
 * `ونش هيدروليك مسطح باربطة كاوتش للسيارات المنخفضة والمهبطة`
 * `سحب سيارات كوبرا سبور وتوصيلها للتوكيل`
-* **الصفحة المستهدفة:** [`/services.html#private-cars`](https://awladhegazy.com/services.html#private-cars)
+* **الصفحة المستهدفة:** [`/services.html#private-cars`](https://winchawladhegazy.com/services.html#private-cars)
 
 ---
 

@@ -4,7 +4,7 @@ with open(r'D:\winch-hegazy\scripts\fetch_old_site.py', 'r', encoding='utf-8') a
     pass
 
 import urllib.request
-req = urllib.request.Request('https://awladhegazy.com/', headers={'User-Agent': 'Mozilla/5.0'})
+req = urllib.request.Request('https://winchawladhegazy.com/', headers={'User-Agent': 'Mozilla/5.0'})
 with urllib.request.urlopen(req, timeout=10) as resp:
     html = resp.read().decode('utf-8', errors='ignore')
 
