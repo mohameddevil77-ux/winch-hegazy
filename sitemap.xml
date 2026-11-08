@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://winchawladhegazy.com/</loc>
     <lastmod>2026-11-08</lastmod>
@@ -162,47 +161,17 @@
     <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <video:video>
-      <video:thumbnail_loc>https://winchawladhegazy.com/assets/images/poster_lamborghini_night.webp</video:thumbnail_loc>
-      <video:title>توثيق بالفيديو: سحب ونقل سيارة سوبر كار لامبورجيني ليلاً - أوناش أولاد حجازي</video:title>
-      <video:description>شاهد توثيقاً بالفيديو لعملية سحب ونقل سيارة سوبر كار خارقة (لامبورجيني هوراكان) ليلاً في القاهرة بأحدث أوناش هيدروليكية مغلقة مع حماية الصدام الرياضي وأربطة العجلات المطاطية من أوناش أولاد حجازي.</video:description>
-      <video:content_loc>https://winchawladhegazy.com/assets/videos/hegazy_lamborghini_vip_night.mp4</video:content_loc>
-      <video:player_loc>https://winchawladhegazy.com/videos/lamborghini-night-rescue.html</video:player_loc>
-      <video:duration>45</video:duration>
-      <video:publication_date>2026-11-06T20:00:00+02:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
   </url>
   <url>
     <loc>https://winchawladhegazy.com/videos/caterpillar-loader-transport.html</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <video:video>
-      <video:thumbnail_loc>https://winchawladhegazy.com/assets/images/poster_caterpillar_loader.webp</video:thumbnail_loc>
-      <video:title>توثيق بالفيديو: تحميل ونقل لودر كاتربيلر CAT 930 للمشروعات - أوناش أولاد حجازي</video:title>
-      <video:description>فيديو يوضح قدرة الطبلية الهيدروليكية لأوناش أولاد حجازي على سحب وتحميل اللوادر والمعدات الهندسية الثقيلة مثل لودر كاتربيلر CAT 930 وتأمينها بجنازير صلب متوافقة مع معايير السلامة.</video:description>
-      <video:content_loc>https://winchawladhegazy.com/assets/videos/hegazy_caterpillar_loader_day.mp4</video:content_loc>
-      <video:player_loc>https://winchawladhegazy.com/videos/caterpillar-loader-transport.html</video:player_loc>
-      <video:duration>35</video:duration>
-      <video:publication_date>2026-11-06T20:30:00+02:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
   </url>
   <url>
     <loc>https://winchawladhegazy.com/videos/commercial-truck-rescue.html</loc>
     <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <video:video>
-      <video:thumbnail_loc>https://winchawladhegazy.com/assets/images/poster_commercial_pickup.webp</video:thumbnail_loc>
-      <video:title>توثيق بالفيديو: إنقاذ ونقل سيارة نقل تجاري بحمولتها ليلاً - أوناش أولاد حجازي</video:title>
-      <video:description>توثيق ميداني لعملية سحب وتأمين شاحنة نقل تجاري محملة بالبضائع ليلاً على الطريق السريع بأحدث أوناش أولاد حجازي مع إضاءات تحذيرية دون الحاجة لتفريغ الحمولة.</video:description>
-      <video:content_loc>https://winchawladhegazy.com/assets/videos/hegazy_commercial_pickup_night.mp4</video:content_loc>
-      <video:player_loc>https://winchawladhegazy.com/videos/commercial-truck-rescue.html</video:player_loc>
-      <video:duration>40</video:duration>
-      <video:publication_date>2026-11-06T21:00:00+02:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
   </url>
 </urlset>
